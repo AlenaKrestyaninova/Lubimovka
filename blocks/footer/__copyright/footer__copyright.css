@@ -1,0 +1,13 @@
+.footer__copyright {
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .footer__copyright {
+        line-height: 1;
+        padding-top: 48px;
+    }
+}

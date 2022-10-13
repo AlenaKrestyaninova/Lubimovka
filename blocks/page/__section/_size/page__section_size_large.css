@@ -1,0 +1,10 @@
+.page__section_size_large {
+    max-width: calc(100% - 2*48px);
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+    .page__section_size_large {
+        max-width: 100%;
+    }
+}

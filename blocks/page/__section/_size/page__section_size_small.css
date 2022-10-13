@@ -1,0 +1,17 @@
+.page__section_size_small {
+    max-width: calc(100% - 2*148px);
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+    .page__section_size_small {
+        max-width: calc(100% - 2*48px);
+    }
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+    .page__section_size_small {
+        max-width: 100%;
+    }
+}

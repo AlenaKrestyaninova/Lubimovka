@@ -1,0 +1,10 @@
+.header__logo {
+    height: 52px;
+  }
+
+  /* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .header__logo {
+      height: 42px;
+    }
+  }

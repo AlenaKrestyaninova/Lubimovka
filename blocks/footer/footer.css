@@ -1,0 +1,35 @@
+.footer {
+    padding-top: 92px;
+    padding-bottom: 24px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+    .footer {
+        padding-left: 48px;
+        padding-right: 48px;
+    }
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+    .footer {
+        padding-left: 24px;
+        padding-right: 24px;
+        padding-top: 88px;
+    }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .footer {
+        padding-left: 16px;
+        padding-right: 16px;
+        flex-direction: column;
+        padding-top: 64px;
+    }
+}
