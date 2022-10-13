@@ -1,0 +1,12 @@
+/* Copyright (c) 2014-2019 by Gayane Bagdasaryan, Vyacheslav Kirilenko. All rights reserved. */
+
+@font-face {
+	font-family: 'FormularLight';
+	src: url('formular-light.eot');
+	src:
+	     url('formular-light.eot?#iefix') format('embedded-opentype'),
+	     url('formular-light.woff2') format('woff2'),
+	     url('formular-light.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
