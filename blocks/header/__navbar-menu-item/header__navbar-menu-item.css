@@ -1,0 +1,3 @@
+.header__navbar-menu-item:not(:last-child) {
+    margin-right: 43px;
+}

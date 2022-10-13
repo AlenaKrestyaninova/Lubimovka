@@ -5,7 +5,7 @@
     -moz-osx-font-smoothing: grayscale;
     color: #FFFFFF;
     box-sizing: border-box;
-    max-width: 1280px;
+    max-width: 1440px;
 }
 
 /* Медиа-запрос для ширины 1024px (меньше 1279px)*/

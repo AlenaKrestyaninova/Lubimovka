@@ -1,0 +1,10 @@
+.header__navbar-menu-link {
+    font-family: 'Formular';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 22px;
+    color: #242424;
+    text-decoration: none;
+    white-space: nowrap;
+}

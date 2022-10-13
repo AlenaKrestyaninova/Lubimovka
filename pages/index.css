@@ -1,11 +1,24 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 @import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
 
 
 
 /* Раздел header*/
 @import url(../blocks/header/header.css);
+@import url(../blocks/header/__logo/header__logo.css);
+@import url(../blocks/header/__navbar-donation-icon/header__navbar-donation-icon.css);
+@import url(../blocks/header/__navbar-donation-link/header__navbar-donation-link.css);
+@import url(../blocks/header/__navbar-menu-item/header__navbar-menu-item.css);
+@import url(../blocks/header/__navbar-menu-link/header__navbar-menu-link.css);
+@import url(../blocks/header/__navbar-section/header__navbar-section.css);
+@import url(../blocks/header/__navbar-social-item/header__navbar-social-item.css);
+@import url(../blocks/header/__navbar-social-link/header__navbar-social-link.css);
+@import url(../blocks/header/__navbar/header__navbar.css);
+@import url(../blocks/header/__navbar-section-social/header__navbar-section-social.css);
+@import url(../blocks/header/__navbar-section-menu/header__navbar-section-menu.css);
+@import url(../blocks/header/__navbar-section-donation/header__navbar-section-donation.css);
 
 
 
