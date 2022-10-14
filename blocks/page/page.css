@@ -9,7 +9,7 @@
     max-width: 1440px;
 }
 
-/* Медиа-запрос для ширины 1220px*/
+/* Медиа-запрос для ширины 1280px*/
 @media all and (max-width:1439px) {
     .page {
         max-width: 100%;
