@@ -1,0 +1,11 @@
+.performance__item {
+    border-right: 1px solid #242424;
+    padding: 0 30px;
+    box-sizing: border-box;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: 120px 1fr;
+}
+.performance__item:nth-child(3n) {
+    border-right: none;
+}

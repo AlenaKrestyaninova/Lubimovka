@@ -1,0 +1,10 @@
+.performance__description {
+    max-width: 150px;
+    font-family: 'Formular', serif;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    color: #242424;
+    margin: 0 0 20px;
+}

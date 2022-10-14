@@ -1,0 +1,12 @@
+.performance__date {
+    padding: 0;
+    margin: 0 42px 0 0;
+    font-family: 'Formular', serif;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'ss01' on;
+    color: #242424;
+
+}
