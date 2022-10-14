@@ -1,15 +1,16 @@
 .page {
     margin: 0 auto;
-    font-family: 'Inter', Arial, sans-serif;
+    font-family: 'Formular', 'Times New Roman', Times, serif;
+    font-style: normal;
+    color: #242424;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    color: #FFFFFF;
     box-sizing: border-box;
-    max-width: 1280px;
+    max-width: 1440px;
 }
 
-/* Медиа-запрос для ширины 1024px (меньше 1279px)*/
-@media all and (max-width:1279px) {
+/* Медиа-запрос для ширины 1280px*/
+@media all and (max-width:1439px) {
     .page {
         max-width: 100%;
     }

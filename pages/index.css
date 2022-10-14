@@ -1,12 +1,17 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
 @import url(../blocks/body/body.css);
+@import url(../blocks/page/page.css);
 
-
+@import url(../blocks/title/title.css);
 
 /* Раздел header*/
 @import url(../blocks/header/header.css);
 
+/* Раздел gallery*/
+@import url(../blocks/gallery/gallery.css);
+@import url(../blocks/gallery/__photos/gallery__photos.css);
+@import url(../blocks/gallery/__photo/gallery__photo.css);
 
 
 /* Раздел footer*/
