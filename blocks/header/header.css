@@ -2,8 +2,8 @@
   display: flex;
 }
 
-/* Медиа-запрос для ширины 1024px*/
-@media screen and (max-width:1279px) {
+/* Медиа-запрос для ширины 1280px*/
+@media screen and (max-width:1439px) {
   
 }
 
