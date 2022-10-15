@@ -4,6 +4,5 @@
     margin: 75px auto 0 auto;
     padding: 0;
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
 }

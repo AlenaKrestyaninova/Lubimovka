@@ -1,0 +1,3 @@
+.performance__section_for-two-elements {
+    grid-template-columns: repeat(2, 480px);
+}

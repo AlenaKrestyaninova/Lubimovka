@@ -1,0 +1,3 @@
+.performance__item_one-of-the-three:nth-child(3n) {
+    border-right: none;
+}

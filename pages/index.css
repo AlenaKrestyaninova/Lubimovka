@@ -14,12 +14,15 @@
 @import url(../blocks/footer/__copyright/footer__copyright.css);
 
 /*Раздел performance*/
-
 @import url(../blocks/performance/performance.css);
+@import url(../blocks/performance/__title/performance__title.css);
 @import url(../blocks/performance/__section/performance__section.css);
+@import url(../blocks/performance/__section/_for-three-elements/performance__section_for-three-elements.css);
+@import url(../blocks/performance/__section/_for-two-elements/performance__section_for-two-elements.css);
 @import url(../blocks/performance/__item/performance__item.css);
+@import url(../blocks/performance/__item/_one-of-the-three/performance__item_one-of-the-three.css);
+@import url(../blocks/performance/__item/_one-of-the-two/performance__item_one-of-the-two.css);
 @import url(../blocks/performance/__image/performance__image.css);
-
 @import url(../blocks/performance/__date-time/performance__date-time.css);
 @import url(../blocks/performance/__date/performance__date.css);
 @import url(../blocks/performance/__time/performance__time.css);
