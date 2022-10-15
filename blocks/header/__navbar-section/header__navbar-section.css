@@ -6,3 +6,18 @@
     display: flex;
     align-items: center;
 }
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+  
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+  
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+  
+}

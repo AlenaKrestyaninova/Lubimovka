@@ -2,3 +2,24 @@
     padding: 0 40px 0 0;
     border-right: 1px solid #242424;
 }
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+    .header__navbar-section-menu {
+        padding: 0 20px 0 0;
+    }
+}
+    
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+    .header__navbar-section-menu {
+        padding: 0 10px 0 0;
+    }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+  .header__navbar-section-menu {
+    visibility: hidden;
+  }
+}
