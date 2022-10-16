@@ -1,16 +1,51 @@
 .header__navbar-section-donation {
-    padding: 0 20px 0 23px;
+    padding: 0 20px 0 5px;
 }
+
+.header__navbar-section-donation::before, .header__navbar-section-donation::after {
+  display: block;
+    width: 0.6em;
+    height: 1.6em;
+    box-sizing: border-box;
+    border: 0.0625rem solid;
+    content: "";
+    visibility: hidden;
+
+}
+
+.header__navbar-section-donation::before {
+  border-right: 0;
+  border-bottom-left-radius: 200% 100%;
+  border-top-left-radius: 200% 100%;
+}
+
+.header__navbar-section-donation::after {
+  border-left: 0;
+  border-bottom-right-radius: 200% 100%;
+  border-top-right-radius: 200% 100%;
+}
+
+
+.header__navbar-section-donation:hover:after, .header__navbar-section-donation:hover:before {
+  visibility: visible;
+}
+
 
 /* Медиа-запрос для ширины 1024px*/
 @media screen and (max-width:1279px) {
   .header__navbar-section-donation {
-    padding: 0 10px 0 13px;
+    padding: 0 10px 0 5px;
   }
 }
 
 /* Медиа-запрос для ширины 768px*/
 @media screen and (max-width:1023px) {
+  .header__navbar-section-donation {
+    padding: 0 6px 0 5px;
+  }
+}
+
+@media screen and (max-width:800px) {
   .header__navbar-section-donation {
     padding: 0 6px 0 6px;
   }
@@ -19,6 +54,6 @@
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width:767px) {
   .header__navbar-section-donation {
-    visibility: hidden;
+    display: none;
   }
 }

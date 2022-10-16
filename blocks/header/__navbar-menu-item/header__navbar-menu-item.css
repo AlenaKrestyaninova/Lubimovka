@@ -1,19 +1,11 @@
 .header__navbar-menu-item:not(:last-child) {
-    margin-right: 43px;
+    margin-right: 24px;
 }
 
-/* Медиа-запрос для ширины 1024px*/
-@media screen and (max-width:1279px) {
+@media screen and (max-width:1420px) {
   .header__navbar-menu-item:not(:last-child) {
-    margin-right: 10px;
+    margin-right: 0px;
   }
-}
-
-/* Медиа-запрос для ширины 768px*/
-@media screen and (max-width:1023px) {
-    .header__navbar-menu-item:not(:last-child) {
-        margin-right: 5px;
-      }
 }
 
 /* Медиа-запрос для ширины 320px*/
