@@ -1,0 +1,21 @@
+@import "../vendor/normalize.css";
+@import "../fonts/fonts.css";
+@import "../blocks/body/body.scss";
+@import "../blocks/page/page.scss";
+
+@import "../blocks/title/title.css";
+
+/* Раздел header*/
+@import "../blocks/header/header.css";
+
+/* Раздел gallery*/
+@import "../blocks/gallery/gallery.css";
+@import "../blocks/gallery/__photos/gallery__photos.css";
+@import "../blocks/gallery/__photo/gallery__photo.css";
+
+
+/* Раздел footer*/
+@import "../blocks/footer/footer.css";
+@import "../blocks/footer/__copyright/footer__copyright.css";
+
+
