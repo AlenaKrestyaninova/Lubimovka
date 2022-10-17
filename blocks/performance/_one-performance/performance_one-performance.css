@@ -1,0 +1,6 @@
+.performance_one-performance {
+    display: grid;
+    grid-template-columns: 450px 480px;
+    gap: 30px;
+    justify-content: center;
+}
