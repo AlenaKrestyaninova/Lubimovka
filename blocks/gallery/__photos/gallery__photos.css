@@ -22,8 +22,3 @@
         grid-template-columns: repeat(2, 1fr);
     }
 }
-
-/* Медиа-запрос для ширины 320px*/
-@media screen and (max-width:767px) {
-  
-}
