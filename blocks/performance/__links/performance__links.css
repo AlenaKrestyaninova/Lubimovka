@@ -1,3 +1,11 @@
 .performance__links {
     position: relative;
+    grid-area: links;
+}
+
+@media (max-width: 768px) {
+    .performance__links {
+        display: flex;
+        gap: 27px;
+    }
 }

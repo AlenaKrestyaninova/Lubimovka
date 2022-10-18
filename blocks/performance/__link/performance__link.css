@@ -43,3 +43,8 @@
     background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
 }
 
+@media (max-width: 768px) {
+    .performance__link {
+        margin-bottom: 0;
+    }
+}

@@ -1,3 +1,19 @@
 .performance__item_one-of-the-three:nth-child(3n) {
     border-right: none;
 }
+
+@media (max-width: 1280px) and (min-width: 769px) {
+    .performance__item_one-of-the-three:nth-child(2n) {
+        border-right: none;
+    }
+    .performance__item_one-of-the-three:nth-child(3n) {
+        border-right: 1px solid #242424;
+    }
+}
+
+@media (max-width: 768px) {
+    .performance__item_one-of-the-three {
+        border-right: none;
+        border-bottom: 1px solid #242424;
+    }
+}

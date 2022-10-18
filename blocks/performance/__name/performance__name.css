@@ -9,3 +9,10 @@
     margin: 0 0 16px;
     padding: 0;
 }
+
+@media (max-width: 768px) {
+    .performance__name {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}

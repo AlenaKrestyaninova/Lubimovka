@@ -3,3 +3,9 @@
     margin: 0 auto;
     padding-bottom: 129px;
 }
+
+@media (max-width: 1280px) {
+    .performance {
+        max-width: 100%;
+    }
+}

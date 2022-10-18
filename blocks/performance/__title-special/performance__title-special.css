@@ -1,0 +1,13 @@
+.performance__title-special {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .performance__title-special {
+        display: block;
+        margin: 0 auto;
+        font-size: 28px;
+        line-height: 32px;
+        width: 366px;
+    }
+}

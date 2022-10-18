@@ -8,3 +8,11 @@
     color: #242424;
     margin: 0 0 20px;
 }
+
+@media (max-width: 768px) {
+    .performance__description {
+        font-size: 14px;
+        line-height: 17px;
+        margin-bottom: 40px;
+    }
+}

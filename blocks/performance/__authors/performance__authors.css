@@ -7,3 +7,11 @@
     line-height: 22px;
     color: #242424;
 }
+
+@media (max-width: 768px) {
+    .performance__authors {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 0 0 8px 0;
+    }
+}

@@ -14,3 +14,18 @@
     margin: 0;
     max-width: 450px;
 }
+
+@media (max-width: 1280px) and (min-width: 769px) {
+    .title {
+        margin: 0 auto;
+        max-width: 400px;
+        font-size: 34px;
+        line-height: 36px;
+    }
+}
+
+@media (max-width: 768px) {
+    .title {
+        display: none;
+    }
+}

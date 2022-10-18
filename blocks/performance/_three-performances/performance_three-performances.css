@@ -1,0 +1,5 @@
+@media (max-width: 768px) {
+    .performance_three-performances {
+        max-width: calc(100% - 24px * 2);
+    }
+}

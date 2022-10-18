@@ -1,3 +1,9 @@
 .performance__section_for-three-elements {
     grid-template-columns: repeat(3, 1fr);
 }
+
+@media (max-width: 1280px) and (min-width: 769px) {
+    .performance__section_for-three-elements {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

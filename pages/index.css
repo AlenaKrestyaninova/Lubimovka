@@ -16,7 +16,10 @@
 /*Раздел performance*/
 @import url(../blocks/performance/performance.css);
 @import url(../blocks/performance/_one-performance/performance_one-performance.css);
+@import url(../blocks/performance/_two-performances/performance_two-performances.css);
+@import url(../blocks/performance/_three-performances/performance_three-performances.css);
 @import url(../blocks/performance/__title/performance__title.css);
+@import url(../blocks/performance/__title-special/performance__title-special.css);
 @import url(../blocks/performance/__section/performance__section.css);
 @import url(../blocks/performance/__section/_for-three-elements/performance__section_for-three-elements.css);
 @import url(../blocks/performance/__section/_for-two-elements/performance__section_for-two-elements.css);
@@ -26,6 +29,7 @@
 @import url(../blocks/performance/__item/_one-of-the-two/performance__item_one-of-the-two.css);
 @import url(../blocks/performance/__item/_one/performance__item_one.css);
 @import url(../blocks/performance/__image/performance__image.css);
+@import url(../blocks/performance/__information/performance__information.css);
 @import url(../blocks/performance/__date-time/performance__date-time.css);
 @import url(../blocks/performance/__date/performance__date.css);
 @import url(../blocks/performance/__time/performance__time.css);
