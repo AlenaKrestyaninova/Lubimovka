@@ -1,0 +1,24 @@
+.gallery__photos {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    max-width: 1440px;
+}
+
+
+
+/* Медиа-запрос для ширины 1220px*/
+@media screen and (max-width:1439px) {
+    .gallery__photos {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+    .gallery__photos {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
