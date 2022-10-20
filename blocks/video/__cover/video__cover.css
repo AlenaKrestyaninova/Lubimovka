@@ -1,0 +1,30 @@
+.video__cover {
+  width: 716px;
+  height: 402.75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+}
+
+@media screen and (max-width:1023px) {
+  .video__cover {
+    width: 640px;
+    height: 360px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .video__cover {
+    width: 366px;
+    height: 206px;
+  }
+}
+
+.video__cover:hover {
+  cursor: pointer;
+}
+
+.video__cover:hover .video__button {
+  transform: scale(1.15);
+}

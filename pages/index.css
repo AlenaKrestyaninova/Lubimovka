@@ -1,9 +1,16 @@
 @import url(../vendor/normalize.css);
 @import url(../fonts/fonts.css);
+@import url(../blocks/page/page.css);
 @import url(../blocks/body/body.css);
-
-
-
+@import url(../blocks/video/video.css);
+@import url(../blocks/video/__content/video__content.css);
+@import url(../blocks/video/__description/video__description.css);
+@import url(../blocks/video/__title/video__title.css);
+@import url(../blocks/video/__cover/video__cover.css);
+@import url(../blocks/video/__button/video__button.css);
+@import url(../blocks/video/__iframe/video__iframe.css);
+@import url(../blocks/hidden/hidden.css);
+@import url(../blocks/video/__img/video__img.css);
 /* Раздел header*/
 @import url(../blocks/header/header.css);
 
