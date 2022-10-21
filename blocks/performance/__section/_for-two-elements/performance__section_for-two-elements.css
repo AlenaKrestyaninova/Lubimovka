@@ -1,9 +1,4 @@
 .performance__section_for-two-elements {
-    grid-template-columns: repeat(2, 480px);
-}
-
-@media (max-width: 1280px) and (min-width: 769px) {
-    .performance__section_for-two-elements {
-        grid-template-columns: repeat(2, 1fr);
-    }
+    max-width: 960px;
+    grid-template-columns: repeat(2, 1fr);
 }

@@ -3,7 +3,7 @@
     grid-area: links;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .performance__links {
         display: flex;
         gap: 27px;

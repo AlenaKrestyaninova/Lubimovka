@@ -1,26 +1,9 @@
 .performance__section {
-    max-width: 100%;
+    /*max-width: 100%;*/
     list-style: none;
     margin: 75px auto 0 auto;
     padding: 0;
     display: grid;
     justify-content: center;
     row-gap: 130px;
-}
-
-@media (max-width: 1280px) and (min-width: 769px) {
-    .performance__section {
-        max-width: 960px;
-    }
-}
-
-@media (max-width: 768px) {
-    .performance__section {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        margin-top: 34px;
-        row-gap: 0;
-
-    }
 }

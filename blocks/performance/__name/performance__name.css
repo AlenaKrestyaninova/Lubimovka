@@ -5,14 +5,21 @@
     font-size: 36px;
     line-height: 38px;
     letter-spacing: -0.01em;
-    color: #242424;
     margin: 0 0 16px;
     padding: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .performance__name {
         font-size: 28px;
         line-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__name {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 12px;
     }
 }

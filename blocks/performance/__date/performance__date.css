@@ -3,8 +3,14 @@
     margin: 0 42px 0 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .performance__date {
         margin-right: 46px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__date {
+        margin-right: 30px;
     }
 }

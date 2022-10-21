@@ -6,6 +6,31 @@
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
+@import "../blocks/performance/performance.css";
+@import "../blocks/performance/_amount/performance_amount_one.css";
+@import "../blocks/performance/_amount/performance_amount_two.css";
+@import "../blocks/performance/_amount/performance_amount_three.css";
+@import "../blocks/performance/__title/performance__title.css";
+@import "../blocks/performance/__title-for-one/performance__title-for-one.css";
+@import "../blocks/performance/__title-special/performance__title-special.css";
+@import "../blocks/performance/__section/performance__section.css";
+@import "../blocks/performance/__section/_for-three-elements/performance__section_for-three-elements.css";
+@import "../blocks/performance/__section/_for-two-elements/performance__section_for-two-elements.css";
+@import "../blocks/performance/__section/_for-one-element/performance__section_for-one-element.css";
+@import "../blocks/performance/__item/performance__item.css";
+@import "../blocks/performance/__item/_one-of-the-three/performance__item_one-of-the-three.css";
+@import "../blocks/performance/__item/_one-of-the-two/performance__item_one-of-the-two.css";
+@import "../blocks/performance/__item/_one/performance__item_one.css";
+@import "../blocks/performance/__image/performance__image.css";
+@import "../blocks/performance/__information/performance__information.css";
+@import "../blocks/performance/__date-time/performance__date-time.css";
+@import "../blocks/performance/__date/performance__date.css";
+@import "../blocks/performance/__time/performance__time.css";
+@import "../blocks/performance/__name/performance__name.css";
+@import "../blocks/performance/__authors/performance__authors.css";
+@import "../blocks/performance/__author/performance__author.css";
+@import "../blocks/performance/__description/performance__description.css";
+@import "../blocks/performance/__links/performance__links.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";
 .body {
@@ -35,3 +60,54 @@
 /* Раздел footer*/
 
 /*# sourceMappingURL=style.css.map */
+
+.performance__link {
+  background: url(../images/performances/arrow.svg) no-repeat left center;
+  display: block;
+  width: 154px;
+  height: 32px;
+  border-bottom: 1px solid #242424;
+  border-left: 1px solid #242424;
+  padding: 9px 0 9px 29px;
+  font-family: 'Formular', serif;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 14px;
+  text-decoration: none;
+  color: #242424;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  margin-bottom: 16px;
+  cursor: pointer;
+  position: relative;
+}
+
+.performance__link:before {
+  content:'';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 32px;
+  background: #242424;
+  transition: all 0.5s ease;
+  z-index: -1;
+}
+
+@media (max-width: 960px) {
+  .performance__link {
+    margin-bottom: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .performance__link {
+    height: 30px;
+    width: 120px;
+    padding-left: 20px;
+    font-size: 12px;
+    background-size: 15px 7px;
+  }
+}
+
+@import url(../blocks/performance/_amount/performance_amount_three.css);

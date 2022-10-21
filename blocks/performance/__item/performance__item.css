@@ -8,13 +8,16 @@
     grid-template-areas:
       "image info"
       ". links";
-    max-width: 480px;
     margin: 0 auto;
+    width: 100%;
 }
 
-@media (max-width: 768px) {
+.performance__item:last-child {
+    border-right: none;
+}
+
+@media (max-width: 960px) {
     .performance__item {
-        width: 364px;
         grid-template-areas:
           "image info"
           "links links";

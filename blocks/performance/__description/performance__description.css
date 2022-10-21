@@ -1,18 +1,23 @@
 .performance__description {
-    max-width: 150px;
-    font-family: 'Formular', serif;
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
-    color: #242424;
     margin: 0 0 20px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .performance__description {
         font-size: 14px;
         line-height: 17px;
         margin-bottom: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__description {
+        font-size: 12px;
+        line-height: 16px;
+        margin-bottom: 20px;
     }
 }

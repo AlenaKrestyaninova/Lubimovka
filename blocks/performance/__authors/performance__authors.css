@@ -5,13 +5,19 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 22px;
-    color: #242424;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 960px) {
     .performance__authors {
         font-size: 16px;
         line-height: 22px;
         margin: 0 0 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__authors {
+        font-size: 14px;
+        line-height: 16px;
     }
 }
