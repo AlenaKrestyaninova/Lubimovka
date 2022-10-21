@@ -1,4 +1,4 @@
-.performance_one-performance {
+.performance_amount_one {
     display: grid;
     grid-template-columns: 450px 480px;
     gap: 30px;
@@ -6,7 +6,7 @@
 }
 
 @media (max-width: 1439px) {
-    .performance_one-performance {
+    .performance_amount_one {
         grid-template-columns: 1fr;
         grid-template-rows: 2fr;
         gap: 34px;
@@ -14,7 +14,7 @@
 }
 
 @media (max-width: 960px) {
-    .performance_one-performance {
+    .performance_amount_one {
         display: none;
     }
 }

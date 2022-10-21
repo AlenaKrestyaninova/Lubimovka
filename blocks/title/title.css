@@ -11,19 +11,19 @@
 }
 
 /* Медиа-запрос для ширины 1220px*/
-@media screen and (max-width:1439px) {
+@media screen and (max-width: 1439px) {
     .title {
         margin-left: 25%;
     }
 }
 
 /* Медиа-запрос для ширины 768px*/
-@media screen and (max-width:1279px) {
-    
+@media screen and (max-width: 1279px) {
+
 }
 
 /* Медиа-запрос для ширины 320px*/
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     .title {
         font-size: 28px;
         line-height: 1.14;

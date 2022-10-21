@@ -12,15 +12,11 @@
 @import "../blocks/performance/_amount/performance_amount_three.css";
 @import "../blocks/performance/__title/performance__title.css";
 @import "../blocks/performance/__title-for-one/performance__title-for-one.css";
-@import "../blocks/performance/__title-special/performance__title-special.css";
+@import "../blocks/performance/__title/_special/performance__title_special.css";
 @import "../blocks/performance/__section/performance__section.css";
 @import "../blocks/performance/__section/_for-three-elements/performance__section_for-three-elements.css";
 @import "../blocks/performance/__section/_for-two-elements/performance__section_for-two-elements.css";
 @import "../blocks/performance/__section/_for-one-element/performance__section_for-one-element.css";
-@import "../blocks/performance/__item/performance__item.css";
-@import "../blocks/performance/__item/_one-of-the-three/performance__item_one-of-the-three.css";
-@import "../blocks/performance/__item/_one-of-the-two/performance__item_one-of-the-two.css";
-@import "../blocks/performance/__item/_one/performance__item_one.css";
 @import "../blocks/performance/__image/performance__image.css";
 @import "../blocks/performance/__information/performance__information.css";
 @import "../blocks/performance/__date-time/performance__date-time.css";
@@ -60,6 +56,48 @@
 /* Раздел footer*/
 
 /*# sourceMappingURL=style.css.map */
+
+.performance__item {
+  border-right: 1px solid #242424;
+  padding: 0 30px;
+  box-sizing: border-box;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 120px 1fr;
+  grid-template-areas:
+      "image info"
+      ". links";
+  margin: 0 auto;
+  width: 100%;
+}
+
+.performance__item:last-child {
+  border-right: none;
+}
+
+@media (max-width: 1439px) and (min-width: 961px) {
+  .performance__item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .performance__item:nth-child(3n) {
+    border-right: 1px solid #242424;
+  }
+}
+
+@media (max-width: 960px) {
+  .performance__item {
+    grid-template-areas:
+          "image info"
+          "links links";
+    grid-template-columns: 92px 1fr;
+    margin: 0 auto;
+    max-width: 100%;
+    border-right: none;
+    border-bottom: 1px solid #242424;
+    padding: 32px 25px;
+  }
+}
 
 .performance__link {
   background: url(../images/performances/arrow.svg) no-repeat left center;
@@ -109,5 +147,3 @@
     background-size: 15px 7px;
   }
 }
-
-@import url(../blocks/performance/_amount/performance_amount_three.css);

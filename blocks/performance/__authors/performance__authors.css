@@ -3,14 +3,11 @@
     font-family: 'Formular', serif;
     font-style: normal;
     font-weight: 300;
-    font-size: 16px;
     line-height: 22px;
 }
 
 @media (max-width: 960px) {
     .performance__authors {
-        font-size: 16px;
-        line-height: 22px;
         margin: 0 0 8px 0;
     }
 }

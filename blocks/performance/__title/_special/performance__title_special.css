@@ -1,18 +1,17 @@
-.performance__title-special {
+.performance__title_special {
     display: none;
 }
 
 @media (max-width: 960px) {
-    .performance__title-special {
+    .performance__title_special {
         display: block;
         margin: 0 auto;
         max-width: 366px;
-
     }
 }
 
 @media (max-width: 380px) {
-    .performance__title-special {
+    .performance__title_special {
         margin: 0 15px;
     }
 }
