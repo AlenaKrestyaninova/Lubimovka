@@ -1,0 +1,8 @@
+.plays__items {
+    margin: 48px auto 0;
+    max-width: calc(100% - 2*60px);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    list-style: none;
+}

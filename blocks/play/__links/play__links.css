@@ -1,0 +1,15 @@
+.play__links {
+    
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.38px;
+    color: inherit;
+    display: block;
+}
+
+.play__link {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+    height: 56px;
+}
