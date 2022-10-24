@@ -4,15 +4,15 @@
 }
 
 /* Медиа-запрос для ширины 320px*/
-@media screen and (max-width:767px) {
+@media screen and (max-width:859px) {
   .header__navbar-section-social {
-    display: none;
+    padding: 0;
   }
 }
 
 /* Медиа-запрос для ширины 320px*/
-@media screen and (max-width:859px) {
+@media screen and (max-width:767px) {
   .header__navbar-section-social {
-    padding: 0;
+    display: none;
   }
 }
