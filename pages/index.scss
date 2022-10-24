@@ -1,0 +1,36 @@
+@import "../vendor/normalize.css";
+@import "../fonts/fonts.css";
+@import "../blocks/body/body.scss";
+@import "../blocks/page/page.scss";
+
+@import "../blocks/title/title.css";
+
+/* Раздел header*/
+@import "../blocks/header/header.css";
+@import "../blocks/header/__burger/header__burger.css";
+@import "../blocks/header/__logo/header__logo.css";
+@import "../blocks/header/__navbar-donation-icon/header__navbar-donation-icon.css";
+@import "../blocks/header/__navbar-donation-link/header__navbar-donation-link.css";
+@import "../blocks/header/__navbar-menu-item/header__navbar-menu-item.css";
+@import "../blocks/header/__navbar-menu-link/header__navbar-menu-link.css";
+@import "../blocks/header/__navbar-mobile-back/header__navbar-mobile-back.css";
+@import "../blocks/header/__navbar-section-donation/header__navbar-section-donation.css";
+@import "../blocks/header/__navbar-section-menu/header__navbar-section-menu.css";
+@import "../blocks/header/__navbar-section-social/header__navbar-section-social.css";
+@import "../blocks/header/__navbar-section/header__navbar-section.css";
+@import "../blocks/header/__navbar-social-item/header__navbar-social-item.css";
+@import "../blocks/header/__navbar-social-link/header__navbar-social-link.css";
+@import "../blocks/header/__navbar/header__navbar.css";
+@import "../blocks/header/header__navbar-mobile-back-title/header__navbar-mobile-back-title.css";
+
+/* Раздел gallery*/
+@import "../blocks/gallery/gallery.css";
+@import "../blocks/gallery/__photos/gallery__photos.css";
+@import "../blocks/gallery/__photo/gallery__photo.css";
+
+
+/* Раздел footer*/
+@import "../blocks/footer/footer.css";
+@import "../blocks/footer/__copyright/footer__copyright.css";
+
+

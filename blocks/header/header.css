@@ -1,6 +1,9 @@
 .header {
   display: flex;
-  border-bottom: 1px solid #242424;
+  flex-direction: row;
+  max-width: 1440px;
+  margin: 0 auto;
+  border-bottom: 1px solid black;
 }
 
 /* Медиа-запрос для ширины 1280px*/
@@ -9,7 +12,7 @@
 }
 
 /* Медиа-запрос для ширины 768px*/
-@media screen and (max-width:1023px) {
+@media screen and (max-width:1279px) {
   
 }
 

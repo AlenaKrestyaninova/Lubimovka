@@ -1,8 +1,10 @@
+$text: #242424;
+
 .page {
     margin: 0 auto;
     font-family: 'Formular', 'Times New Roman', Times, serif;
     font-style: normal;
-    color: #242424;
+    color: $text;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
