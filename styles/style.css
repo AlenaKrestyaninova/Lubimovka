@@ -107,7 +107,6 @@
   border-bottom: 1px solid #242424;
   border-left: 1px solid #242424;
   padding: 9px 0 9px 29px;
-  font-family: 'Formular', serif;
   font-weight: 300;
   font-size: 16px;
   line-height: 14px;
@@ -132,6 +131,19 @@
   z-index: -1;
 }
 
+.performance__link:hover:before {
+  width: 100%;
+}
+
+.performance__link:last-child {
+  margin-bottom: 0;
+}
+
+.performance__link:hover {
+  color: #E5E5E5;
+  background: url(../images/performances/arrow-hover.svg) no-repeat left center;
+}
+
 @media (max-width: 960px) {
   .performance__link {
     margin-bottom: 0;
@@ -140,10 +152,9 @@
 
 @media (max-width: 480px) {
   .performance__link {
-    height: 30px;
-    width: 120px;
-    padding-left: 20px;
+    padding: 8px 0 8px 20px;
     font-size: 12px;
+    line-height: 8px;
     background-size: 15px 7px;
   }
 }

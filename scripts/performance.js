@@ -81,11 +81,11 @@ const createPerformance = (date, time, name, playwright, director, description, 
     performance.querySelector('.performance__date').textContent = date;
     performance.querySelector('.performance__time').textContent = time;
     performance.querySelector('.performance__name').textContent = name;
-    performance.querySelector('.playwright').textContent = playwright;
-    performance.querySelector('.director').textContent = director;
+    performance.querySelector('#playwright').textContent = playwright;
+    performance.querySelector('#director').textContent = director;
     performance.querySelector('.performance__description').textContent = description;
-    performance.querySelector('.about').href = linkAbout;
-    performance.querySelector('.tickets').href = linkTickets;
+    performance.querySelector('#about').href = linkAbout;
+    performance.querySelector('#tickets').href = linkTickets;
 
     return performance;
 };
