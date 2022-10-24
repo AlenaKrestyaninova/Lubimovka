@@ -2,8 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f17b44-71be-4a88-966a-837ec62ef994" name="Changes" comment="idk">
-      <change afterPath="$PROJECT_DIR$/blocks/persons/__title/persons__title.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/persons/persons.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/persons/__description/persons__description.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/persons/__name/persons__name.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/blocks/persons/__photo/persons__photo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/persons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/persons/__item/persons__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__item/persons__item.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/persons/__title/persons__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__title/persons__title.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/persons/persons.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/persons.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,8 +24,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="CSS File" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -80,7 +91,12 @@
       <workItem from="1666279666180" duration="7477000" />
       <workItem from="1666338887596" duration="26802000" />
       <workItem from="1666599253152" duration="5967000" />
-      <workItem from="1666610343369" duration="825000" />
+      <workItem from="1666610343369" duration="5511000" />
+      <workItem from="1666618620175" duration="173000" />
+      <workItem from="1666618806472" duration="270000" />
+      <workItem from="1666619090620" duration="137000" />
+      <workItem from="1666619721908" duration="229000" />
+      <workItem from="1666619969718" duration="5396000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1666263988125</created>
