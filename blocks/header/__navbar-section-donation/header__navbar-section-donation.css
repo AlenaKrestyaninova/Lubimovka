@@ -28,6 +28,7 @@
 
 .header__navbar-section-donation:hover:after, .header__navbar-section-donation:hover:before {
   visibility: visible;
+  color: #242424
 }
 
 

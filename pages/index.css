@@ -20,6 +20,8 @@
 @import url(../blocks/header/__navbar-section-menu/header__navbar-section-menu.css);
 @import url(../blocks/header/__navbar-section-donation/header__navbar-section-donation.css);
 @import url(../blocks/header/__burger/header__burger.css);
+@import url(../blocks/header/__navbar-mobile-back/header__navbar-mobile-back.css);
+@import url(../blocks/header/header__navbar-mobile-back-title/header__navbar-mobile-back-title.css);
 
 
 

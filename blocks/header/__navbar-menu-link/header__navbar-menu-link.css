@@ -42,7 +42,7 @@
 /* Медиа-запрос для ширины 1024px*/
 @media screen and (max-width:1279px) {
   .header__navbar-menu-link {
-    font-size: 14px;
+    font-size: 14.2px;
   }
 }
 
@@ -54,7 +54,7 @@
 }
 
 /* Медиа-запрос для ширины 320px*/
-@media screen and (max-width:860px) {
+@media screen and (max-width:929px) {
   .header__navbar-menu-link {
     font-size: 10px;
   }

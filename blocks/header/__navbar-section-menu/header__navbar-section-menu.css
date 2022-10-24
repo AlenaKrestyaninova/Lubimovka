@@ -17,6 +17,19 @@
     }
 }
 
+@media screen and (max-width:950px) {
+    .header__navbar-section-menu {
+        padding: 0 5px 0 0;
+    }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:859px) {
+    .header__navbar-section-social {
+      padding: 0;
+    }
+  }
+
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width:767px) {
   .header__navbar-section-menu {

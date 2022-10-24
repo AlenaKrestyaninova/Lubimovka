@@ -9,3 +9,10 @@
     display: none;
   }
 }
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:859px) {
+  .header__navbar-section-social {
+    padding: 0;
+  }
+}
