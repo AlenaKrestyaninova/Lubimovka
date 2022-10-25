@@ -9,6 +9,10 @@
 @import "../blocks/plays/plays.css";
 @import "../blocks/plays/__items/plays__items.css";
 @import "../blocks/play/play.css";
+@import "../blocks/play/__promo/play__promo.css";
+@import "../blocks/play/__title/play__title.css";
+@import "../blocks/play/__author/play__author.css";
+@import "../blocks/play/__place/play__place.css";
 @import "../blocks/play/__links/play__links.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";

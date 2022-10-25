@@ -1,8 +1,16 @@
 .plays__items {
-    margin: 48px auto 0;
+    margin: 0 auto;
+    padding: 0;
     max-width: calc(100% - 2*60px);
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     list-style: none;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .plays__items {
+        max-width: calc(100% - 2*24px);
+    }
 }

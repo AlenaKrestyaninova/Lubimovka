@@ -1,27 +1,5 @@
 .play {
     width: 240px;
-}
-
-.play__promo {
-    display: block;
-    width: 240px;
-    height: 300px;
-    background-color: #B7C09D;
-}
-
-.play__img {
-    background-color: #B7C09D;
-    width: 100%;
-    height: 100%;
-}
-
-.play__title {
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 20px;
-    line-height: 1.2;
-    letter-spacing: -0.01em;
-    text-decoration: none;
-    color: inherit;
+    list-style: none;
+    box-sizing: border-box;
 }
