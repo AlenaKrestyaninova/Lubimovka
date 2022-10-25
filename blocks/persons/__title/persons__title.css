@@ -1,2 +1,8 @@
-.persons__title {
+@media screen and (max-width:767px) {
+    .persons__title {
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
 }
+

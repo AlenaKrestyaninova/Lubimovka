@@ -2,19 +2,11 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f17b44-71be-4a88-966a-837ec62ef994" name="Changes" comment="idk">
-      <change afterPath="$PROJECT_DIR$/blocks/persons/__description/persons__description.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/persons/__name/persons__name.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/blocks/persons/__photo/persons__photo.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/persons.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/persons/__item/persons__item.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__item/persons__item.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/persons/__title/persons__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__title/persons__title.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/persons/persons.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/persons.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scripts/persons.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/persons.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
