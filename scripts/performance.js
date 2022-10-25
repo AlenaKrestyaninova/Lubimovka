@@ -68,9 +68,9 @@ const performances = [
 ];
 
 const performanceTemplate  = document.querySelector('.performance__template').content;
-const performanceSectionForThreeElements = document.querySelector('.performance__section_for-three-elements');
-const performanceSectionForTwoElements = document.querySelector('.performance__section_for-two-elements');
-const performanceSectionForOneElement = document.querySelector('.performance__section_for-one-element');
+const performanceSectionForThreeElements = document.querySelector('#performance__section_for-three-elements');
+const performanceSectionForTwoElements = document.querySelector('#performance__section_for-two-elements');
+const performanceSectionForOneElement = document.querySelector('#performance__section_for-one-element');
 
 const createPerformance = (date, time, name, playwright, director, description, imageLink, linkAbout, linkTickets) => {
     const performance = performanceTemplate.querySelector('.performance__item').cloneNode(true);
@@ -89,11 +89,6 @@ const createPerformance = (date, time, name, playwright, director, description, 
 
     return performance;
 };
-
-/*performances.forEach((performance) => {
-    const newPerformance = createPerformance(performance.date, performance.time, performance.name, performance.playwright, performance.director, performance.description, performance.imageLink, performance.linkAbout, performance.linkTickets);
-    performanceSection.append(newPerformance);
-});*/
 
 for (let i=0; i<3; i++) {
     const newPerformance = createPerformance(performances[i].date, performances[i].time, performances[i].name, performances[i].playwright, performances[i].director, performances[i].description, performances[i].imageLink, performances[i].linkAbout, performances[i].linkTickets);

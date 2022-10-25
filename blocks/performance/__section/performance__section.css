@@ -6,4 +6,17 @@
     display: grid;
     justify-content: center;
     row-gap: 130px;
+    grid-template-columns: repeat(auto-fit, 480px);
+}
+@media (max-width: 960px) {
+    .performance__section {
+        gap: 0;
+        margin-top: 2px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__section {
+        grid-template-columns: minmax(330px, 1fr);
+    }
 }
