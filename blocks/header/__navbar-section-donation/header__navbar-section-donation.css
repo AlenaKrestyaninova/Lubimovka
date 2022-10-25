@@ -1,5 +1,9 @@
 .header__navbar-section-donation {
     padding: 0 20px 0 5px;
+    display: flex;
+    list-style: none;
+    align-items: center;
+    text-decoration: none;
 }
 
 .header__navbar-section-donation::before, .header__navbar-section-donation::after {
@@ -28,7 +32,7 @@
 
 .header__navbar-section-donation:hover:after, .header__navbar-section-donation:hover:before {
   visibility: visible;
-  color: #242424
+  color: #242424;
 }
 
 

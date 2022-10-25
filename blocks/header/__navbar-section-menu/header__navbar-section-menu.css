@@ -1,6 +1,7 @@
 .header__navbar-section-menu {
-    padding: 0 29px 0 0;
-    border-right: 1px solid #242424;
+    padding: 0 25px 0 0;
+    display: flex;
+    list-style: none;
 }
 
 /* Медиа-запрос для ширины 1024px*/

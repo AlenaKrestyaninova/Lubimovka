@@ -1,20 +1,14 @@
 .header__navbar {
     display: flex;
-    margin: 15px 0 11px 0;
     align-items: center;
-}
-
-
-/* Медиа-запрос для ширины 768px*/
-@media screen and (max-width:1420px) {
-    .header__navbar{
-        margin: 15px auto 11px auto;
-    }
+    justify-content: space-between;
+    width: 100%;
 }
 
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width:767px) {
     .header__navbar{
         margin: 15px 0 11px 0;
+        justify-content: flex-start;
     }
 }
