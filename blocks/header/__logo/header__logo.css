@@ -1,10 +1,36 @@
 .header__logo {
-    height: 52px;
+  width: 43px;
+  height: 35px;
+  margin: 0 30px 0 43px;
   }
 
-  /* Медиа-запрос для ширины 320px*/
+
+@media screen and (max-width:1279px) {
+  .header__logo {
+    margin: 0 17px 0 23px;
+  }
+}
+  
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+  .header__logo {
+    margin: 0 6px 0 8px;
+  }
+}
+
+@media screen and (max-width:820px) {
+  .header__logo {
+    width: 43px;
+    height: 34px;
+    margin: 0;
+  }
+}
+  
+/* Медиа-запрос для ширины 320px*/
 @media screen and (max-width:767px) {
     .header__logo {
-      height: 42px;
+      width: 43px;
+      height: 34px;
+      margin-left: 24px;
     }
-  }
+}

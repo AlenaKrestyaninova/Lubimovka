@@ -1,0 +1,17 @@
+.header__navbar-mobile-back {
+    display: none;
+    border-right: 1px solid #242424;
+    border-bottom: 1px solid #242424;
+    border-top: none;
+    border-left: none;
+    background-color: inherit;
+    padding: 0 0 0 6px;
+    align-items: center;
+    margin-left: 24px;
+}
+
+@media screen and (max-width:767px) {
+    .header__navbar-mobile-back {
+      display: flex;
+    }
+  }

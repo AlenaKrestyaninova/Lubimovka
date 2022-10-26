@@ -1,0 +1,14 @@
+.header__burger {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: none;
+    height: 60px;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .header__burger {
+      display: block;
+    }
+  }
