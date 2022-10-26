@@ -1,0 +1,35 @@
+.performance__name {
+    font-family: 'Neue Machina', serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 38px;
+    letter-spacing: -0.01em;
+    margin: 0 0 16px;
+    padding: 0;
+    max-width: 269px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -moz-box;
+    -moz-box-orient: vertical;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-clamp: 2;
+    box-orient: vertical;
+}
+
+@media (max-width: 960px) {
+    .performance__name {
+        font-size: 28px;
+        line-height: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__name {
+        font-size: 24px;
+        line-height: 28px;
+        margin-bottom: 12px;
+    }
+}

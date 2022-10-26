@@ -1,0 +1,23 @@
+.performance {
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 122px 0 7px 0;
+}
+
+@media (max-width: 1439px) {
+    .performance {
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 960px) {
+    .performance {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance {
+        padding-top: 50px;
+    }
+}
