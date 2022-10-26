@@ -1,0 +1,24 @@
+.navbar__link_menu {
+    line-height: 22px;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+  .navbar__link_menu {
+    font-size: 14.2px;
+  }
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1098px) {
+    .navbar__link_menu {
+        font-size: 12px;
+    }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:929px) {
+  .navbar__link_menu {
+    font-size: 10px;
+  }
+}

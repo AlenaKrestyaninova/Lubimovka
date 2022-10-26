@@ -1,0 +1,23 @@
+.navbar__donation-link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 17px;
+    text-transform: uppercase;
+    color: #242424;
+    text-decoration: none;
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1098px) {
+  .navbar__donation-link {
+    font-size: 12px;
+  }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:860px) {
+  .navbar__donation-link {
+    font-size: 10px;
+  }
+}

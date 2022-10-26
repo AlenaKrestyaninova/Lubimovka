@@ -1,0 +1,30 @@
+.navbar__section_menu {
+    padding: 0 25px 0 0;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+    .navbar__section_menu {
+        padding: 0 15px 0 0;
+    }
+}
+    
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+    .navbar__section_menu {
+        padding: 0 10px 0 0;
+    }
+}
+
+@media screen and (max-width:950px) {
+    .navbar__section_menu {
+        padding: 0 5px 0 0;
+    }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:859px) {
+    .navbar__section_menu {
+      padding: 0;
+    }
+  }

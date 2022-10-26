@@ -1,0 +1,11 @@
+.navbar__donation-icon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+  .navbar__donation-icon {
+    width: 15px;
+  }
+}

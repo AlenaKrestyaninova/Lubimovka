@@ -3,21 +3,22 @@
 @import "../fonts/fonts.css";
 @import "../blocks/title/title.css";
 @import "../blocks/header/header.css";
-@import "../blocks/header/__burger/header__burger.css";
-@import "../blocks/header/__logo/header__logo.css";
-@import "../blocks/header/__navbar-donation-icon/header__navbar-donation-icon.css";
-@import "../blocks/header/__navbar-donation-link/header__navbar-donation-link.css";
-@import "../blocks/header/__navbar-menu-item/header__navbar-menu-item.css";
-@import "../blocks/header/__navbar-menu-link/header__navbar-menu-link.css";
-@import "../blocks/header/__navbar-mobile-back/header__navbar-mobile-back.css";
-@import "../blocks/header/__navbar-section-donation/header__navbar-section-donation.css";
-@import "../blocks/header/__navbar-section-menu/header__navbar-section-menu.css";
-@import "../blocks/header/__navbar-section-social/header__navbar-section-social.css";
-@import "../blocks/header/__navbar-section/header__navbar-section.css";
-@import "../blocks/header/__navbar-social-item/header__navbar-social-item.css";
-@import "../blocks/header/__navbar-social-link/header__navbar-social-link.css";
-@import "../blocks/header/__navbar/header__navbar.css";
-@import "../blocks/header/header__navbar-mobile-back-title/header__navbar-mobile-back-title.css";
+@import "../blocks/navbar/__back/_title/navbar__back_title.css";
+@import "../blocks/navbar/__back/navbar__back.css";
+@import "../blocks/navbar/__burger/navbar__burger.css";
+@import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
+@import "../blocks/navbar/__donation-link/navbar__donation-link.css";
+@import "../blocks/navbar/__item/_menu/navbar__item_menu.css";
+@import "../blocks/navbar/__item/navbar__item.css";
+@import "../blocks/navbar/__link/navbar__link.css";
+@import "../blocks/navbar/__link/_menu/navbar__link_menu.css";
+@import "../blocks/navbar/__link/_social/navbar__link_social.css";
+@import "../blocks/navbar/__logo/navbar__logo.css";
+@import "../blocks/navbar/__section/_donation/navbar__section_donation.css";
+@import "../blocks/navbar/__section/_menu/navbar__section_menu.css";
+@import "../blocks/navbar/__section/_social/navbar__section_social.css";
+@import "../blocks/navbar/__section/navbar__section.css";
+@import "../blocks/navbar/navbar.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
@@ -45,7 +46,8 @@
     max-width: 100%;
   }
 }
-/* Раздел header*/
+/* Раздел header */
+/*  Раздел navbar */
 /* Раздел gallery*/
 /* Раздел footer*/
 

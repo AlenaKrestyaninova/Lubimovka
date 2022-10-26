@@ -1,0 +1,31 @@
+.navbar__section_social {
+    padding: 0 5px 0 5px;
+    position: relative;
+}
+
+.navbar__section_social::before {
+  content: "";
+  width: 0px;
+  height: 50px;
+  border: 1px solid #242424;
+  left: -6px;
+  position: absolute;
+}
+
+.navbar__section_social::after {
+  content: "";
+  width: 0px;
+  height: 50px;
+  border: 1px solid #242424;
+  right: -6px;
+  position: absolute;
+}
+
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:859px) {
+  .navbar__section_social {
+    padding: 0;
+  }
+}
+
