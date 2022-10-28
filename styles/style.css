@@ -48,6 +48,9 @@
 }
 /* Раздел header */
 /*  Раздел navbar */
+.navbar {
+  background-color: var(--hex);
+}
 /* Раздел gallery*/
 /* Раздел footer*/
 
