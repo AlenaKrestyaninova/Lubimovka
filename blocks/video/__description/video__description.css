@@ -1,0 +1,27 @@
+.video__description {
+  width: 716px;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 28px;
+  letter-spacing: -0.01em;
+  color: #242424;
+  padding: 0;
+  margin: 55px 0 0;    
+}
+
+@media screen and (max-width:1023px) {
+  .video__description {
+    font-size: 18px;
+    line-height: 26px;
+    width: 640px;
+  }
+}
+
+@media screen and (max-width:767px) {
+  .video__description {
+    font-size: 20px;
+    line-height: 28px;
+    width: 366px;
+    margin-top: 32px;
+  }
+}

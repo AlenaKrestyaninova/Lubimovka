@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Любимовка 2.0</title>
+    <link rel="stylesheet" href="./plugin/swiper.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="body">
@@ -23,20 +24,79 @@
 
         </section>
 
-        <!-- Блок с одним видео -->
-        <section class="art">
+       <!-- Блок с одним видео -->
+      <section class="video">
+        <h2 class="title video__title">Заголовок блока с видео</h2>
+        <div class="video__content">
+          <a target="blank" class="video__link" href="https://www.youtube.com/embed/xB654zuufpc">
+            <div class="video__cover">
+              <img src="images/cover-video.png" class="video__img">
+              <div class="video__button"></div>
+            </div>
+          </a>
+        </div>
+        <p class="video__description">Из этого следует два вывода: с одной стороны, искусство не должно быть равно реальности, потому что иначе оно не будет искусством, с другой стороны – оно должно быть все-таки подобно реальности, иначе мы ничего не поймем, не подключимся и не распознаем замыслы автора. Мне нравится такое определение, что один из видов эстетики – это, грубо говоря, "понимание" чего-то. Если нам нечего понимать, то мы не получим ни удовольствия, ни какого-то чувства, ничего. А для того, чтобы что-то понять, нам должно быть представлено что-то, что не равно само себе. То есть нам показывают или говорят что-то, а мы понимаем, что там есть что-то еще. Вот мы смотрим на античную статую и понимаем, что это – статуя, но похожа на человека. Если она будет абсолютно такая же как человек, как восковая фигура, то мы поймем, что это уже не искусство. Искусство для того, чтобы люди догадались, домыслили, дочувствовали что-то.</p>
+      </section>
 
-        </section>
+      <!-- Блок с двумя видео -->
+      <section class="two-video video">
+        <h2 class="title video__title">Заголовок блока с двумя видео</h2>
+        <div class="video__container swiper-container">
+          <div class="swiper-wrapper slider">
+            <div class="video__content swiper-slide video__content_row">
+              <a target="blank" class="video__link" href="https://www.youtube.com/embed/uzzhJGaN83Q">
+                <div class="video__cover">
+                  <img src="images/cover-video.jpg" class="video__img">
+                  <div class="video__button"></div>
+                </div>
+              </a>
+            </div>
+            <div class="video__content swiper-slide video__content_row">
+              <a target="blank" class="video__link" href="https://www.youtube.com/embed/Dz6u6DFjNmM">
+                <div class="video__cover">
+                  <img src="images/cover-video.jpg" class="video__img">
+                  <div class="video__button"></div>
+                </div>
+              </a>
+            </div>        
+          </div>
+          <div class="swiper-pagination"></div> 
+        </div>
+      </section>
 
-        <!-- Блок с двумя видео -->
-        <section class="video">
-
-        </section>
-
-        <!-- Блок с тремя видео - Переименовать секцию!!!-->
-        <section class="triple-video">
-
-        </section>
+      <!-- Блок с тремя видео -->
+      <section class="three-video video">
+        <h2 class="title video__title">Заголовок блока с тремя видео</h2>
+        <div class="video__container swiper-container g">
+          <div class="swiper-wrapper slider">
+            <div class="video__content swiper-slide video__content_row">
+              <a target="blank" class="video__link" href="https://www.youtube.com/embed/JDs2DxwNLUo">
+                <div class="video__cover">
+                  <img src="images/cover-video.jpg" class="video__img">
+                  <div class="video__button"></div>
+                </div>
+              </a>
+            </div>
+            <div class="video__content swiper-slide video__content_row">
+              <a target="blank" class="video__link" href="https://www.youtube.com/embed/wPg_StIU5dM">
+                <div class="video__cover">
+                  <img src="images/cover-video.jpg" class="video__img">
+                  <div class="video__button"></div>
+                </div>
+              </a>
+            </div>
+            <div class="video__content swiper-slide video__content_row">
+              <a target="blank" class="video__link" href="https://www.youtube.com/embed/PW7e9Rp9VCw">
+                <div class="video__cover">
+                  <img src="images/cover-video.jpg" class="video__img">
+                  <div class="video__button"></div>
+                </div>
+              </a>
+            </div> 
+          </div>
+          <div class="swiper-pagination"></div>               
+        </div>
+      </section>
 
         <!-- Блок с фотографиями -->
         <section class="gallery">
@@ -128,5 +188,7 @@
     </template>
 </div>
 <script src="scripts/performance.js"></script>
+<script src="plugin/swiper.js"></script>
+<script src="index.js"></script>
 </body>
 </html>

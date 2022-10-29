@@ -1,0 +1,20 @@
+.video__container {
+  padding: 0;
+  margin: 8px 0 0 0;
+  max-width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+@media screen and (max-width:1023px) {
+    /*  .video__content_row {
+       width: 640px;
+       height: 360px;
+     } */
+   }
+   
+   @media screen and (max-width:767px) {
+     .video__container  {
+       gap: 30px;
+     }
+   }
