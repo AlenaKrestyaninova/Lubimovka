@@ -1,0 +1,48 @@
+@import "../../../pages/variables.scss";
+
+.navbar__back {
+    display: none;
+    border-right: 1px solid $coal;
+    border-bottom: 1px solid $coal;
+    border-top: none;
+    border-left: none;
+    padding: 0 0 0 6px;
+    align-items: center;
+    margin-left: 24px;
+    padding: 9px 29px 9px 0px;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 14px;
+    color: $coal;
+    text-transform: uppercase;
+    background: url(../../../images/Union.svg) no-repeat right center;
+    position: relative;
+}
+
+@media screen and (max-width:767px) {
+    .navbar__back {
+      display: block;
+    }
+  }
+
+  .navbar__back:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 0;
+    height: 32px;
+    background: $coal;
+    transition: all 0.7s ease;
+    z-index: -1;
+}
+
+.navbar__back:hover:before {
+    width: 100%;
+}
+
+.navbar__back:hover {
+  color: #E5E5E5;
+  background: url(../../../images/Union-hover.svg) no-repeat right center;
+}

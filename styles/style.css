@@ -3,14 +3,13 @@
 @import "../fonts/fonts.css";
 @import "../blocks/title/title.css";
 @import "../blocks/header/header.css";
+@import "../blocks/navbar/navbar.css";
 @import "../blocks/navbar/__back/_title/navbar__back_title.css";
-@import "../blocks/navbar/__back/navbar__back.css";
 @import "../blocks/navbar/__burger/navbar__burger.css";
 @import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
 @import "../blocks/navbar/__donation-link/navbar__donation-link.css";
 @import "../blocks/navbar/__item/_menu/navbar__item_menu.css";
 @import "../blocks/navbar/__item/navbar__item.css";
-@import "../blocks/navbar/__link/navbar__link.css";
 @import "../blocks/navbar/__link/_menu/navbar__link_menu.css";
 @import "../blocks/navbar/__link/_social/navbar__link_social.css";
 @import "../blocks/navbar/__logo/navbar__logo.css";
@@ -18,7 +17,6 @@
 @import "../blocks/navbar/__section/_menu/navbar__section_menu.css";
 @import "../blocks/navbar/__section/_social/navbar__section_social.css";
 @import "../blocks/navbar/__section/navbar__section.css";
-@import "../blocks/navbar/navbar.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
@@ -48,9 +46,87 @@
 }
 /* Раздел header */
 /*  Раздел navbar */
-.navbar {
-  background-color: var(--hex);
+.navbar__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  color: #242424;
 }
+
+.navbar__link::before, .navbar__link::after {
+  display: block;
+  width: 0.6em;
+  height: 1.6em;
+  box-sizing: border-box;
+  border: 0.0625rem solid;
+  content: "";
+  visibility: hidden;
+}
+
+.navbar__link::before {
+  border-right: 0;
+  border-bottom-left-radius: 200% 100%;
+  border-top-left-radius: 200% 100%;
+}
+
+.navbar__link::after {
+  border-left: 0;
+  border-bottom-right-radius: 200% 100%;
+  border-top-right-radius: 200% 100%;
+}
+
+.navbar__link:hover:after, .navbar__link:hover:before {
+  visibility: visible;
+}
+
+.navbar__back {
+  display: none;
+  border-right: 1px solid #242424;
+  border-bottom: 1px solid #242424;
+  border-top: none;
+  border-left: none;
+  padding: 0 0 0 6px;
+  align-items: center;
+  margin-left: 24px;
+  padding: 9px 29px 9px 0px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 14px;
+  color: #242424;
+  text-transform: uppercase;
+  background: url(../../../images/Union.svg) no-repeat right center;
+  position: relative;
+}
+
+@media screen and (max-width: 767px) {
+  .navbar__back {
+    display: block;
+  }
+}
+.navbar__back:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 0;
+  height: 32px;
+  background: #242424;
+  transition: all 0.7s ease;
+  z-index: -1;
+}
+
+.navbar__back:hover:before {
+  width: 100%;
+}
+
+.navbar__back:hover {
+  color: #E5E5E5;
+  background: url(../../../images/Union-hover.svg) no-repeat right center;
+}
+
 /* Раздел gallery*/
 /* Раздел footer*/
 

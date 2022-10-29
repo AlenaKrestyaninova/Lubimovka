@@ -1,10 +1,12 @@
+@import "../../../pages/variables.scss";
+
 .navbar__link {
     font-style: normal;
     font-weight: 300;
     font-size: 16px;
-    color: #242424;
     text-decoration: none;
     display: flex;
+    color: $coal;
 }
 
 .navbar__link::before, .navbar__link::after {

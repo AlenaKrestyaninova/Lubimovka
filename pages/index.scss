@@ -9,14 +9,14 @@
 @import "../blocks/header/header.css";
 
 /*  Раздел navbar */
+@import "../blocks/navbar/__link/navbar__link.scss";
+@import "../blocks/navbar/navbar.css";
 @import "../blocks/navbar/__back/_title/navbar__back_title.css";
-@import "../blocks/navbar/__back/navbar__back.css";
 @import "../blocks/navbar/__burger/navbar__burger.css";
 @import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
 @import "../blocks/navbar/__donation-link/navbar__donation-link.css";
 @import "../blocks/navbar/__item/_menu/navbar__item_menu.css";
 @import "../blocks/navbar/__item/navbar__item.css";
-@import "../blocks/navbar/__link/navbar__link.css";
 @import "../blocks/navbar/__link/_menu/navbar__link_menu.css";
 @import "../blocks/navbar/__link/_social/navbar__link_social.css";
 @import "../blocks/navbar/__logo/navbar__logo.css";
@@ -24,7 +24,8 @@
 @import "../blocks/navbar/__section/_menu/navbar__section_menu.css";
 @import "../blocks/navbar/__section/_social/navbar__section_social.css";
 @import "../blocks/navbar/__section/navbar__section.css";
-@import "../blocks/navbar/navbar.css";
+@import "../blocks/navbar/__back/navbar__back.scss";
+
 
 /* Раздел gallery*/
 @import "../blocks/gallery/gallery.css";
