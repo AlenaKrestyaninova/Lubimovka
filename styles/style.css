@@ -13,6 +13,7 @@
 @import "../blocks/play/__title/play__title.css";
 @import "../blocks/play/__author/play__author.css";
 @import "../blocks/play/__place/play__place.css";
+@import "../blocks/play/__links/play__links.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";
 .body {
@@ -40,24 +41,6 @@
 /* Раздел header*/
 /* Раздел gallery*/
 /* Раздел plays*/
-.play__links {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1.38px;
-  color: inherit;
-  display: none;
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  cursor: pointer;
-}
-
-/* Медиа-запрос для ширины 320px*/
-@media screen and (max-width: 767px) {
-  .play__links {
-    display: block;
-  }
-}
 .play__link {
   display: flex;
   flex-direction: row;
@@ -74,14 +57,26 @@
 }
 
 .play__link:hover {
-  color: #E5E5E5;
+  color: #ffffff;
+  background-color: #242424;
 }
 
-.play__link-arrow-dioganal {
+.play__link-arrow {
+  display: block;
+  background-image: url(../../../images/arrow.svg);
+  width: 20px;
+  height: 12px;
+}
+
+.play__link-arrow:hover {
+  background-image: url(../../../images/arrow-hover.svg);
+}
+
+.play__link-arrow_dioganal {
   rotate: -45deg;
 }
 
-.play__link-arrow-down {
+.play__link-arrow_down {
   rotate: 90deg;
 }
 

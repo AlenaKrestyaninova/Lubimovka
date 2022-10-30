@@ -1,5 +1,4 @@
-$text: #242424;
-$background-green: #B7C09D;
+@import "../../../pages/variables.scss";
 
 .play__link {
     display: flex;
@@ -17,14 +16,26 @@ $background-green: #B7C09D;
 }
 
 .play__link:hover {
-    color: #E5E5E5;
-
+    color: $white;
+    background-color: $text;
 }
 
-.play__link-arrow-dioganal {
+.play__link-arrow {
+    display: block;
+    background-image: url(../../../images/arrow.svg);
+    width: 20px;
+    height: 12px;
+}
+
+.play__link-arrow:hover{
+    background-image: url(../../../images/arrow-hover.svg);
+}
+
+.play__link-arrow_dioganal {
     rotate: -45deg;
 }
 
-.play__link-arrow-down {
+.play__link-arrow_down {
     rotate: 90deg;
 }
+
