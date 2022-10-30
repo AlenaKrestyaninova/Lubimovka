@@ -10,7 +10,7 @@
   }
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width:600px) {
   .video__content {
     width: 366px;
     height: 206px;

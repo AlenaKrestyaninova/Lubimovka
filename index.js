@@ -61,13 +61,15 @@ let sliderTwoVideo
 function initTwoVideoSlider () {
   const videoSection = document.querySelector('.two-video')
   const slider = videoSection.querySelector('.swiper-container');
+  hiddenPaginator(videoSection);
   if(window.innerWidth < 899) {
     sliderTwoVideo = new Swiper(slider, {
       slidesPerView: 'auto',
       spaceBetween: 0,
       mousewheel: true,
+      keyboard: true,
       breakpoints: {
-        768: {
+        600: {
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -86,13 +88,16 @@ let sliderThreeVideo
 function initThreeVideoSlider () {
   const videoSection = document.querySelector('.three-video')
   const slider = videoSection.querySelector('.swiper-container');
+  hiddenPaginator(videoSection);
   if(window.innerWidth < 1378) {
     sliderThreeVideo = new Swiper(slider, {
       slidesPerView: 'auto',
       spaceBetween: 0,
       mousewheel: true,
+      keyboard: true,
+      onlyInViewport: true,
       breakpoints: {
-        798: {
+        600: {
           pagination: {
             el: '.swiper-pagination',
             clickable: true,
@@ -106,6 +111,16 @@ function initThreeVideoSlider () {
   } 
 }
 }
+
+function hiddenPaginator(videoSection) {
+  const paginator = videoSection.querySelector('.swiper-pagination');
+  if(window.innerWidth < 600) {
+    paginator.classList.add('hidden');
+    } else {
+    paginator.classList.remove('hidden');
+    } 
+  }
+
 initThreeVideoSlider();
 initTwoVideoSlider();
 playVideo();
