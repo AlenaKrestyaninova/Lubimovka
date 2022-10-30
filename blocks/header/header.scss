@@ -1,9 +1,11 @@
+@import "../../pages/variables.scss";
+
 .header {
   display: flex;
   flex-direction: row;
   max-width: 1440px;
   margin: 0 auto;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $coal;
 }
 
 /* Медиа-запрос для ширины 1280px*/

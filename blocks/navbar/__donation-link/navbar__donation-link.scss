@@ -1,10 +1,12 @@
+@import "../../../pages/variables.scss";
+
 .navbar__donation-link {
     font-style: normal;
     font-weight: 300;
     font-size: 14px;
     line-height: 17px;
     text-transform: uppercase;
-    color: #242424;
+    color: $coal;
     text-decoration: none;
 }
 
