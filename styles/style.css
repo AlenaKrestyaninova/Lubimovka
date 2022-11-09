@@ -8,8 +8,6 @@
 @import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
 @import "../blocks/navbar/__item/_menu/navbar__item_menu.css";
 @import "../blocks/navbar/__item/navbar__item.css";
-@import "../blocks/navbar/__link/_menu/navbar__link_menu.css";
-@import "../blocks/navbar/__link/_social/navbar__link_social.css";
 @import "../blocks/navbar/__logo/navbar__logo.css";
 @import "../blocks/navbar/__section/_menu/navbar__section_menu.css";
 @import "../blocks/navbar/__section/navbar__section.css";
@@ -112,6 +110,51 @@
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width: 860px) {
   .navbar__donation-link {
+    font-size: 10px;
+  }
+}
+.navbar__link_menu {
+  line-height: 22px;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width: 1279px) {
+  .navbar__link_menu {
+    font-size: 14.2px;
+  }
+}
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1098px) {
+  .navbar__link_menu {
+    font-size: 12px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 929px) {
+  .navbar__link_menu {
+    font-size: 10px;
+  }
+}
+.navbar__link_social {
+  line-height: 18px;
+  text-transform: lowercase;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width: 1279px) {
+  .navbar__link_social {
+    font-size: 14px;
+  }
+}
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1098px) {
+  .navbar__link_social {
+    font-size: 12px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 860px) {
+  .navbar__link_social {
     font-size: 10px;
   }
 }
