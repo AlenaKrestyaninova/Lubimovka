@@ -71,8 +71,13 @@
       <!-- Блок с пьесами -->
       <section class="plays">
         <h2 class="title">Заголовок блока с пьесами</h2>
-        <ul class="plays__items">
-        </ul>
+        <div class="plays__swiper swiper">
+          <ul class="plays__items swiper-wrapper">
+          </ul>
+          <div class="plays__swiper-button swiper-button-prev"></div>
+          <div class="plays__swiper-button swiper-button-next"></div>
+        </div>
+        
       </section>
 
       <!-- Блок с персонами -->
@@ -101,7 +106,7 @@
   </div>
 
   <template id="play-template">
-    <li class="play">
+    <li class="play swiper-slide">
         <div class="play__promo">
             <h3 class="play__title"></h3>
             <div class="play__links">
@@ -120,6 +125,8 @@
     </li>
   </template>
 
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
   <script src="scripts/plays.js"></script>
 </body>
 </html>

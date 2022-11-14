@@ -7,6 +7,7 @@
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
 @import "../blocks/plays/plays.css";
+@import "../blocks/plays/__swiper/plays__swiper.css";
 @import "../blocks/plays/__items/plays__items.css";
 @import "../blocks/play/play.css";
 @import "../blocks/play/__promo/play__promo.css";
@@ -59,6 +60,10 @@
 .play__link:hover {
   color: #ffffff;
   background-color: #242424;
+}
+
+.play__link-text {
+  margin: 0;
 }
 
 .play__link-arrow {

@@ -66,4 +66,17 @@ const addPlay = (name, author, place, image, readLink, downloadLink) => {
     playsContainer.append(play)
 }
 
-plays.forEach(play => addPlay(play.name, play.author, play.place, play.image, play.readLink, play.downloadLink))
+plays.forEach(play => addPlay(play.name, play.author, play.place, play.image, play.readLink, play.downloadLink));
+
+const swiper = new Swiper('.swiper', {
+    // Optional parameters
+    direction: 'horizontal',
+    loop: false,
+    spaceBetween: 30,
+    slidesPerView: "auto",
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+  });

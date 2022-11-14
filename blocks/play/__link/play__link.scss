@@ -20,6 +20,10 @@
     background-color: $text;
 }
 
+.play__link-text {
+    margin: 0;
+}
+
 .play__link-arrow {
     display: block;
     background-image: url(../../../images/arrow.svg);
