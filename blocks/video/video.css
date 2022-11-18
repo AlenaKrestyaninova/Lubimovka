@@ -1,0 +1,12 @@
+.video {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 98px 0 0 0;
+}
+
+.three-video {
+  padding: 48px 0 0 0;
+}

@@ -1,0 +1,8 @@
+.video__button {
+  position: absolute;
+  z-index: 5;
+  width: 64px;
+  height: 64px;
+  background: url(../../../images/button-video.svg);
+  transition: transform 0.4s;
+}

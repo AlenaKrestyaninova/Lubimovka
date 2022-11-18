@@ -1,0 +1,16 @@
+.swiper-pagination-bullet {
+	width: 10px;
+	height: 10px;
+	margin: 0 0 -100px 0;
+	background-color: rgb(180, 178, 178);
+	opacity: 0.5;
+	margin-top: -50px;
+}
+
+.swiper-pagination-bullet-active {
+	background-color: rgb(29, 29, 30);
+}
+
+.swiper-container {
+	padding-bottom: 50px;
+}
