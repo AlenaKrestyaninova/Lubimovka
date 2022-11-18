@@ -39,7 +39,10 @@ function parseVideoURL(media) {
 
   return match[1];
 }
-//функция остановки видео при пролистывании слайдера
+//функция остановки видео при пролистывании слайдера (Работает корректно для всех элементов слайдера кроме последнего,
+//проблема в самом слайдере, так как последнему слайду в класс не устанавливается значение active, при настройках в слайдере slidesPerView: 'auto',
+//если у кого есть желание можете подумать как это все таки сделать правильно, а пока оставляю без этой функции
+
 /* function stopVideo(video, cover, id) {
   const slids = document.querySelectorAll('.swiper-wrapper');
   slids.forEach(slid => {
@@ -57,11 +60,11 @@ function parseVideoURL(media) {
 } */
 
 //функционал слайдера
+//Установка слайдера на секцию с двумя видео
 let sliderTwoVideo
 function initTwoVideoSlider () {
   const videoSection = document.querySelector('.two-video')
   const slider = videoSection.querySelector('.swiper-container');
-  hiddenPaginator(videoSection);
   if(window.innerWidth < 899) {
     sliderTwoVideo = new Swiper(slider, {
       slidesPerView: 'auto',
@@ -83,12 +86,11 @@ function initTwoVideoSlider () {
   } 
 }
 }
-
+//Установка слайдера на секцию с тремя видео
 let sliderThreeVideo
 function initThreeVideoSlider () {
   const videoSection = document.querySelector('.three-video')
   const slider = videoSection.querySelector('.swiper-container');
-  hiddenPaginator(videoSection);
   if(window.innerWidth < 1378) {
     sliderThreeVideo = new Swiper(slider, {
       slidesPerView: 'auto',
@@ -104,7 +106,7 @@ function initThreeVideoSlider () {
           }
         }
       },
-    })  
+    }) 
 } else {
   if (slider.classList.contains('swiper-container-initialized')) {
     sliderThreeVideo.destroy();
@@ -112,12 +114,16 @@ function initThreeVideoSlider () {
 }
 }
 
-function hiddenPaginator(videoSection) {
-  const paginator = videoSection.querySelector('.swiper-pagination');
-  if(window.innerWidth < 600) {
-    paginator.classList.add('hidden');
+function hiddenPaginator() {
+  const paginators = document.querySelectorAll('.swiper-pagination');
+  if(window.innerWidth < 767) {
+    paginators.forEach(paginator => {
+      paginator.classList.add('hidden')
+    });
     } else {
-    paginator.classList.remove('hidden');
+      paginators.forEach(paginator => {
+        paginator.classList.remove('hidden')
+      });
     } 
   }
 
@@ -126,3 +132,4 @@ initTwoVideoSlider();
 playVideo();
 addEventListener('resize', initThreeVideoSlider);
 addEventListener('resize', initTwoVideoSlider);
+addEventListener('resize', hiddenPaginator);
