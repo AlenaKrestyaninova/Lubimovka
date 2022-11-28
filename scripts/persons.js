@@ -52,6 +52,7 @@ function initPersonsSlider () {
             mousewheel: true,
             keyboard: true,
             onlyInViewport: true,
+            slidesOffsetAfter: 138,
             breakpoints: {
                 200: {
                     pagination: {
@@ -68,19 +69,5 @@ function initPersonsSlider () {
     }
 }
 
-function hiddenPaginator() {
-    const paginators = document.querySelectorAll('.swiper-pagination');
-    if(window.innerWidth < 767) {
-        paginators.forEach(paginator => {
-            paginator.classList.add('hidden')
-        });
-    } else {
-        paginators.forEach(paginator => {
-            paginator.classList.remove('hidden')
-        });
-    }
-}
-
 initPersonsSlider();
 addEventListener('resize', initPersonsSlider);
-addEventListener('resize', hiddenPaginator);

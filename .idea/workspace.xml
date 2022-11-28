@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e1f17b44-71be-4a88-966a-837ec62ef994" name="Changes" comment="idk">
-      <change afterPath="$PROJECT_DIR$/blocks/slider/slider.css" afterDir="false" />
+    <list default="true" id="8f448229-0862-4134-bb89-7c0be22081f0" name="Changes" comment="idk">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blocks/slider/slider.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css.map" afterDir="false" />

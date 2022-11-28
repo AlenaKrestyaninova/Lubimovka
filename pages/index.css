@@ -13,7 +13,6 @@
 @import "../blocks/persons/__photo/persons__photo.css";
 @import "../blocks/persons/__name/persons__name.css";
 @import "../blocks/persons/__description/persons__description.css";
-@import "../blocks/slider/slider.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";
 .body {
