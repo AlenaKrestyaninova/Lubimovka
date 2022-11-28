@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e1f17b44-71be-4a88-966a-837ec62ef994" name="Changes" comment="idk">
+      <change afterPath="$PROJECT_DIR$/blocks/slider/slider.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/persons/__title/persons__title.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__title/persons__title.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.scss" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scripts/persons.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/persons.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/styles/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/styles/style.css.map" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,15 +21,15 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="CSS File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="feature/perfomance_block" />
+        <entry key="$PROJECT_DIR$" value="7b8e8f221bbea0290b59fbd45a5a801d88aacf5b" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />

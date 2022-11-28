@@ -9,8 +9,10 @@
     justify-content: center;
 }
 
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
     .persons__section {
-
+        display: flex;
+        justify-content: start;
+        margin: 0 25px;
     }
 }

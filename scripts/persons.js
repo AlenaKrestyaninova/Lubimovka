@@ -40,3 +40,47 @@ persons.forEach( (person) => {
     const newPerson = createNewPerson(person.name, person.description, person.url);
     personSection.append(newPerson);
 });
+
+let sliderPersons
+function initPersonsSlider () {
+    const personsSection = document.querySelector('.persons')
+    const slider = personsSection.querySelector('.swiper-container');
+    if(window.innerWidth < 767) {
+        sliderPersons = new Swiper(slider, {
+            slidesPerView: 'auto',
+            spaceBetween: 0,
+            mousewheel: true,
+            keyboard: true,
+            onlyInViewport: true,
+            breakpoints: {
+                200: {
+                    pagination: {
+                        el: '.swiper-pagination',
+                        clickable: true
+                    }
+                }
+            },
+        })
+    } else {
+        if (slider.classList.contains('swiper-container-initialized')) {
+            sliderPersons.destroy();
+        }
+    }
+}
+
+function hiddenPaginator() {
+    const paginators = document.querySelectorAll('.swiper-pagination');
+    if(window.innerWidth < 767) {
+        paginators.forEach(paginator => {
+            paginator.classList.add('hidden')
+        });
+    } else {
+        paginators.forEach(paginator => {
+            paginator.classList.remove('hidden')
+        });
+    }
+}
+
+initPersonsSlider();
+addEventListener('resize', initPersonsSlider);
+addEventListener('resize', hiddenPaginator);
