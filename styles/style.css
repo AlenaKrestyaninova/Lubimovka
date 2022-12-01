@@ -2,6 +2,7 @@
 @import "../vendor/normalize.css";
 @import "../fonts/fonts.css";
 @import "../blocks/title/title.css";
+@import "../blocks/animation-progress/animation-progress.css";
 @import "../blocks/header/header.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";

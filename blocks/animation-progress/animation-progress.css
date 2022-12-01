@@ -1,0 +1,19 @@
+.animation-progress {
+    background-image: linear-gradient(#000, #000);
+    background-size: 0% 100%;
+    background-repeat: no-repeat;
+    transition: all .2s ease-in;
+  }
+  
+  .animation-progress:hover {
+    background-size: 100% 100%;
+    color: #fff;
+  }
+  
+  .animation-progress:hover .youtube-link__arrow {
+    fill: #fff;
+  }
+  
+  .animation-progress:active {
+    outline: 2px solid #000;
+  }
