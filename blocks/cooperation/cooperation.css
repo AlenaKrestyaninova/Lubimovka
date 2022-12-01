@@ -1,0 +1,8 @@
+.cooperation {
+    margin: 0;
+    margin-right: calc(222 / 1440 * 100%);
+    margin-left: calc(665 / 1440 * 100%);
+    padding: 74px 0 169px;
+    display: flex;
+    flex-direction: column;
+}

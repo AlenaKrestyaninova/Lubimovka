@@ -1,0 +1,11 @@
+.cooperation__title {
+    max-width: 516px;
+    margin: 0 0 0 27px;
+    font-size: 36px;
+    line-height: calc(38 / 36 * 100%);
+    width: calc(100% * 366/414);
+    font-family: 'Neue Machina', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: -0.01em;
+}
