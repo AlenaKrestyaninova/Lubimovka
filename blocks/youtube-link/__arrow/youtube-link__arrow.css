@@ -1,0 +1,6 @@
+.youtube-link__arrow {
+    width: 25px;
+    height: 25px;
+    fill: #242424;
+    transition: fill .2s ease-in;
+}

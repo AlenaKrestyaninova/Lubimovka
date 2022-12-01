@@ -29,12 +29,18 @@
 @import "../blocks/performance/__links/performance__links.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";
+@import "../blocks/youtube-link/youtube-link.css";
+@import "../blocks/youtube-link/__contatiner/youtube-link__container.css";
+@import "../blocks/youtube-link/__description/youtube-link__description.css";
+@import "../blocks/youtube-link/__link/youtube-link__link.css";
+@import "../blocks/youtube-link/__title/youtube-link__title.css";
 @import "../blocks/cooperation/cooperation.css";
 @import "../blocks/cooperation/__asterisk/cooperation__asterisk.css";
 @import "../blocks/cooperation/__paragraph/cooperation__paragraph.css";
 @import "../blocks/cooperation/__text/cooperation__text.css";
 @import "../blocks/cooperation/__title/cooperation__title.css";
 @import "../blocks/cooperation/__link/cooperation__link.css";
+@import "../blocks/youtube-link/__arrow/youtube-link__arrow.css";
 .body {
   margin: 0;
   background-color: #ECEBE8;
@@ -161,6 +167,7 @@
   }
 }
 /* Раздел footer*/
+/* Раздел youtube-link*/
 /* Раздел cooperation*/
 
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,15 @@
+.youtube-link__description {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    font-feature-settings: 'ss01' on;
+    max-width: 410px;
+    margin: 0;
+  }
+  
+  @media screen and (max-width: 1279px) {
+    .youtube-link__description {
+      max-width: 303px;
+    }
+  }

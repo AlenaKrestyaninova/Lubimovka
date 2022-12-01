@@ -1,0 +1,20 @@
+.youtube-link__container {
+    display: flex;
+    justify-content: space-between;
+    padding-left: calc(100% * 361/1440);
+    padding-right: calc(100% * 270/1440);
+    padding-top: 20px;
+  }
+  
+  @media screen and (max-width: 1023px) {
+    .youtube-link__container {
+      flex-direction: column;
+    }
+  }
+  
+  @media screen and (max-width: 767px) {
+    .youtube-link__container {
+      padding-left: calc(100% * 87/414);
+      padding-right: calc(100% * 24/414);
+    }
+  }

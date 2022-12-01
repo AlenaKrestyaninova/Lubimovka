@@ -1,0 +1,13 @@
+.youtube-link {
+    background-color: #B7C09D;
+  padding-top: 71px;
+  padding-bottom: 141px;
+}
+
+@media screen and (max-width: 1023px) {
+  .youtube-link {
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
+
