@@ -10,3 +10,12 @@
     letter-spacing: -0.01em;
     font-size: 20px;
 }
+
+@media screen and (max-width: 767px) {
+    .cooperation__text {
+        max-width: calc(333 / 414 * 100%);
+        margin-top: 19px;
+        margin-left: 32px;
+        row-gap: 23px;
+    }
+}

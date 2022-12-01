@@ -6,3 +6,12 @@
     display: flex;
     flex-direction: column;
 }
+
+@media screen and (max-width: 767px) {
+    .cooperation {
+        margin-right: calc(118 / 1440 * 100%);
+        margin-left: calc(25 / 414 * 100%);
+        padding-top: 50px;
+        padding-bottom: 114px;
+    }
+}
