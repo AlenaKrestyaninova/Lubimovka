@@ -1,6 +1,6 @@
 .persons__section {
     display: grid;
-    max-width: 930px;
+    max-width: 1170px;
     grid-template-columns: repeat(auto-fill, 210px);
     gap: 30px;
     list-style: none;

@@ -1,23 +1,28 @@
 const persons = [
     {
-        name: 'Мария Крупник',
-        description: 'Арт-менеджер, переводчик, куратор образовательной программы',
-        url: '../images/persons/krupnik.webp'
+        name: 'Алёна Крестьянинова',
+        description: 'Тим-лид, умница, красавица',
+        url: '../images/persons/prAlenaKrestyaninova.jpg'
     },
     {
-        name: 'Вероника Устимук',
-        description: 'Продюсер, координатор волонтёров фестиваля',
-        url: '../images/persons/Ustimuk_cut.webp'
+        name: 'Дмитрий Бакшистов',
+        description: 'Веб разработчик, кондитер',
+        url: '../images/persons/prDmitriyBakshistov.jpg'
     },
     {
-        name: 'Анна Юсина',
-        description: 'Театровед, редактор блога фестиваля',
-        url: '../images/persons/yusina.webp'
+        name: 'Аврора Ренард',
+        description: 'Сейлор Мун, бесподобна и чудесна',
+        url: '../images/persons/prAuroraRenard.jpg'
     },
     {
-        name: 'Ольга Иванникова',
-        description: 'Продюсер, координатор фестиваля',
-        url: '../images/persons/Ivannikova.webp'
+        name: 'Алексей Холмогоров',
+        description: 'Инкогнито, user not found',
+        url: '../images/persons/anonymous.webp'
+    },
+    {
+        name: 'Арина Кострова',
+        description: 'Web-разработчик, любит путешествовать',
+        url: '../images/persons/prArinaKostrova.jpg'
     }
 ];
 
@@ -52,7 +57,7 @@ function initPersonsSlider () {
             mousewheel: true,
             keyboard: true,
             onlyInViewport: true,
-            slidesOffsetAfter: 138,
+            slidesOffsetAfter: 168,
             breakpoints: {
                 200: {
                     pagination: {
