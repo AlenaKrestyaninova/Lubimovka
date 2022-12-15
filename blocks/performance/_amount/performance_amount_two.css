@@ -1,0 +1,5 @@
+@media (max-width: 960px) {
+    .performance_amount_two {
+        display: none;
+    }
+}

@@ -1,0 +1,20 @@
+.performance__authors {
+    margin: 0 0 20px 30px;
+    font-family: 'Formular', serif;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 22px;
+}
+
+@media (max-width: 960px) {
+    .performance__authors {
+        margin: 0 0 8px 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__authors {
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
