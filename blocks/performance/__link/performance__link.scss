@@ -1,0 +1,61 @@
+$text: #242424;
+
+.performance__link {
+    background: url(../../../images/performances/arrow.svg) no-repeat left center;
+    display: block;
+    width: 154px;
+    height: 32px;
+    border-bottom: 1px solid $text;
+    border-left: 1px solid $text;
+    padding: 9px 0 9px 29px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 14px;
+    text-decoration: none;
+    color: $text;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.performance__link:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 32px;
+    background: $text;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.performance__link:hover:before {
+    width: 100%;
+}
+
+.performance__link:last-child {
+    margin-bottom: 0;
+}
+
+.performance__link:hover {
+    color: #E5E5E5;
+    background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
+}
+
+@media (max-width: 960px) {
+    .performance__link {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__link {
+        padding: 8px 0 8px 20px;
+        font-size: 12px;
+        line-height: 8px;
+        background-size: 15px 7px;
+    }
+}
