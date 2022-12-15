@@ -74,9 +74,44 @@ const swiper = new Swiper('.swiper', {
     loop: false,
     spaceBetween: 30,
     slidesPerView: "auto",
+    mousewheel: true,
+    keyboard: true,
+    onlyInViewport: true,
+    slidesOffsetAfter: 110,
     // Navigation arrows
     navigation: {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
   });
+
+// let sliderPlays
+// function initPlaysSlider () {
+//     const playsSection = document.querySelector('.plays')
+//     const slider = playsSection.querySelector('.swiper-container');
+//     if(window.innerWidth < 767) {
+//         sliderPlays = new Swiper(slider, {
+//             slidesPerView: 'auto',
+//             spaceBetween: 30,
+//             mousewheel: true,
+//             keyboard: true,
+//             onlyInViewport: true,
+//             slidesOffsetAfter: 138,
+//             breakpoints: {
+//                 200: {
+//                     pagination: {
+//                         el: '.swiper-pagination',
+//                         clickable: true
+//                     }
+//                 }
+//             },
+//         })
+//     } else {
+//         if (slider.classList.contains('swiper-container-initialized')) {
+//             sliderPlays.destroy();
+//         }
+//     }
+// }
+
+// initPlaysSlider();
+// addEventListener('resize', initPlaysSlider);

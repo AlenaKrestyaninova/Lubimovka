@@ -13,33 +13,46 @@
     background: $background-green;
     padding: 0 16px 0;
     box-sizing: border-box;
+    position: relative;
 }
 
-.play__link:hover {
+.play__link:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 56px;
+    background: $text;
+    transition: all 0.5s ease;
+}
+
+.play__link:hover:before {
+    width: 100%;
+}
+
+.play__link:hover .play__link-text,.play__link-arrow {
     color: $white;
-    background-color: $text;
+    z-index: 1;
 }
 
 .play__link-text {
     margin: 0;
+    display: block;
+    z-index: 1;
 }
 
 .play__link-arrow {
     display: block;
-    background-image: url(../../../images/arrow.svg);
-    width: 20px;
-    height: 12px;
+    width: 25px;
+    height: 25px;
 }
 
-.play__link-arrow:hover{
-    background-image: url(../../../images/arrow-hover.svg);
+.play__link:hover path{
+    fill: #ffffff;
 }
 
 .play__link-arrow_dioganal {
-    rotate: -45deg;
-}
-
-.play__link-arrow_down {
-    rotate: 90deg;
+    rotate: -135deg;
 }
 
