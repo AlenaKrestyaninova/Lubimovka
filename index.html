@@ -18,6 +18,7 @@
     </header>
 
     <main class="content">
+
         <!-- Блок о проекте -->
         <section class="about">
 
@@ -76,8 +77,15 @@
             </ul>
         </section>
 
-        <!-- Блок с фотографиями -->
-        <section class="play">
+        <!-- Блок с пьесами -->
+        <section class="plays">
+          <h2 class="title">Заголовок блока с пьесами</h2>
+          <div class="plays__swiper swiper">
+            <ul class="plays__items swiper-wrapper">
+            </ul>
+            <div class="plays__swiper-button swiper-button-prev"></div>
+            <div class="plays__swiper-button swiper-button-next"></div>
+          </div>
 
         </section>
 
@@ -103,6 +111,36 @@
         </nav>
         <p class="footer__copyright">&copy; Любимовка. 2022. &amp; Praktikum team</p>
     </footer>
+    
+  </div>
+
+  <template id="play-template">
+    <li class="play swiper-slide">
+        <div class="play__promo">
+            <h3 class="play__title"></h3>
+            <div class="play__links">
+                <a href="#" class="play__link play__link_read">
+                    <p class="play__link-text">Смотреть читку</p>
+                    <div class="play__link-arrow play__link-arrow_dioganal">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5234 21L11.7986 20.2752L6 14.4766L6.70287 13.7737L12.0235 19.0944L12.0235 0H13.0235L13.0235 19.0502L18.2752 13.7986L19 14.5234L13.2263 20.2971L12.5234 21Z" fill="#242424"/>
+                      </svg>
+                    </div>
+                </a>
+                <a href="#" class="play__link play__link_download">
+                    <p class="play__link-text">Скачать пьесу</p>
+                    <div class="play__link-arrow play__link-arrow_down">
+                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5234 21L11.7986 20.2752L6 14.4766L6.70287 13.7737L12.0235 19.0944L12.0235 0H13.0235L13.0235 19.0502L18.2752 13.7986L19 14.5234L13.2263 20.2971L12.5234 21Z" fill="#242424"/>
+                      </svg>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <h4 class="play__author"></h4>
+        <p class="play__place"></p>
+    </li>
+  </template>
 
     <template class="performance__template">
         <li class="performance__item performance__item_one-of-the-three">
@@ -128,5 +166,9 @@
     </template>
 </div>
 <script src="scripts/performance.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/plays.js"></script>
+
 </body>
 </html>

@@ -19,3 +19,6 @@
 * раздел для желающих присоединиться в качестве режиссёра:  
 
 Ссылка на макет: [Макет в figma](https://www.figma.com/file/sPmrkcsXbuuHC24zIRktfJ/lubimovka-pr.page?node-id=0%3A1)
+
+To watch changes in scss with hit reload do 
+sass --watch pages/index.scss styles/style.css
