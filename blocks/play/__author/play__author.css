@@ -1,0 +1,17 @@
+.play__author {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    margin: 0;
+    padding-top: 16px;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .play__author {
+        padding-top: 24px;
+    }
+}
