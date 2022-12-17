@@ -38,6 +38,12 @@
 @import "../blocks/performance/__links/performance__links.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";
+@import "../blocks/cooperation/cooperation.css";
+@import "../blocks/cooperation/__asterisk/cooperation__asterisk.css";
+@import "../blocks/cooperation/__paragraph/cooperation__paragraph.css";
+@import "../blocks/cooperation/__text/cooperation__text.css";
+@import "../blocks/cooperation/__title/cooperation__title.css";
+@import "../blocks/cooperation/__link/cooperation__link.css";
 .body {
   margin: 0;
   background-color: #ECEBE8;
@@ -121,8 +127,6 @@
 
 /* Раздел footer*/
 
-/*# sourceMappingURL=style.css.map */
-
 .performance__item {
   border-right: 1px solid #242424;
   padding: 0 30px;
@@ -130,9 +134,7 @@
   display: grid;
   column-gap: 30px;
   grid-template-columns: 120px 1fr;
-  grid-template-areas:
-      "image info"
-      ". links";
+  grid-template-areas: "image info" ". links";
   margin: 0 auto;
   width: 100%;
 }
@@ -145,17 +147,13 @@
   .performance__item:nth-child(2n) {
     border-right: none;
   }
-
   .performance__item:nth-child(3n) {
     border-right: 1px solid #242424;
   }
 }
-
 @media (max-width: 960px) {
   .performance__item {
-    grid-template-areas:
-          "image info"
-          "links links";
+    grid-template-areas: "image info" "links links";
     grid-template-columns: 92px 1fr;
     margin: 0 auto;
     max-width: 100%;
@@ -164,9 +162,15 @@
     padding: 32px 25px;
   }
 }
-
+@media (max-width: 380px) {
+  .performance__item {
+    column-gap: 15px;
+    padding: 20px 15px;
+    min-width: 320px;
+  }
+}
 .performance__link {
-  background: url(../images/performances/arrow.svg) no-repeat left center;
+  background: url(../../../images/performances/arrow.svg) no-repeat left center;
   display: block;
   width: 154px;
   height: 32px;
@@ -186,7 +190,7 @@
 }
 
 .performance__link:before {
-  content:'';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -207,7 +211,7 @@
 
 .performance__link:hover {
   color: #E5E5E5;
-  background: url(../images/performances/arrow-hover.svg) no-repeat left center;
+  background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
 }
 
 @media (max-width: 960px) {
@@ -215,7 +219,6 @@
     margin-bottom: 0;
   }
 }
-
 @media (max-width: 480px) {
   .performance__link {
     padding: 8px 0 8px 20px;
@@ -224,3 +227,7 @@
     background-size: 15px 7px;
   }
 }
+/* Раздел footer*/
+/* Раздел cooperation*/
+
+/*# sourceMappingURL=style.css.map */
