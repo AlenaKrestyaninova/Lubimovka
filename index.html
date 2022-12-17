@@ -18,6 +18,7 @@
     </header>
 
     <main class="content">
+
         <!-- Блок о проекте -->
         <section class="about">
 
@@ -38,17 +39,6 @@
 
         </section>
 
-      <!-- Блок с пьесами -->
-      <section class="plays">
-        <h2 class="title">Заголовок блока с пьесами</h2>
-        <div class="plays__swiper swiper">
-          <ul class="plays__items swiper-wrapper">
-          </ul>
-          <div class="plays__swiper-button swiper-button-prev"></div>
-          <div class="plays__swiper-button swiper-button-next"></div>
-        </div>
-        
-      </section>
         <!-- Блок с фотографиями -->
         <section class="gallery">
             <h2 class="title">Заголовок блока с фотографиями</h2>
@@ -87,8 +77,15 @@
             </ul>
         </section>
 
-        <!-- Блок с фотографиями -->
-        <section class="play">
+        <!-- Блок с пьесами -->
+        <section class="plays">
+          <h2 class="title">Заголовок блока с пьесами</h2>
+          <div class="plays__swiper swiper">
+            <ul class="plays__items swiper-wrapper">
+            </ul>
+            <div class="plays__swiper-button swiper-button-prev"></div>
+            <div class="plays__swiper-button swiper-button-next"></div>
+          </div>
 
         </section>
 
@@ -145,14 +142,10 @@
     </li>
   </template>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="scripts/plays.js"></script>
-
     <template class="performance__template">
         <li class="performance__item performance__item_one-of-the-three">
             <img src="#" alt="#"
-                class="performance__image">
+                 class="performance__image">
             <div class="performance__information">
                 <div class="performance__date-time">
                     <p class="performance__date"></p>
@@ -173,5 +166,9 @@
     </template>
 </div>
 <script src="scripts/performance.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/plays.js"></script>
+
 </body>
 </html>
