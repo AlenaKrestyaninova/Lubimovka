@@ -6,11 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="8f448229-0862-4134-bb89-7c0be22081f0" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/persons/__name/persons__name.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__name/persons__name.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/persons/__photo/persons__photo.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__photo/persons__photo.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" beforeDir="false" afterPath="$PROJECT_DIR$/blocks/persons/__section/persons__section.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scripts/persons.js" beforeDir="false" afterPath="$PROJECT_DIR$/scripts/persons.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,22 +43,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/arina/Desktop/Yandex_Praktikum/projects/Lubimovka&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;watcher.settings&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "C:/Users/arina/Desktop/Yandex_Praktikum/praktikum/animals react",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "watcher.settings",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\arina\Desktop\Yandex_Praktikum\projects\Lubimovka\images\persons" />
@@ -99,7 +94,10 @@
       <workItem from="1666619721908" duration="229000" />
       <workItem from="1666619969718" duration="5396000" />
       <workItem from="1669916355063" duration="595000" />
-      <workItem from="1670415169354" duration="3684000" />
+      <workItem from="1670415169354" duration="4975000" />
+      <workItem from="1670430848144" duration="13000" />
+      <workItem from="1671103592765" duration="1219000" />
+      <workItem from="1671389438338" duration="1275000" />
     </task>
     <task id="LOCAL-00001" summary="idk">
       <created>1666263988125</created>
