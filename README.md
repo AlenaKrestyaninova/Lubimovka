@@ -20,5 +20,5 @@
 
 Ссылка на макет: [Макет в figma](https://www.figma.com/file/sPmrkcsXbuuHC24zIRktfJ/lubimovka-pr.page?node-id=0%3A1)
 
-To watch changes in scss with hit reload do 
+To watch changes in scss with hot reload do 
 sass --watch pages/index.scss styles/style.css
