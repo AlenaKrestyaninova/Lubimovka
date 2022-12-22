@@ -1,0 +1,45 @@
+@charset "UTF-8";
+@import "../vendor/normalize.css";
+@import "../fonts/fonts.css";
+@import "../blocks/title/title.css";
+@import "../blocks/header/header.css";
+@import "../blocks/gallery/gallery.css";
+@import "../blocks/gallery/__photos/gallery__photos.css";
+@import "../blocks/gallery/__photo/gallery__photo.css";
+@import "../blocks/persons/persons.css";
+@import "../blocks/persons/__title/persons__title.css";
+@import "../blocks/persons/__section/persons__section.css";
+@import "../blocks/persons/__item/persons__item.css";
+@import "../blocks/persons/__photo/persons__photo.css";
+@import "../blocks/persons/__name/persons__name.css";
+@import "../blocks/persons/__description/persons__description.css";
+@import "../blocks/footer/footer.css";
+@import "../blocks/footer/__copyright/footer__copyright.css";
+.body {
+  margin: 0;
+  background-color: #ECEBE8;
+}
+
+.page {
+  margin: 0 auto;
+  font-family: "Formular", "Times New Roman", Times, serif;
+  font-style: normal;
+  color: #242424;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  box-sizing: border-box;
+  max-width: 1440px;
+}
+
+/* Медиа-запрос для ширины 1280px*/
+@media all and (max-width: 1439px) {
+  .page {
+    max-width: 100%;
+  }
+}
+/* Раздел header*/
+/* Раздел gallery*/
+/* Раздел persons*/
+/* Раздел footer*/
+
+/*# sourceMappingURL=index.css.map */

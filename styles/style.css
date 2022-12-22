@@ -23,9 +23,6 @@
 @import "../blocks/performance/__title-for-one/performance__title-for-one.css";
 @import "../blocks/performance/__title/_special/performance__title_special.css";
 @import "../blocks/performance/__section/performance__section.css";
-@import "../blocks/performance/__section/_for-three-elements/performance__section_for-three-elements.css";
-@import "../blocks/performance/__section/_for-two-elements/performance__section_for-two-elements.css";
-@import "../blocks/performance/__section/_for-one-element/performance__section_for-one-element.css";
 @import "../blocks/performance/__image/performance__image.css";
 @import "../blocks/performance/__information/performance__information.css";
 @import "../blocks/performance/__date-time/performance__date-time.css";
@@ -36,6 +33,13 @@
 @import "../blocks/performance/__author/performance__author.css";
 @import "../blocks/performance/__description/performance__description.css";
 @import "../blocks/performance/__links/performance__links.css";
+@import "../blocks/persons/persons.css";
+@import "../blocks/persons/__title/persons__title.css";
+@import "../blocks/persons/__section/persons__section.css";
+@import "../blocks/persons/__item/persons__item.css";
+@import "../blocks/persons/__photo/persons__photo.css";
+@import "../blocks/persons/__name/persons__name.css";
+@import "../blocks/persons/__description/persons__description.css";
 @import "../blocks/footer/footer.css";
 @import "../blocks/footer/__copyright/footer__copyright.css";
 @import "../blocks/cooperation/cooperation.css";
@@ -170,7 +174,7 @@
   }
 }
 .performance__link {
-  background: url(../../../images/performances/arrow.svg) no-repeat left center;
+  background: url(images/performances/arrow.svg) no-repeat left center;
   display: block;
   width: 154px;
   height: 32px;
@@ -211,7 +215,7 @@
 
 .performance__link:hover {
   color: #E5E5E5;
-  background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
+  background: url(images/performances/arrow-hover.svg) no-repeat left center;
 }
 
 @media (max-width: 960px) {

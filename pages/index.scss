@@ -34,9 +34,6 @@
 @import "../blocks/performance/__title-for-one/performance__title-for-one.css";
 @import "../blocks/performance/__title/_special/performance__title_special.css";
 @import "../blocks/performance/__section/performance__section.css";
-@import "../blocks/performance/__section/_for-three-elements/performance__section_for-three-elements.css";
-@import "../blocks/performance/__section/_for-two-elements/performance__section_for-two-elements.css";
-@import "../blocks/performance/__section/_for-one-element/performance__section_for-one-element.css";
 @import "../blocks/performance/__item/performance__item.scss";
 @import "../blocks/performance/__image/performance__image.css";
 @import "../blocks/performance/__information/performance__information.css";
@@ -49,6 +46,14 @@
 @import "../blocks/performance/__description/performance__description.css";
 @import "../blocks/performance/__links/performance__links.css";
 @import "../blocks/performance/__link/performance__link.scss";
+/* Раздел persons*/
+@import "../blocks/persons/persons.css";
+@import "../blocks/persons/__title/persons__title.css";
+@import "../blocks/persons/__section/persons__section.css";
+@import "../blocks/persons/__item/persons__item.css";
+@import "../blocks/persons/__photo/persons__photo.css";
+@import "../blocks/persons/__name/persons__name.css";
+@import "../blocks/persons/__description/persons__description.css";
 
 /* Раздел footer*/
 @import "../blocks/footer/footer.css";
