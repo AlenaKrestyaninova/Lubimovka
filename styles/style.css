@@ -174,7 +174,7 @@
   }
 }
 .performance__link {
-  background: url(images/performances/arrow.svg) no-repeat left center;
+  background: url(../../../images/performances/arrow.svg) no-repeat left center;
   display: block;
   width: 154px;
   height: 32px;
@@ -215,7 +215,7 @@
 
 .performance__link:hover {
   color: #E5E5E5;
-  background: url(images/performances/arrow-hover.svg) no-repeat left center;
+  background: url(../../images/performances/arrow-hover.svg) no-repeat left center;
 }
 
 @media (max-width: 960px) {
