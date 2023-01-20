@@ -48,6 +48,8 @@
 @import "../blocks/cooperation/__text/cooperation__text.css";
 @import "../blocks/cooperation/__title/cooperation__title.css";
 @import "../blocks/cooperation/__link/cooperation__link.css";
+@import "../blocks/logo/logo.css";
+@import "../blocks/logo/_place/logo_place_footer.css";
 .body {
   margin: 0;
   background-color: #ECEBE8;
