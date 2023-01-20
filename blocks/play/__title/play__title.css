@@ -1,0 +1,14 @@
+.play__title {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+    text-decoration: none;
+    color: inherit;
+    margin: 0;
+    padding: 24px 24px 0;
+    z-index: 1;
+    position: absolute;
+}

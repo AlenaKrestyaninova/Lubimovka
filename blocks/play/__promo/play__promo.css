@@ -1,0 +1,28 @@
+.play__promo {
+    display: block;
+    width: 240px;
+    height: 300px;
+    background-color: #B7C09D;
+    background-size: cover;
+    background-position: center;
+    color: inherit;
+    text-decoration: none;
+    position: relative;
+}
+
+.play__promo::before{
+    content: '';
+    background-color: rgba(255, 255, 255, .7);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .play__promo {
+        width: 240px;
+        height: 342px;
+    }
+}

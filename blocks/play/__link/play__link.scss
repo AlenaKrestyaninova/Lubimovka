@@ -1,0 +1,58 @@
+@import "../../../pages/variables.scss";
+
+.play__link {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: inherit;
+    text-decoration: none;
+    height: 56px;
+    width: 100%;
+    border-top: 1px solid $text;
+    background: $background-green;
+    padding: 0 16px 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.play__link:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 56px;
+    background: $text;
+    transition: all 0.5s ease;
+}
+
+.play__link:hover:before {
+    width: 100%;
+}
+
+.play__link:hover .play__link-text,.play__link-arrow {
+    color: $white;
+    z-index: 1;
+}
+
+.play__link-text {
+    margin: 0;
+    display: block;
+    z-index: 1;
+}
+
+.play__link-arrow {
+    display: block;
+    width: 25px;
+    height: 25px;
+}
+
+.play__link:hover path{
+    fill: #ffffff;
+}
+
+.play__link-arrow_dioganal {
+    rotate: -135deg;
+}
+
