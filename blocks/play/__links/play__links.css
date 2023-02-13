@@ -1,0 +1,29 @@
+.play__links {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.38px;
+    color: inherit;
+    opacity: 0;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .play__promo:hover .play__links {
+        opacity: 1;
+        transition: opacity .2s ease;
+    }
+}
+
+.play__links:focus-within {
+    opacity: 1;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .play__links {
+        opacity: 1;
+    }
+}
