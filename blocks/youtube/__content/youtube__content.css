@@ -1,30 +1,29 @@
-.title {
-    margin: 0 0 42px 362px;
-    font-family: 'Neue Machina';
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    max-width: 568px;
+.youtube__content {
+    display: flex;
+    flex-direction: row;
+    margin-left: 362px;
+    align-items: center;
 }
 
 /* Медиа-запрос для ширины 1280px*/
 @media screen and (max-width: 1439px) {
-    .title {
+    .youtube__content {
         margin-left: 25%;
     }
 }
 
 /* Медиа-запрос для ширины 768px*/
 @media screen and (max-width: 1279px) {
-
+    .youtube__content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width: 767px) {
-    .title {
-        font-size: 28px;
-        line-height: 1.14;
-        margin-left: 24px;
+    .youtube__content {
+        margin-left: 87px;
+        margin-right: 24px;
     }
 }

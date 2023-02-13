@@ -47,6 +47,9 @@
 @import "../blocks/cooperation/__text/cooperation__text.css";
 @import "../blocks/cooperation/__title/cooperation__title.css";
 @import "../blocks/cooperation/__link/cooperation__link.css";
+@import "../blocks/youtube/__title/youtube__title.css";
+@import "../blocks/youtube/__content/youtube__content.css";
+@import "../blocks/youtube/__subtitle/youtube__subtitle.css";
 .body {
   margin: 0;
   background-color: #ECEBE8;
@@ -438,5 +441,84 @@
   }
 }
 /* Раздел cooperation*/
+/* Раздел youtube*/
+.youtube {
+  margin-top: 112px;
+  background-color: #B7C09D;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+}
+
+/* Медиа-запрос для ширины 1220px*/
+/* Медиа-запрос для ширины 768px*/
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .youtube {
+    margin-top: 100px;
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
+.youtube__button {
+  width: 298px;
+  height: 56px;
+  background-color: transparent;
+  border: 1px solid #242424;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: none;
+  color: #242424;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.youtube__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 56px;
+  background-color: #242424;
+  transition: all 0.5s ease;
+}
+
+.youtube__button:hover:before {
+  width: 100%;
+}
+
+.youtube__button-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.38;
+  margin: 0;
+}
+
+.youtube__button:hover .youtube__button-text, .youtube__button-arrow {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.youtube__button:hover path {
+  fill: #ffffff;
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1279px) {
+  .youtube__button {
+    margin-top: 16px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .youtube__button {
+    max-width: 100%;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
