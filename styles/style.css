@@ -7,6 +7,15 @@
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
+@import "../blocks/plays/plays.css";
+@import "../blocks/plays/__swiper/plays__swiper.css";
+@import "../blocks/plays/__items/plays__items.css";
+@import "../blocks/play/play.css";
+@import "../blocks/play/__promo/play__promo.css";
+@import "../blocks/play/__title/play__title.css";
+@import "../blocks/play/__author/play__author.css";
+@import "../blocks/play/__place/play__place.css";
+@import "../blocks/play/__links/play__links.css";
 @import "../blocks/performance/performance.css";
 @import "../blocks/performance/_amount/performance_amount_one.css";
 @import "../blocks/performance/_amount/performance_amount_two.css";
@@ -15,9 +24,6 @@
 @import "../blocks/performance/__title-for-one/performance__title-for-one.css";
 @import "../blocks/performance/__title/_special/performance__title_special.css";
 @import "../blocks/performance/__section/performance__section.css";
-@import "../blocks/performance/__section/_for-three-elements/performance__section_for-three-elements.css";
-@import "../blocks/performance/__section/_for-two-elements/performance__section_for-two-elements.css";
-@import "../blocks/performance/__section/_for-one-element/performance__section_for-one-element.css";
 @import "../blocks/performance/__image/performance__image.css";
 @import "../blocks/performance/__information/performance__information.css";
 @import "../blocks/performance/__date-time/performance__date-time.css";
@@ -28,8 +34,23 @@
 @import "../blocks/performance/__author/performance__author.css";
 @import "../blocks/performance/__description/performance__description.css";
 @import "../blocks/performance/__links/performance__links.css";
-@import "../blocks/footer/footer.css";
-@import "../blocks/footer/__copyright/footer__copyright.css";
+@import "../blocks/persons/persons.css";
+@import "../blocks/persons/__title/persons__title.css";
+@import "../blocks/persons/__section/persons__section.css";
+@import "../blocks/persons/__item/persons__item.css";
+@import "../blocks/persons/__photo/persons__photo.css";
+@import "../blocks/persons/__name/persons__name.css";
+@import "../blocks/persons/__description/persons__description.css";
+@import "../blocks/logo/_place/logo_place_footer.css";
+@import "../blocks/cooperation/cooperation.css";
+@import "../blocks/cooperation/__asterisk/cooperation__asterisk.css";
+@import "../blocks/cooperation/__paragraph/cooperation__paragraph.css";
+@import "../blocks/cooperation/__text/cooperation__text.css";
+@import "../blocks/cooperation/__title/cooperation__title.css";
+@import "../blocks/cooperation/__link/cooperation__link.css";
+@import "../blocks/youtube/__title/youtube__title.css";
+@import "../blocks/youtube/__content/youtube__content.css";
+@import "../blocks/youtube/__subtitle/youtube__subtitle.css";
 .body {
   margin: 0;
   background-color: #ECEBE8;
@@ -54,10 +75,64 @@
 }
 /* Раздел header*/
 /* Раздел gallery*/
-/* Раздел footer*/
+/* Раздел plays*/
+.play__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  height: 56px;
+  width: 100%;
+  border-top: 1px solid #242424;
+  background: #B7C09D;
+  padding: 0 16px 0;
+  box-sizing: border-box;
+  position: relative;
+}
 
-/*# sourceMappingURL=style.css.map */
+.play__link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 56px;
+  background: #242424;
+  transition: all 0.5s ease;
+}
 
+.play__link:hover:before {
+  width: 100%;
+}
+
+.play__link:hover .play__link-text, .play__link-arrow {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.play__link-text {
+  margin: 0;
+  display: block;
+  z-index: 1;
+}
+
+.play__link-arrow {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.play__link:hover path {
+  fill: #ffffff;
+}
+
+.play__link-arrow_dioganal {
+  rotate: -135deg;
+}
+
+/*Раздел performance*/
 .performance__item {
   border-right: 1px solid #242424;
   padding: 0 30px;
@@ -65,9 +140,7 @@
   display: grid;
   column-gap: 30px;
   grid-template-columns: 120px 1fr;
-  grid-template-areas:
-      "image info"
-      ". links";
+  grid-template-areas: "image info" ". links";
   margin: 0 auto;
   width: 100%;
 }
@@ -80,17 +153,13 @@
   .performance__item:nth-child(2n) {
     border-right: none;
   }
-
   .performance__item:nth-child(3n) {
     border-right: 1px solid #242424;
   }
 }
-
 @media (max-width: 960px) {
   .performance__item {
-    grid-template-areas:
-          "image info"
-          "links links";
+    grid-template-areas: "image info" "links links";
     grid-template-columns: 92px 1fr;
     margin: 0 auto;
     max-width: 100%;
@@ -99,9 +168,15 @@
     padding: 32px 25px;
   }
 }
-
+@media (max-width: 380px) {
+  .performance__item {
+    column-gap: 15px;
+    padding: 20px 15px;
+    min-width: 320px;
+  }
+}
 .performance__link {
-  background: url(../images/performances/arrow.svg) no-repeat left center;
+  background: url(../../../images/performances/arrow.svg) no-repeat left center;
   display: block;
   width: 154px;
   height: 32px;
@@ -121,7 +196,7 @@
 }
 
 .performance__link:before {
-  content:'';
+  content: "";
   position: absolute;
   top: 0;
   left: 0;
@@ -142,7 +217,7 @@
 
 .performance__link:hover {
   color: #E5E5E5;
-  background: url(../images/performances/arrow-hover.svg) no-repeat left center;
+  background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
 }
 
 @media (max-width: 960px) {
@@ -150,7 +225,6 @@
     margin-bottom: 0;
   }
 }
-
 @media (max-width: 480px) {
   .performance__link {
     padding: 8px 0 8px 20px;
@@ -159,3 +233,293 @@
     background-size: 15px 7px;
   }
 }
+/* Раздел persons*/
+/* Раздел footer*/
+.footer {
+  padding-top: 42px;
+  padding-bottom: 54px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: "logo partners partners partners partners" ". address navigation about projects" ". lubimovka lubimovka design yandex";
+  grid-template-columns: 13% 1fr 15% 15% 20%;
+  margin: 0 auto;
+  max-width: calc(100% - 60px);
+}
+
+.logo_place_footer {
+  grid-area: logo;
+}
+
+.footer__partners {
+  grid-area: partners;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer__partners-title {
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  margin: 0;
+}
+
+.footer__partner-text {
+  display: none;
+}
+
+.footer__address {
+  grid-area: address;
+}
+
+.footer__address-title {
+  margin: 0;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.footer__address-location {
+  margin: 8px 0 0;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.6;
+}
+
+.footer__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer__navigation {
+  grid-area: navigation;
+}
+
+.footer__about {
+  grid-area: about;
+}
+
+.footer__projects {
+  grid-area: projects;
+}
+
+.footer__list-item {
+  text-decoration: none;
+  color: #242424;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  color: #242424;
+  text-decoration: none;
+  margin-top: 49px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.footer__lubimovka-links {
+  grid-area: lubimovka;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.footer__design {
+  grid-area: design;
+}
+
+.footer__design-img {
+  width: 27px;
+  height: 25px;
+  align-self: flex-start;
+}
+
+.footer__design-text {
+  margin: 0;
+}
+
+.footer__yandex {
+  grid-area: yandex;
+}
+
+.footer__list-item:hover, .footer__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    grid-template-columns: 13% 1fr 20% 20% 20%;
+  }
+}
+@media (max-width: 1023px) {
+  .footer {
+    padding-top: 0;
+    grid-template-areas: "logo address address" "navigation about projects" "partners partners partners" "lubimovka design yandex";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__list {
+    margin-top: 20px;
+  }
+  .footer__partners {
+    margin-top: 30px;
+  }
+  .footer__link {
+    margin-top: 30px;
+  }
+  .footer__lubimovka-links {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 14px;
+  }
+  .footer__copyright, .footer__privacy {
+    margin-top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .footer {
+    max-width: calc(100% - 56px);
+    grid-template-areas: "logo logo" "address address" "navigation about" "projects projects" "partners partners" "lubimovka lubimovka" "design design" "yandex yandex";
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 30px;
+  }
+  .footer__address {
+    margin-top: 32px;
+  }
+  .footer__list {
+    margin-top: 53px;
+  }
+  .footer__partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 40;
+    margin-top: 83px;
+    padding-bottom: 83px;
+    border-bottom: 1px solid #242424;
+  }
+  .footer__partners-title {
+    display: none;
+  }
+  .footer__partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  .footer__partner-text {
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424;
+    text-align: center;
+  }
+  .footer__lubimovka-links {
+    gap: 10px;
+  }
+  .footer__design {
+    margin-top: 59px;
+  }
+  .footer__yandex {
+    margin-top: 16px;
+  }
+}
+/* Раздел cooperation*/
+/* Раздел youtube*/
+.youtube {
+  margin-top: 112px;
+  background-color: #B7C09D;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+}
+
+/* Медиа-запрос для ширины 1220px*/
+/* Медиа-запрос для ширины 768px*/
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .youtube {
+    margin-top: 100px;
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
+.youtube__button {
+  width: 298px;
+  height: 56px;
+  background-color: transparent;
+  border: 1px solid #242424;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: none;
+  color: #242424;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.youtube__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 56px;
+  background-color: #242424;
+  transition: all 0.5s ease;
+}
+
+.youtube__button:hover:before {
+  width: 100%;
+}
+
+.youtube__button-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.38;
+  margin: 0;
+}
+
+.youtube__button:hover .youtube__button-text, .youtube__button-arrow {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.youtube__button:hover path {
+  fill: #ffffff;
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1279px) {
+  .youtube__button {
+    margin-top: 16px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .youtube__button {
+    max-width: 100%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

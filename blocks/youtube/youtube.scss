@@ -1,0 +1,28 @@
+@import "../../pages/variables.scss";
+
+.youtube {
+    margin-top: 112px;
+    background-color: $background-green;
+    padding-top: 70px;
+    padding-bottom: 140px;
+    box-sizing: border-box;
+}
+
+/* Медиа-запрос для ширины 1220px*/
+@media screen and (max-width: 1439px) {
+    
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1279px) {
+
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+    .youtube {
+        margin-top: 100px;
+        padding-top: 56px;
+        padding-bottom: 72px;
+    }
+}

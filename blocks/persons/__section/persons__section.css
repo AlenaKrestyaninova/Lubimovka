@@ -1,0 +1,18 @@
+.persons__section {
+    display: grid;
+    max-width: 1170px;
+    grid-template-columns: repeat(auto-fill, 210px);
+    gap: 30px;
+    list-style: none;
+    margin: 0 auto;
+    padding: 16px 0 112px;
+    justify-content: center;
+}
+
+@media screen and (max-width: 767px) {
+    .persons__section {
+        display: flex;
+        justify-content: start;
+        margin: 0 25px;
+    }
+}
