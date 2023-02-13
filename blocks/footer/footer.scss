@@ -1,0 +1,226 @@
+@import "../../pages/variables.scss";
+
+.footer {
+  padding-top: 42px;
+  padding-bottom: 54px;
+  box-sizing: border-box;
+  display: grid;
+  grid-template-areas: 
+    "logo partners partners partners partners"
+    ". address navigation about projects"
+    ". lubimovka lubimovka design yandex";
+  grid-template-columns: 13% 1fr 15% 15% 20%;
+  margin: 0 auto;
+  max-width: calc(100% - 2*30px);
+}
+
+.logo_place_footer {
+  grid-area: logo;
+}
+
+.footer__partners {
+  grid-area: partners;
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  flex-direction: row;
+}
+
+.footer__partners-title {
+  font-family: 'Formular';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+  margin: 0;
+}
+
+.footer__partner-text {
+  display: none;
+}
+
+.footer__address {
+  grid-area: address;
+}
+
+.footer__address-title {
+  margin: 0;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+}
+
+.footer__address-location {
+  margin: 8px 0 0;
+  font-family: "Formular";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 22px;
+  opacity: 0.6;
+}
+
+.footer__list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 13px;
+}
+
+.footer__navigation {
+  grid-area: navigation;
+}
+
+.footer__about {
+  grid-area: about;
+}
+
+.footer__projects {
+  grid-area: projects;
+}
+
+.footer__list-item {
+  text-decoration: none;
+  color: $text;
+}
+
+.footer__link {
+  display: flex;
+  flex-direction: row;
+  color: $text;
+  text-decoration: none;
+  margin-top: 49px;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 1.21;
+}
+
+.footer__lubimovka-links {
+  grid-area: lubimovka;
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+}
+
+.footer__design {
+  grid-area: design;
+}
+
+.footer__design-img {
+  width: 27px;
+  height: 25px;
+  align-self: flex-start;
+}
+
+.footer__design-text {
+  margin: 0;
+}
+
+.footer__yandex {
+  grid-area: yandex;
+}
+
+.footer__list-item:hover, .footer__link:hover {
+  text-decoration: underline;
+}
+
+@media screen and (max-width: 1279px) {
+  .footer {
+    grid-template-columns: 13% 1fr 20% 20% 20%;
+  }
+}
+
+@media (max-width: 1023px) {
+  .footer {
+    padding-top: 0;
+    grid-template-areas: 
+      "logo address address"
+      "navigation about projects"
+      "partners partners partners"
+      "lubimovka design yandex";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__list{
+    margin-top: 20px;
+  }
+  .footer__partners{
+    margin-top: 30px;
+  }
+  .footer__link {
+    margin-top: 30px;
+  }
+  .footer__lubimovka-links {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 14px;
+  }
+  .footer__copyright, .footer__privacy {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 767px) {
+  .footer {
+    max-width: calc(100% - 2*28px);
+    grid-template-areas: 
+      "logo logo"
+      "address address"
+      "navigation about"
+      "projects projects"
+      "partners partners"
+      "lubimovka lubimovka"
+      "design design"
+      "yandex yandex";
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 30px;
+  }
+  .footer__address {
+    margin-top: 32px;
+  }
+  .footer__list {
+    margin-top: 53px;
+  }
+  .footer__partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 40;
+    margin-top: 83px;
+    padding-bottom: 83px;
+    border-bottom: 1px solid #242424;
+  }
+  .footer__partners-title {
+    display: none;
+  }
+  .footer__partner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+  }
+  .footer__partner-text {
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424;
+    text-align: center;
+  }
+  .footer__lubimovka-links {
+    gap: 10px;
+  }
+  .footer__design {
+    margin-top: 59px;
+  }
+  .footer__yandex {
+    margin-top: 16px;
+  }
+}
+
