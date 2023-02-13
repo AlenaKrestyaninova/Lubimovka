@@ -68,50 +68,51 @@ const addPlay = (name, author, place, image, readLink, downloadLink) => {
 
 plays.forEach(play => addPlay(play.name, play.author, play.place, play.image, play.readLink, play.downloadLink));
 
-const swiper = new Swiper('.swiper', {
-    // Optional parameters
-    direction: 'horizontal',
-    loop: false,
-    spaceBetween: 30,
-    slidesPerView: "auto",
-    mousewheel: true,
-    keyboard: true,
-    onlyInViewport: true,
-    slidesOffsetAfter: 110,
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-  });
+// const swiper = new Swiper('.swiper', {
+//     // Optional parameters
+//     direction: 'horizontal',
+//     loop: false,
+//     spaceBetween: 30,
+//     slidesPerView: "auto",
+//     mousewheel: true,
+//     keyboard: true,
+//     onlyInViewport: true,
+//     slidesOffsetAfter: 110,
+//     // Navigation arrows
+//     navigation: {
+//         nextEl: '.swiper-button-next',
+//         prevEl: '.swiper-button-prev',
+//     },
+// });
 
-// let sliderPlays
-// function initPlaysSlider () {
-//     const playsSection = document.querySelector('.plays')
-//     const slider = playsSection.querySelector('.swiper-container');
-//     if(window.innerWidth < 767) {
-//         sliderPlays = new Swiper(slider, {
-//             slidesPerView: 'auto',
-//             spaceBetween: 30,
-//             mousewheel: true,
-//             keyboard: true,
-//             onlyInViewport: true,
-//             slidesOffsetAfter: 138,
-//             breakpoints: {
-//                 200: {
-//                     pagination: {
-//                         el: '.swiper-pagination',
-//                         clickable: true
-//                     }
-//                 }
-//             },
-//         })
-//     } else {
-//         if (slider.classList.contains('swiper-container-initialized')) {
-//             sliderPlays.destroy();
-//         }
-//     }
-// }
 
-// initPlaysSlider();
-// addEventListener('resize', initPlaysSlider);
+let sliderPlays
+function initPlaysSlider () {
+    const playsSection = document.querySelector('.plays')
+    const slider = playsSection.querySelector('.plays__swiper');
+    if(window.innerWidth < 1479) {
+        sliderPlays = new Swiper(slider, {
+            slidesPerView: 'auto',
+            spaceBetween: 30,
+            mousewheel: true,
+            keyboard: true,
+            onlyInViewport: true,
+            slidesOffsetAfter: 110,
+            breakpoints: {
+                200: {
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                }
+            },
+        })
+    } else {
+        if (slider.classList.contains('swiper-container-initialized')) {
+            sliderPlays.destroy();
+        }
+    }
+}
+
+initPlaysSlider();
+addEventListener('resize', initPlaysSlider);
