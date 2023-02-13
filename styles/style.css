@@ -41,15 +41,13 @@
 @import "../blocks/persons/__name/persons__name.css";
 @import "../blocks/persons/__description/persons__description.css";
 @import "../blocks/footer/footer.css";
-@import "../blocks/footer/__copyright/footer__copyright.css";
+@import "../blocks/logo/_place/logo_place_footer.css";
 @import "../blocks/cooperation/cooperation.css";
 @import "../blocks/cooperation/__asterisk/cooperation__asterisk.css";
 @import "../blocks/cooperation/__paragraph/cooperation__paragraph.css";
 @import "../blocks/cooperation/__text/cooperation__text.css";
 @import "../blocks/cooperation/__title/cooperation__title.css";
 @import "../blocks/cooperation/__link/cooperation__link.css";
-@import "../blocks/logo/logo.css";
-@import "../blocks/logo/_place/logo_place_footer.css";
 .body {
   margin: 0;
   background-color: #ECEBE8;
@@ -131,8 +129,7 @@
   rotate: -135deg;
 }
 
-/* Раздел footer*/
-
+/*Раздел performance*/
 .performance__item {
   border-right: 1px solid #242424;
   padding: 0 30px;
@@ -217,7 +214,7 @@
 
 .performance__link:hover {
   color: #E5E5E5;
-  background: url(../../images/performances/arrow-hover.svg) no-repeat left center;
+  background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
 }
 
 @media (max-width: 960px) {
@@ -233,6 +230,7 @@
     background-size: 15px 7px;
   }
 }
+/* Раздел persons*/
 /* Раздел footer*/
 /* Раздел cooperation*/
 
