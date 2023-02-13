@@ -10,7 +10,6 @@
   grid-template-columns: 13% 1fr 15% 15% 20%;
   margin: 0 auto;
   max-width: calc(100% - 2*30px);
-  border: 1px solid red;
 }
 
 .logo_place_footer {
@@ -23,7 +22,6 @@
   gap: 30px;
   align-items: center;
   flex-direction: row;
-  border: 1px solid red;
 }
 
 .footer__partners-title {
@@ -41,7 +39,6 @@
 
 .footer__address {
   grid-area: address;
-  border: 1px solid red;
 }
 
 .footer__address-title {
@@ -71,7 +68,6 @@
   display: flex;
   flex-direction: column;
   gap: 13px;
-  border: 1px solid red;
 }
 
 .footer__navigation {
@@ -127,6 +123,10 @@
   grid-area: yandex;
 }
 
+.footer__list-item:hover, .footer__link:hover {
+  text-decoration: underline;
+}
+
 @media screen and (max-width: 1279px) {
   .footer {
     grid-template-columns: 13% 1fr 20% 20% 20%;
@@ -135,18 +135,89 @@
 
 @media (max-width: 1023px) {
   .footer {
-    /* padding-left: 24px;
-    padding-right: 24px;
-    padding-top: 88px; */
+    padding-top: 0;
+    grid-template-areas: 
+      "logo address address"
+      "navigation about projects"
+      "partners partners partners"
+      "lubimovka design yandex";
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .footer__list{
+    margin-top: 20px;
+  }
+  .footer__partners{
+    margin-top: 30px;
+  }
+  .footer__link {
+    margin-top: 30px;
+  }
+  .footer__lubimovka-links {
+    flex-direction: column;
+    margin-top: 30px;
+    gap: 14px;
+  }
+  .footer__copyright, .footer__privacy {
+    margin-top: 0;
   }
 }
 
 @media (max-width: 767px) {
   .footer {
-    /* padding-left: 16px;
-    padding-right: 55px;
+    max-width: calc(100% - 2*28px);
+    grid-template-areas: 
+      "logo logo"
+      "address address"
+      "navigation about"
+      "projects projects"
+      "partners partners"
+      "lubimovka lubimovka"
+      "design design"
+      "yandex yandex";
+    grid-template-columns: repeat(2, 1fr);
+    padding-bottom: 30px;
+  }
+  .footer__address {
+    margin-top: 32px;
+  }
+  .footer__list {
+    margin-top: 53px;
+  }
+  .footer__partners {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-items: center;
+    gap: 40;
+    margin-top: 83px;
+    border-bottom: 1px solid #242424;
+  }
+  .footer__partners-title {
+    display: none;
+  }
+  .footer__partner {
+    display: flex;
     flex-direction: column;
-    padding-top: 64px; */
+    align-items: center;
+    text-decoration: none;
+  }
+  .footer__partner-text {
+    display: block;
+    margin: 0;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 20px;
+    color: #242424;
+    text-align: center;
+  }
+  .footer__lubimovka-links {
+    gap: 10px;
+  }
+  .footer__design {
+    margin-top: 59px;
+  }
+  .footer__yandex {
+    margin-top: 16px;
   }
 }
 
