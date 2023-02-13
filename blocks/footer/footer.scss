@@ -1,3 +1,5 @@
+@import "../../pages/variables.scss";
+
 .footer {
   padding-top: 42px;
   padding-bottom: 54px;
@@ -84,13 +86,13 @@
 
 .footer__list-item {
   text-decoration: none;
-  color: #242424;
+  color: $text;
 }
 
 .footer__link {
   display: flex;
   flex-direction: row;
-  color: #242424;
+  color: $text;
   text-decoration: none;
   margin-top: 49px;
   font-weight: 300;
@@ -190,6 +192,7 @@
     justify-items: center;
     gap: 40;
     margin-top: 83px;
+    padding-bottom: 83px;
     border-bottom: 1px solid #242424;
   }
   .footer__partners-title {
