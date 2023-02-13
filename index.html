@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Любимовка 2.0</title>
+    <link rel="stylesheet" href="./plugin/swiper.css">
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 <body class="body">
@@ -79,19 +80,23 @@
 
         <!-- Блок с пьесами -->
         <section class="plays">
-          <h2 class="title">Заголовок блока с пьесами</h2>
-          <div class="plays__swiper swiper">
-            <ul class="plays__items swiper-wrapper">
-            </ul>
-            <div class="plays__swiper-button swiper-button-prev"></div>
-            <div class="plays__swiper-button swiper-button-next"></div>
-          </div>
+            <h2 class="title">Заголовок блока с пьесами</h2>
+            <div class="plays__swiper swiper">
+                <ul class="plays__items swiper-wrapper">
+                </ul>
+                <div class="plays__swiper-button swiper-button-prev"></div>
+                <div class="plays__swiper-button swiper-button-next"></div>
+            </div>
 
         </section>
 
         <!-- Блок с персонами -->
         <section class="persons">
-
+            <h2 class="title persons__title">Команда разработчиков</h2>
+            <div class="swiper-container">
+                <ul class="persons__section swiper-wrapper slider">
+                </ul>
+            </div>
         </section>
 
         <!-- Блок со ссылкой (лучше переименовать секцию)-->
@@ -101,7 +106,20 @@
 
         <!-- Блок с сотрудничеством -->
         <section class="cooperation">
-
+            <div class="cooperation__asterisk"></div>
+            <h2 class="cooperation__title">Проект открыт к&nbsp;сотрудничеству</h2>
+            <div class="cooperation__text">
+                <p class="cooperation__paragraph">
+                    Мы находимся в постоянном поиске режиссёров и актеров, заинтересованных в постановке читок.
+                </p>
+                <address class="cooperation__paragraph">
+                    Пишите на
+                    <a href="mailto:more@lubimovka.ru?subject=Сотрудничество%20с%20проектом%20%22Любимовка%22"
+                       class="cooperation__link" lang="en">
+                        more@lubimovka.ru
+                    </a>
+                </address>
+            </div>
         </section>
     </main>
 
@@ -111,10 +129,10 @@
         </nav>
         <p class="footer__copyright">&copy; Любимовка. 2022. &amp; Praktikum team</p>
     </footer>
-    
-  </div>
 
-  <template id="play-template">
+</div>
+
+<template id="play-template">
     <li class="play swiper-slide">
         <div class="play__promo">
             <h3 class="play__title"></h3>
@@ -122,17 +140,21 @@
                 <a href="#" class="play__link play__link_read">
                     <p class="play__link-text">Смотреть читку</p>
                     <div class="play__link-arrow play__link-arrow_dioganal">
-                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5234 21L11.7986 20.2752L6 14.4766L6.70287 13.7737L12.0235 19.0944L12.0235 0H13.0235L13.0235 19.0502L18.2752 13.7986L19 14.5234L13.2263 20.2971L12.5234 21Z" fill="#242424"/>
-                      </svg>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M12.5234 21L11.7986 20.2752L6 14.4766L6.70287 13.7737L12.0235 19.0944L12.0235 0H13.0235L13.0235 19.0502L18.2752 13.7986L19 14.5234L13.2263 20.2971L12.5234 21Z"
+                                  fill="#242424"/>
+                        </svg>
                     </div>
                 </a>
                 <a href="#" class="play__link play__link_download">
                     <p class="play__link-text">Скачать пьесу</p>
                     <div class="play__link-arrow play__link-arrow_down">
-                      <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M12.5234 21L11.7986 20.2752L6 14.4766L6.70287 13.7737L12.0235 19.0944L12.0235 0H13.0235L13.0235 19.0502L18.2752 13.7986L19 14.5234L13.2263 20.2971L12.5234 21Z" fill="#242424"/>
-                      </svg>
+                        <svg width="25" height="25" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd"
+                                  d="M12.5234 21L11.7986 20.2752L6 14.4766L6.70287 13.7737L12.0235 19.0944L12.0235 0H13.0235L13.0235 19.0502L18.2752 13.7986L19 14.5234L13.2263 20.2971L12.5234 21Z"
+                                  fill="#242424"/>
+                        </svg>
                     </div>
                 </a>
             </div>
@@ -140,35 +162,46 @@
         <h4 class="play__author"></h4>
         <p class="play__place"></p>
     </li>
-  </template>
+</template>
 
-    <template class="performance__template">
-        <li class="performance__item performance__item_one-of-the-three">
-            <img src="#" alt="#"
-                 class="performance__image">
-            <div class="performance__information">
-                <div class="performance__date-time">
-                    <p class="performance__date"></p>
-                    <p class="performance__time"></p>
-                </div>
-                <h3 class="performance__name"></h3>
-                <div class="performance__authors">
-                    <p class="performance__author" id="playwright"></p>
-                    <p class="performance__author" id="director"></p>
-                </div>
-                <p class="performance__description"></p>
+<template class="performance__template">
+    <li class="performance__item performance__item_one-of-the-three">
+        <img src="#" alt="#"
+             class="performance__image">
+        <div class="performance__information">
+            <div class="performance__date-time">
+                <p class="performance__date"></p>
+                <p class="performance__time"></p>
             </div>
-            <div class="performance__links">
-                <a class="performance__link" id="about" href="#">О спектакле</a>
-                <a class="performance__link" id="tickets" href="#">Билеты</a>
+            <h3 class="performance__name"></h3>
+            <div class="performance__authors">
+                <p class="performance__author" id="playwright"></p>
+                <p class="performance__author" id="director"></p>
             </div>
-        </li>
-    </template>
+            <p class="performance__description"></p>
+        </div>
+        <div class="performance__links">
+            <a class="performance__link" id="about" href="#">О спектакле</a>
+            <a class="performance__link" id="tickets" href="#">Билеты</a>
+        </div>
+    </li>
+</template>
 </div>
 <script src="scripts/performance.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="scripts/plays.js"></script>
 
+
+</div>
+<template class="persons__template">
+    <li class="persons__item swiper-slide">
+        <img src="#" alt="#" class="persons__photo">
+        <h3 class="persons__name"></h3>
+        <p class="persons__description"></p>
+    </li>
+</template>
+<script src="plugin/swiper.js"></script>
+<script src="scripts/persons.js"></script>
 </body>
 </html>

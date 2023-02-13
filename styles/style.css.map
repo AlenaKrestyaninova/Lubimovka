@@ -4,8 +4,9 @@
   "sources": [
     "../pages/index.scss",
     "../blocks/body/body.scss",
-    "../blocks//performance/__link/performance__link.scss",
     "../blocks/page/page.scss",
+    "../blocks//performance/__link/performance__link.scss",
+    "../blocks/performance/__item/performance__item.scss",
     "../blocks/play/__link/play__link.scss",
     "../pages/variables.scss"
   ],

@@ -129,8 +129,7 @@
   rotate: -135deg;
 }
 
-/* Раздел footer*/
-
+/*Раздел performance*/
 .performance__item {
   border-right: 1px solid #242424;
   padding: 0 30px;
@@ -215,7 +214,7 @@
 
 .performance__link:hover {
   color: #E5E5E5;
-  background: url(../../images/performances/arrow-hover.svg) no-repeat left center;
+  background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
 }
 
 @media (max-width: 960px) {
@@ -231,7 +230,8 @@
     background-size: 15px 7px;
   }
 }
+/* Раздел persons*/
 /* Раздел footer*/
 /* Раздел cooperation*/
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
