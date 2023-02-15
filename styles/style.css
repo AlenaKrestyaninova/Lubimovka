@@ -3,6 +3,7 @@
 @import "../fonts/fonts.css";
 @import "../blocks/title/title.css";
 @import "../blocks/header/header.css";
+@import "../blocks/lead/lead.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
@@ -72,6 +73,7 @@
   }
 }
 /* Раздел header*/
+/* Раздел lead*/
 /* Раздел about*/
 .about {
   background-color: #B7C09D;
