@@ -82,21 +82,23 @@
         <!-- Блок с пьесами -->
         <section class="plays">
             <h2 class="title">Заголовок блока с пьесами</h2>
-            <div class="plays__swiper swiper">
+            <div class="swiper-container">
                 <ul class="plays__items swiper-wrapper">
                 </ul>
-                <div class="plays__swiper-button swiper-button-prev"></div>
-                <div class="plays__swiper-button swiper-button-next"></div>
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
             </div>
 
         </section>
 
         <!-- Блок с персонами -->
         <section class="persons">
-            <h2 class="title persons__title">Команда разработчиков</h2>
+            <h2 class="title">Команда разработчиков</h2>
             <div class="swiper-container">
-                <ul class="persons__section swiper-wrapper slider">
+                <ul class="persons__items swiper-wrapper">
                 </ul>
+                <div class="swiper-button swiper-button-prev"></div>
+                <div class="swiper-button swiper-button-next"></div>
             </div>
         </section>
 
@@ -253,14 +255,7 @@
         </div>
     </li>
 </template>
-</div>
-<script src="scripts/performance.js"></script>
-<!-- Swiper JS -->
-<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-<script src="scripts/plays.js"></script>
 
-
-</div>
 <template class="persons__template">
     <li class="persons__item swiper-slide">
         <img src="#" alt="#" class="persons__photo">
@@ -268,6 +263,14 @@
         <p class="persons__description"></p>
     </li>
 </template>
+
+<script src="scripts/performance.js"></script>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/plays.js"></script>
+
+
+
 <script src="plugin/swiper.js"></script>
 <script src="scripts/persons.js"></script>
 </body>

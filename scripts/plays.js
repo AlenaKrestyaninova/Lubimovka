@@ -89,7 +89,7 @@ plays.forEach(play => addPlay(play.name, play.author, play.place, play.image, pl
 let sliderPlays
 function initPlaysSlider () {
     const playsSection = document.querySelector('.plays')
-    const slider = playsSection.querySelector('.plays__swiper');
+    const slider = playsSection.querySelector('.swiper-container');
     if(window.innerWidth < 1479) {
         sliderPlays = new Swiper(slider, {
             slidesPerView: 'auto',

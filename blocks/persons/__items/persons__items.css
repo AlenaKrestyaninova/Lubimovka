@@ -1,0 +1,21 @@
+.persons__items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: calc(100% - 2*135px);
+    list-style: none;
+    margin: 0 auto;
+    padding: 16px 0 112px;
+}
+
+@media screen and (max-width: 1279px) {
+    .persons__items {
+        max-width: calc(100% - 2*60px);
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .persons__items {
+        max-width: calc(100% - 2*24px);
+    }
+}
