@@ -5,22 +5,13 @@
 @import "../blocks/header/header.css";
 @import "../blocks/video/video.css";
 @import "../blocks/video/__title/video__title.css";
-@import "../blocks/video/__content/video__content.css";
 @import "../blocks/video/__cover/video__cover.css";
 @import "../blocks/video/__img/video__img.css";
 @import "../blocks/video/__button/video__button.css";
+@import "../blocks/video/__description/video__description.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
-@import "../blocks/plays/plays.css";
-@import "../blocks/plays/__swiper/plays__swiper.css";
-@import "../blocks/plays/__items/plays__items.css";
-@import "../blocks/play/play.css";
-@import "../blocks/play/__promo/play__promo.css";
-@import "../blocks/play/__title/play__title.css";
-@import "../blocks/play/__author/play__author.css";
-@import "../blocks/play/__place/play__place.css";
-@import "../blocks/play/__links/play__links.css";
 @import "../blocks/performance/performance.css";
 @import "../blocks/performance/_amount/performance_amount_one.css";
 @import "../blocks/performance/_amount/performance_amount_two.css";
@@ -39,14 +30,21 @@
 @import "../blocks/performance/__author/performance__author.css";
 @import "../blocks/performance/__description/performance__description.css";
 @import "../blocks/performance/__links/performance__links.css";
+@import "../blocks/swiper/swiper.css";
+@import "../blocks/plays/plays.css";
+@import "../blocks/plays/__items/plays__items.css";
+@import "../blocks/play/play.css";
+@import "../blocks/play/__promo/play__promo.css";
+@import "../blocks/play/__title/play__title.css";
+@import "../blocks/play/__author/play__author.css";
+@import "../blocks/play/__place/play__place.css";
+@import "../blocks/play/__links/play__links.css";
 @import "../blocks/persons/persons.css";
-@import "../blocks/persons/__title/persons__title.css";
-@import "../blocks/persons/__section/persons__section.css";
+@import "../blocks/persons/__items/persons__items.css";
 @import "../blocks/persons/__item/persons__item.css";
 @import "../blocks/persons/__photo/persons__photo.css";
 @import "../blocks/persons/__name/persons__name.css";
 @import "../blocks/persons/__description/persons__description.css";
-@import "../blocks/logo/_place/logo_place_footer.css";
 @import "../blocks/video/video.css";
 @import "../blocks/video/__title/video__title.css";
 @import "../blocks/video/__content/video__content.css";
@@ -68,6 +66,7 @@
 @import "../blocks/youtube/__title/youtube__title.css";
 @import "../blocks/youtube/__content/youtube__content.css";
 @import "../blocks/youtube/__subtitle/youtube__subtitle.css";
+@import "../blocks/logo/_place/logo_place_footer.css";
 .body {
   margin: 0;
   background-color: #ECEBE8;
@@ -137,65 +136,8 @@
     margin-right: 24px;
   }
 }
+/* Раздел video*/
 /* Раздел gallery*/
-/* Раздел gallery*/
-/* Раздел plays*/
-.play__link {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  color: inherit;
-  text-decoration: none;
-  height: 56px;
-  width: 100%;
-  border-top: 1px solid #242424;
-  background: #B7C09D;
-  padding: 0 16px 0;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.play__link:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 56px;
-  background: #242424;
-  transition: all 0.5s ease;
-}
-
-.play__link:hover:before {
-  width: 100%;
-}
-
-.play__link:hover .play__link-text, .play__link-arrow {
-  color: #ffffff;
-  z-index: 1;
-}
-
-.play__link-text {
-  margin: 0;
-  display: block;
-  z-index: 1;
-}
-
-.play__link-arrow {
-  display: block;
-  width: 25px;
-  height: 25px;
-}
-
-.play__link:hover path {
-  fill: #ffffff;
-}
-
-.play__link-arrow_dioganal {
-  rotate: -135deg;
-}
-
 /*Раздел performance*/
 .performance__item {
   border-right: 1px solid #242424;
@@ -297,7 +239,145 @@
     background-size: 15px 7px;
   }
 }
+/* Раздел plays*/
+.play__link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  color: inherit;
+  text-decoration: none;
+  height: 56px;
+  width: 100%;
+  border-top: 1px solid #242424;
+  background: #B7C09D;
+  padding: 0 16px 0;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.play__link:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 56px;
+  background: #242424;
+  transition: all 0.5s ease;
+}
+
+.play__link:hover:before {
+  width: 100%;
+}
+
+.play__link:hover .play__link-text, .play__link-arrow {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.play__link-text {
+  margin: 0;
+  display: block;
+  z-index: 1;
+}
+
+.play__link-arrow {
+  display: block;
+  width: 25px;
+  height: 25px;
+}
+
+.play__link:hover path {
+  fill: #ffffff;
+}
+
+.play__link-arrow_dioganal {
+  rotate: -135deg;
+}
+
 /* Раздел persons*/
+/* Раздел видео*/
+/* Раздел cooperation*/
+/* Раздел youtube*/
+.youtube {
+  margin-top: 112px;
+  background-color: #B7C09D;
+  padding-top: 70px;
+  padding-bottom: 140px;
+  box-sizing: border-box;
+}
+
+/* Медиа-запрос для ширины 1220px*/
+/* Медиа-запрос для ширины 768px*/
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .youtube {
+    margin-top: 100px;
+    padding-top: 56px;
+    padding-bottom: 72px;
+  }
+}
+.youtube__button {
+  width: 298px;
+  height: 56px;
+  background-color: transparent;
+  border: 1px solid #242424;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  cursor: pointer;
+  text-decoration: none;
+  color: #242424;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.youtube__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 56px;
+  background-color: #242424;
+  transition: all 0.5s ease;
+}
+
+.youtube__button:hover:before {
+  width: 100%;
+}
+
+.youtube__button-text {
+  text-transform: uppercase;
+  font-size: 16px;
+  line-height: 1.38;
+  margin: 0;
+}
+
+.youtube__button:hover .youtube__button-text, .youtube__button-arrow {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.youtube__button:hover path {
+  fill: #ffffff;
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1279px) {
+  .youtube__button {
+    margin-top: 16px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .youtube__button {
+    max-width: 100%;
+  }
+}
 /* Раздел footer*/
 .footer {
   padding-top: 42px;
@@ -503,87 +583,6 @@
   }
   .footer__yandex {
     margin-top: 16px;
-  }
-}
-/* Раздел видео*/
-/* Раздел cooperation*/
-/* Раздел youtube*/
-.youtube {
-  margin-top: 112px;
-  background-color: #B7C09D;
-  padding-top: 70px;
-  padding-bottom: 140px;
-  box-sizing: border-box;
-}
-
-/* Медиа-запрос для ширины 1220px*/
-/* Медиа-запрос для ширины 768px*/
-/* Медиа-запрос для ширины 320px*/
-@media screen and (max-width: 767px) {
-  .youtube {
-    margin-top: 100px;
-    padding-top: 56px;
-    padding-bottom: 72px;
-  }
-}
-.youtube__button {
-  width: 298px;
-  height: 56px;
-  background-color: transparent;
-  border: 1px solid #242424;
-  padding: 0 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-  cursor: pointer;
-  text-decoration: none;
-  color: #242424;
-  box-sizing: border-box;
-  position: relative;
-}
-
-.youtube__button:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 56px;
-  background-color: #242424;
-  transition: all 0.5s ease;
-}
-
-.youtube__button:hover:before {
-  width: 100%;
-}
-
-.youtube__button-text {
-  text-transform: uppercase;
-  font-size: 16px;
-  line-height: 1.38;
-  margin: 0;
-}
-
-.youtube__button:hover .youtube__button-text, .youtube__button-arrow {
-  color: #ffffff;
-  z-index: 1;
-}
-
-.youtube__button:hover path {
-  fill: #ffffff;
-}
-
-/* Медиа-запрос для ширины 768px*/
-@media screen and (max-width: 1279px) {
-  .youtube__button {
-    margin-top: 16px;
-  }
-}
-/* Медиа-запрос для ширины 320px*/
-@media screen and (max-width: 767px) {
-  .youtube__button {
-    max-width: 100%;
   }
 }
 
