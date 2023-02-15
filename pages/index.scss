@@ -70,7 +70,7 @@
 /* Раздел видео*/
 @import "../blocks/video/video.css";
 @import "../blocks/video/__title/video__title.css";
-@import "../blocks/video/__content/video__content.css";
+@import "../blocks/video/__content/_row/video__content_row.css";
 @import "../blocks/video/__description/video__description.css";
 @import "../blocks/video/__cover/video__cover.css";
 @import "../blocks/video/__button/video__button.css";
@@ -79,7 +79,6 @@
 @import "../blocks/video/__img/video__img.css";
 @import "../blocks/video/__content/_row/video__content_row.css";
 @import "../blocks/video/__container/video__container.css";
-@import "../blocks/slider/slider.css";
 
 /* Раздел cooperation*/
 @import "../blocks/cooperation/cooperation.css";

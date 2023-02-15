@@ -3,7 +3,6 @@
 //функционал обложки видео
 function playVideo() {
     const videos = document.querySelectorAll('.video__content');
-    console.log(videos);
     videos.forEach(video => setVideo(video));
 }
 
@@ -63,76 +62,76 @@ slids.forEach(slid => {
 
 //функционал слайдера
 //Установка слайдера на секцию с двумя видео
-// let sliderTwoVideo
-// function initTwoVideoSlider () {
-//     const videoSection = document.querySelector('.two-video')
-//     const slider = videoSection.querySelector('.swiper-container');
-//     if(window.innerWidth < 899) {
-//         sliderTwoVideo = new Swiper(slider, {
-//         slidesPerView: 'auto',
-//         spaceBetween: 0,
-//         mousewheel: true,
-//         keyboard: true,
-//         breakpoints: {
-//             600: {
-//                 pagination: {
-//                     el: '.swiper-pagination',
-//                     clickable: true,
-//                 }
-//             }
-//         }
-//         })  
-//     } else {
-//         if (slider.classList.contains('swiper-container-initialized')) {
-//             sliderTwoVideo.destroy();
-//         }
-//     }
-// }
+let sliderTwoVideo
+function initTwoVideoSlider () {
+    const videoSection = document.querySelector('.two-video')
+    const slider = videoSection.querySelector('.swiper-container');
+    if(window.innerWidth < 899) {
+        sliderTwoVideo = new Swiper(slider, {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        mousewheel: true,
+        keyboard: true,
+        breakpoints: {
+            600: {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            }
+        }
+        })  
+    } else {
+        if (slider.classList.contains('swiper-container-initialized')) {
+            sliderTwoVideo.destroy();
+        }
+    }
+}
 
 // //Установка слайдера на секцию с тремя видео
-// let sliderThreeVideo
-// function initThreeVideoSlider () {
-//     const videoSection = document.querySelector('.three-video')
-//     const slider = videoSection.querySelector('.swiper-container');
-//     if(window.innerWidth < 1378) {
-//         sliderThreeVideo = new Swiper(slider, {
-//         slidesPerView: 'auto',
-//         spaceBetween: 0,
-//         mousewheel: true,
-//         keyboard: true,
-//         onlyInViewport: true,
-//         breakpoints: {
-//             600: {
-//                 pagination: {
-//                     el: '.swiper-pagination',
-//                     clickable: true,
-//                 }
-//             }
-//         },
-//         }) 
-//     } else {
-//         if (slider.classList.contains('swiper-container-initialized')) {
-//             sliderThreeVideo.destroy();
-//         } 
-//     }
-// }
+let sliderThreeVideo
+function initThreeVideoSlider () {
+    const videoSection = document.querySelector('.three-video')
+    const slider = videoSection.querySelector('.swiper-container');
+    if(window.innerWidth < 1378) {
+        sliderThreeVideo = new Swiper(slider, {
+        slidesPerView: 'auto',
+        spaceBetween: 0,
+        mousewheel: true,
+        keyboard: true,
+        onlyInViewport: true,
+        breakpoints: {
+            600: {
+                pagination: {
+                    el: '.swiper-pagination',
+                    clickable: true,
+                }
+            }
+        },
+        }) 
+    } else {
+        if (slider.classList.contains('swiper-container-initialized')) {
+            sliderThreeVideo.destroy();
+        } 
+    }
+}
 
-// function hiddenPaginator() {
-//     const paginators = document.querySelectorAll('.swiper-pagination');
-//     if(window.innerWidth < 767) {
-//         paginators.forEach(paginator => {
-//         paginator.classList.add('hidden')
-//         });
-//     } else {
-//         paginators.forEach(paginator => {
-//             paginator.classList.remove('hidden')
-//         });
-//     }
-// }
+function hiddenPaginator() {
+    const paginators = document.querySelectorAll('.swiper-pagination');
+    if(window.innerWidth < 767) {
+        paginators.forEach(paginator => {
+            paginator.classList.add('hidden')
+        });
+    } else {
+        paginators.forEach(paginator => {
+            paginator.classList.remove('hidden')
+        });
+    }
+}
 
-// initThreeVideoSlider();
-// initTwoVideoSlider();
+initThreeVideoSlider();
+initTwoVideoSlider();
 playVideo();
-// addEventListener('resize', initThreeVideoSlider);
-// addEventListener('resize', initTwoVideoSlider);
-// addEventListener('resize', hiddenPaginator);
+addEventListener('resize', initThreeVideoSlider);
+addEventListener('resize', initTwoVideoSlider);
+addEventListener('resize', hiddenPaginator);
