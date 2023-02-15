@@ -3,6 +3,12 @@
 @import "../fonts/fonts.css";
 @import "../blocks/title/title.css";
 @import "../blocks/header/header.css";
+@import "../blocks/video/video.css";
+@import "../blocks/video/__title/video__title.css";
+@import "../blocks/video/__content/video__content.css";
+@import "../blocks/video/__cover/video__cover.css";
+@import "../blocks/video/__img/video__img.css";
+@import "../blocks/video/__button/video__button.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
@@ -33,8 +39,14 @@
 @import "../blocks/performance/__author/performance__author.css";
 @import "../blocks/performance/__description/performance__description.css";
 @import "../blocks/performance/__links/performance__links.css";
-@import "../blocks/footer/footer.css";
-@import "../blocks/footer/__copyright/footer__copyright.css";
+@import "../blocks/persons/persons.css";
+@import "../blocks/persons/__title/persons__title.css";
+@import "../blocks/persons/__section/persons__section.css";
+@import "../blocks/persons/__item/persons__item.css";
+@import "../blocks/persons/__photo/persons__photo.css";
+@import "../blocks/persons/__name/persons__name.css";
+@import "../blocks/persons/__description/persons__description.css";
+@import "../blocks/logo/_place/logo_place_footer.css";
 @import "../blocks/video/video.css";
 @import "../blocks/video/__title/video__title.css";
 @import "../blocks/video/__content/video__content.css";
@@ -47,14 +59,6 @@
 @import "../blocks/video/__content/_row/video__content_row.css";
 @import "../blocks/video/__container/video__container.css";
 @import "../blocks/slider/slider.css";
-@import "../blocks/persons/persons.css";
-@import "../blocks/persons/__title/persons__title.css";
-@import "../blocks/persons/__section/persons__section.css";
-@import "../blocks/persons/__item/persons__item.css";
-@import "../blocks/persons/__photo/persons__photo.css";
-@import "../blocks/persons/__name/persons__name.css";
-@import "../blocks/persons/__description/persons__description.css";
-@import "../blocks/logo/_place/logo_place_footer.css";
 @import "../blocks/cooperation/cooperation.css";
 @import "../blocks/cooperation/__asterisk/cooperation__asterisk.css";
 @import "../blocks/cooperation/__paragraph/cooperation__paragraph.css";
@@ -134,8 +138,7 @@
   }
 }
 /* Раздел gallery*/
-<<<<<<< HEAD
-=======
+/* Раздел gallery*/
 /* Раздел plays*/
 .play__link {
   display: flex;
@@ -193,7 +196,6 @@
   rotate: -135deg;
 }
 
->>>>>>> b37f0d8d60e0c9159558069376e3ae1fb6ca2481
 /*Раздел performance*/
 .performance__item {
   border-right: 1px solid #242424;
@@ -295,10 +297,6 @@
     background-size: 15px 7px;
   }
 }
-<<<<<<< HEAD
-/* Раздел footer*/
-/* Раздел видео*/
-=======
 /* Раздел persons*/
 /* Раздел footer*/
 .footer {
@@ -507,6 +505,7 @@
     margin-top: 16px;
   }
 }
+/* Раздел видео*/
 /* Раздел cooperation*/
 /* Раздел youtube*/
 .youtube {
@@ -587,6 +586,5 @@
     max-width: 100%;
   }
 }
->>>>>>> b37f0d8d60e0c9159558069376e3ae1fb6ca2481
 
 /*# sourceMappingURL=style.css.map */

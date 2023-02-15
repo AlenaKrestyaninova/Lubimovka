@@ -11,6 +11,14 @@
 /* Раздел about*/
 @import "../blocks/about/about.scss";
 
+/* Раздел video*/
+@import "../blocks/video/video.css";
+@import "../blocks/video/__title/video__title.css";
+@import "../blocks/video/__cover/video__cover.css";
+@import "../blocks/video/__img/video__img.css";
+@import "../blocks/video/__button/video__button.css";
+@import "../blocks/video/__description/video__description.css";
+
 /* Раздел gallery*/
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
