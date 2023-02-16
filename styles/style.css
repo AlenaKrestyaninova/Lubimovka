@@ -8,6 +8,7 @@
 @import "../blocks/navbar/__item/navbar__item.css";
 @import "../blocks/navbar/__logo/navbar__logo.css";
 @import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
+@import "../blocks/sidebar/sidebar.css";
 @import "../blocks/lead/lead.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
