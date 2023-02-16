@@ -3,7 +3,12 @@
 @import "../fonts/fonts.css";
 @import "../blocks/page/__section/page__section.css";
 @import "../blocks/title/title.css";
-@import "../blocks/header/header.css";
+@import "../blocks/navbar/__burger/navbar__burger.css";
+@import "../blocks/navbar/__section/navbar__section.css";
+@import "../blocks/navbar/__item/navbar__item.css";
+@import "../blocks/navbar/__logo/navbar__logo.css";
+@import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
+@import "../blocks/sidebar/sidebar.css";
 @import "../blocks/lead/lead.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
@@ -66,7 +71,128 @@
 }
 
 /* Медиа-запрос для ширины 1280px*/
-/* Раздел header*/
+/* Раздел header */
+.header {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  border-bottom: 1px solid #242424;
+}
+
+/* Медиа-запрос для ширины 1280px*/
+/* Медиа-запрос для ширины 768px*/
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .header {
+    border-bottom: none;
+  }
+}
+/*  Раздел navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar__line {
+  width: 1px;
+  height: 100%;
+  background-color: #242424;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .navbar {
+    min-height: 60px;
+    /* margin: 15px 0 11px 0;
+    justify-content: flex-start; */
+  }
+  .navbar__line {
+    display: none;
+  }
+}
+.navbar__link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  color: #242424;
+}
+
+.navbar__link::before, .navbar__link::after {
+  display: block;
+  width: 0.6em;
+  height: 1.6em;
+  box-sizing: border-box;
+  border: 0.0625rem solid;
+  content: "";
+  visibility: hidden;
+}
+
+.navbar__link::before {
+  border-right: 0;
+  border-bottom-left-radius: 200% 100%;
+  border-top-left-radius: 200% 100%;
+}
+
+.navbar__link::after {
+  border-left: 0;
+  border-bottom-right-radius: 200% 100%;
+  border-top-right-radius: 200% 100%;
+}
+
+.navbar__link:hover:after, .navbar__link:hover:before {
+  visibility: visible;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width: 1279px) {
+  .navbar__link {
+    font-size: 14.2px;
+  }
+}
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1098px) {
+  .navbar__link {
+    font-size: 12px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 929px) {
+  .navbar__link {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar__link {
+    display: none;
+  }
+}
+.navbar__donation-link {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 17px;
+  text-transform: uppercase;
+  color: #242424;
+  text-decoration: none;
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1098px) {
+  .navbar__donation-link {
+    font-size: 12px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 860px) {
+  .navbar__donation-link {
+    font-size: 10px;
+  }
+}
 /* Раздел lead*/
 /* Раздел about*/
 .about {
@@ -268,7 +394,9 @@
 
 .play__link-arrow_dioganal {
   rotate: -135deg;
-} /* Раздел persons*/
+}
+
+/* Раздел persons*/
 /* Раздел cooperation*/
 /* Раздел youtube*/
 .youtube {

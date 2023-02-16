@@ -1,0 +1,26 @@
+@import "../../pages/variables.scss";
+
+.header {
+  display: flex;
+  flex-direction: row;
+  // max-width: 1440px;
+  margin: 0 auto;
+  border-bottom: 1px solid $text;
+}
+
+/* Медиа-запрос для ширины 1280px*/
+@media screen and (max-width:1439px) {
+  
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1279px) {
+  
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+  .header {
+    border-bottom: none;
+  }
+}

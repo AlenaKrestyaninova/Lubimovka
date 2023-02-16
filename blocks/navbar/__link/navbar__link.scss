@@ -1,0 +1,64 @@
+@import "../../../pages/variables.scss";
+
+.navbar__link {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: $text;
+}
+
+.navbar__link::before, .navbar__link::after {
+    display: block;
+    width: 0.6em;
+    height: 1.6em;
+    box-sizing: border-box;
+    border: 0.0625rem solid;
+    content: "";
+    visibility: hidden;
+}
+
+.navbar__link::before {
+    border-right: 0;
+    border-bottom-left-radius: 200% 100%;
+    border-top-left-radius: 200% 100%;
+}
+  
+.navbar__link::after {
+    border-left: 0;
+    border-bottom-right-radius: 200% 100%;
+    border-top-right-radius: 200% 100%;
+}
+  
+.navbar__link:hover:after, .navbar__link:hover:before {
+    visibility: visible;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+    .navbar__link {
+        font-size: 14.2px;
+    }
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1098px) {
+    .navbar__link {
+        font-size: 12px;
+    }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:929px) {
+    .navbar__link {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar__link {
+        display: none;
+    }
+}

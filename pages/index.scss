@@ -6,8 +6,19 @@
 
 @import "../blocks/title/title.css";
 
-/* Раздел header*/
-@import "../blocks/header/header.css";
+/* Раздел header */
+@import "../blocks/header/header.scss";
+
+/*  Раздел navbar */
+@import "../blocks/navbar/navbar.scss";
+@import "../blocks/navbar/__burger/navbar__burger.css";
+@import "../blocks/navbar/__section/navbar__section.css";
+@import "../blocks/navbar/__item/navbar__item.css";
+@import "../blocks/navbar/__link/navbar__link.scss";
+@import "../blocks/navbar/__logo/navbar__logo.css";
+@import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
+@import "../blocks/navbar/__donation-link/navbar__donation-link.scss";
+@import "../blocks/sidebar/sidebar.css";
 
 /* Раздел lead*/
 @import "../blocks/lead/lead.css";
