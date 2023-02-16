@@ -5,15 +5,8 @@
 
 @media (max-width: 1439px) and (min-width: 961px) {
     .performance__title-for-one {
-        margin: 0 auto;
+        margin-left: 25%;
+        /* margin: 0 0 0 25%; */
         max-width: 400px;
-        font-size: 34px;
-        line-height: 36px;
-    }
-}
-
-@media (max-width: 960px) {
-    .performance__title-for-one {
-        display: none;
     }
 }

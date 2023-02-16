@@ -1,6 +1,7 @@
 @charset "UTF-8";
 @import "../vendor/normalize.css";
 @import "../fonts/fonts.css";
+@import "../blocks/page/__section/page__section.css";
 @import "../blocks/title/title.css";
 @import "../blocks/header/header.css";
 @import "../blocks/lead/lead.css";
@@ -46,7 +47,6 @@
 @import "../blocks/cooperation/__text/cooperation__text.css";
 @import "../blocks/cooperation/__title/cooperation__title.css";
 @import "../blocks/cooperation/__link/cooperation__link.css";
-@import "../blocks/youtube/__title/youtube__title.css";
 @import "../blocks/youtube/__content/youtube__content.css";
 @import "../blocks/youtube/__subtitle/youtube__subtitle.css";
 @import "../blocks/logo/_place/logo_place_footer.css";
@@ -63,15 +63,9 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   box-sizing: border-box;
-  max-width: 1440px;
 }
 
 /* Медиа-запрос для ширины 1280px*/
-@media all and (max-width: 1439px) {
-  .page {
-    max-width: 100%;
-  }
-}
 /* Раздел header*/
 /* Раздел lead*/
 /* Раздел about*/
@@ -80,18 +74,6 @@
   padding-top: 79px;
   padding-bottom: 120px;
   box-sizing: border-box;
-}
-
-.about__title {
-  margin-left: 25%;
-  font-family: "Neue Machina";
-  font-style: normal;
-  font-weight: 400;
-  font-size: 40px;
-  line-height: 1;
-  letter-spacing: -0.01em;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 .about__subtitle {
@@ -103,7 +85,6 @@
   letter-spacing: -0.01em;
   margin-top: 0;
   margin-bottom: 0;
-  padding-top: 17px;
 }
 
 /* Медиа-запрос для ширины 320px*/
@@ -124,14 +105,14 @@
 /*Раздел performance*/
 .performance__item {
   border-right: 1px solid #242424;
-  padding: 0 30px;
+  padding: 0 25px;
   box-sizing: border-box;
   display: grid;
   column-gap: 30px;
   grid-template-columns: 120px 1fr;
   grid-template-areas: "image info" ". links";
   margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .performance__item:last-child {
@@ -151,7 +132,6 @@
     grid-template-areas: "image info" "links links";
     grid-template-columns: 92px 1fr;
     margin: 0 auto;
-    max-width: 100%;
     border-right: none;
     border-bottom: 1px solid #242424;
     padding: 32px 25px;
@@ -160,21 +140,19 @@
 @media (max-width: 380px) {
   .performance__item {
     column-gap: 15px;
-    padding: 20px 15px;
-    min-width: 320px;
+    padding: 20px auto;
+    max-width: 100%;
   }
 }
 .performance__link {
-  background: url(../../../images/performances/arrow.svg) no-repeat left center;
-  display: block;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 9px;
   width: 154px;
-  height: 32px;
   border-bottom: 1px solid #242424;
   border-left: 1px solid #242424;
-  padding: 9px 0 9px 29px;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 14px;
+  line-height: 32px;
   text-decoration: none;
   color: #242424;
   text-transform: uppercase;
@@ -205,8 +183,23 @@
 }
 
 .performance__link:hover {
-  color: #E5E5E5;
-  background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
+  color: #ffffff;
+}
+
+.performance__link:hover path {
+  fill: #ffffff;
+}
+
+.performance__link-arrow {
+  display: block;
+}
+
+.performance__link-text {
+  margin: 0;
+  display: block;
+  z-index: 1;
+  font-weight: 300;
+  font-size: 16px;
 }
 
 @media (max-width: 960px) {
@@ -215,11 +208,9 @@
   }
 }
 @media (max-width: 480px) {
-  .performance__link {
-    padding: 8px 0 8px 20px;
+  .performance__link-text {
     font-size: 12px;
     line-height: 8px;
-    background-size: 15px 7px;
   }
 }
 /* Раздел plays*/
@@ -277,9 +268,7 @@
 
 .play__link-arrow_dioganal {
   rotate: -135deg;
-}
-
-/* Раздел persons*/
+} /* Раздел persons*/
 /* Раздел cooperation*/
 /* Раздел youtube*/
 .youtube {
@@ -362,14 +351,12 @@
 }
 /* Раздел footer*/
 .footer {
-  padding-top: 42px;
   padding-bottom: 54px;
   box-sizing: border-box;
   display: grid;
   grid-template-areas: "logo partners partners partners partners" ". address navigation about projects" ". lubimovka lubimovka design yandex";
   grid-template-columns: 13% 1fr 15% 15% 20%;
   margin: 0 auto;
-  max-width: calc(100% - 60px);
 }
 
 .logo_place_footer {
@@ -494,7 +481,6 @@
 }
 @media (max-width: 1023px) {
   .footer {
-    padding-top: 0;
     grid-template-areas: "logo address address" "navigation about projects" "partners partners partners" "lubimovka design yandex";
     grid-template-columns: repeat(3, 1fr);
   }

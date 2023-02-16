@@ -2,6 +2,7 @@
 @import "../fonts/fonts.css";
 @import "../blocks/body/body.scss";
 @import "../blocks/page/page.scss";
+@import "../blocks/page/__section/page__section.css";
 
 @import "../blocks/title/title.css";
 
@@ -71,7 +72,6 @@
 
 /* Раздел youtube*/
 @import "../blocks/youtube/youtube.scss";
-@import "../blocks/youtube/__title/youtube__title.css";
 @import "../blocks/youtube/__content/youtube__content.css";
 @import "../blocks/youtube/__subtitle/youtube__subtitle.css";
 @import "../blocks/youtube/__button/youtube__button.scss";

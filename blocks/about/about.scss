@@ -7,18 +7,6 @@
     box-sizing: border-box;
 }
 
-.about__title {
-    margin-left: 25%;
-    font-family: 'Neue Machina';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 40px;
-    line-height: 1;
-    letter-spacing: -0.01em;
-    margin-top: 0;
-    margin-bottom: 0;
-}
-
 .about__subtitle {
     margin-left: 29%;
     max-width: 509px;
@@ -28,7 +16,6 @@
     letter-spacing: -0.01em;
     margin-top: 0;
     margin-bottom: 0;
-    padding-top: 17px;
 }
 
 /* Медиа-запрос для ширины 320px*/

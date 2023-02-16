@@ -20,7 +20,7 @@
 
     <main class="content">
         <!-- Лид -->
-        <section class="lead">
+        <section class="lead page__section">
             <button type="button" class="lead__button" aria-label="Показать проекты">
                 <p class="lead__button-text">Проекты</p>
                 <div class="lead__button-arrow">
@@ -36,8 +36,10 @@
 
         <!-- Блок о проекте -->
         <section class="about">
-            <h2 class="about__title">О проекте</h2>
-            <p class="about__subtitle">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
+            <div class="page__section">
+                <h2 class="title">О проекте</h2>
+                <p class="about__subtitle">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
+            </div>
         </section>
 
         <!-- Блок с одним видео -->
@@ -56,7 +58,7 @@
         </section>
 
         <!-- Блок с фотографиями -->
-        <section class="gallery">
+        <section class="gallery page__section">
             <h2 class="title">Заголовок блока с фотографиями</h2>
             <div class="gallery__photos">
                 <img src="./images/gallery1.png" alt="фото из галереи" class="gallery__photo">
@@ -71,7 +73,7 @@
         </section>
 
         <!-- Блок с тремя спектаклями -->
-        <section class="performance performance_amount_three">
+        <section class="performance performance_amount_three page__section">
             <h2 class="title performance__title">Заголовок блока с&nbsp;тремя&nbsp;и&nbsp;более спектаклями</h2>
             <h2 class="title performance__title_special">Заголовок блока со&nbsp;спектаклями любое количество</h2>
             <ul class="performance__section" id="performance__section_for-three-elements">
@@ -79,14 +81,14 @@
         </section>
 
         <!-- Блок с двумя спектаклями -->
-        <section class="performance performance_amount_two">
+        <section class="performance performance_amount_two page__section">
             <h2 class="title performance__title">Заголовок блока с&nbsp;двумя&nbsp;спектаклями</h2>
             <ul class="performance__section" id="performance__section_for-two-elements">
             </ul>
         </section>
 
         <!-- Блок с одним спектаклем -->
-        <section class="performance performance_amount_one">
+        <section class="performance performance_amount_one page__section">
             <h2 class="title performance__title performance__title-for-one">Заголовок блока
                 с&nbsp;одним&nbsp;спектаклем</h2>
             <ul class="performance__section" id="performance__section_for-one-element">
@@ -94,7 +96,7 @@
         </section>
 
         <!-- Блок с пьесами -->
-        <section class="plays">
+        <section class="plays page__section">
             <h2 class="title">Заголовок блока с пьесами</h2>
             <div class="swiper-container">
                 <ul class="plays__items swiper-wrapper">
@@ -106,7 +108,7 @@
         </section>
 
         <!-- Блок с персонами -->
-        <section class="persons">
+        <section class="persons page__section">
             <h2 class="title">Команда разработчиков</h2>
             <div class="swiper-container">
                 <ul class="persons__items swiper-wrapper">
@@ -118,22 +120,24 @@
 
         <!-- Блок со ссылкой youtube -->
         <section class="youtube">
-            <h2 class="title youtube__title">Любимовка на YouTube</h2>
-            <div class="youtube__content">
-                <p class="youtube__subtitle">Видео прошедших мероприятий можно посмотреть в плейлисте на канале Любимовки в YouTube</p>
-                <a href="https://www.youtube.com/playlist?list=PL9Pz6qSnYlVHotLMuD-XDQCc3uU7ngwIQ" class="youtube__button">
-                    <p class="youtube__button-text">youtube</p>
-                    <div class="youtube__button-arrow">
-                        <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                        </svg>
-                    </div>
-                </a>
+            <div class="page__section">
+                <h2 class="title">Любимовка на YouTube</h2>
+                <div class="youtube__content">
+                    <p class="youtube__subtitle">Видео прошедших мероприятий можно посмотреть в плейлисте на канале Любимовки в YouTube</p>
+                    <a href="https://www.youtube.com/playlist?list=PL9Pz6qSnYlVHotLMuD-XDQCc3uU7ngwIQ" class="youtube__button">
+                        <p class="youtube__button-text">youtube</p>
+                        <div class="youtube__button-arrow">
+                            <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Блок с сотрудничеством -->
-        <section class="cooperation">
+        <section class="cooperation page__section">
             <div class="cooperation__asterisk"></div>
             <h2 class="cooperation__title">Проект открыт к&nbsp;сотрудничеству</h2>
             <div class="cooperation__text">
@@ -150,7 +154,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer page__section">
         <div class="logo logo_place_footer">
             <a href="#" class="logo__link"></a>
         </div>
@@ -248,8 +252,7 @@
 
 <template class="performance__template">
     <li class="performance__item performance__item_one-of-the-three">
-        <img src="#" alt="#"
-             class="performance__image">
+        <img src="#" alt="#" class="performance__image">
         <div class="performance__information">
             <div class="performance__date-time">
                 <p class="performance__date"></p>
@@ -263,8 +266,22 @@
             <p class="performance__description"></p>
         </div>
         <div class="performance__links">
-            <a class="performance__link" id="about" href="#">О спектакле</a>
-            <a class="performance__link" id="tickets" href="#">Билеты</a>
+            <a class="performance__link" id="about" href="#">
+                <div class="performance__link-arrow">
+                    <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
+                    </svg>
+                </div>
+                <p class="performance__link-text">О спектакле</p>
+            </a>
+            <a class="performance__link" id="tickets" href="#">
+                <div class="performance__link-arrow">
+                    <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
+                    </svg>
+                </div>
+                <p class="performance__link-text">Билеты</p>
+            </a>
         </div>
     </li>
 </template>
