@@ -6,6 +6,7 @@
     font-size: 16px;
     text-decoration: none;
     display: flex;
+    align-items: center;
     color: $text;
 }
 
@@ -33,4 +34,31 @@
   
 .navbar__link:hover:after, .navbar__link:hover:before {
     visibility: visible;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+    .navbar__link {
+        font-size: 14.2px;
+    }
+}
+
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1098px) {
+    .navbar__link {
+        font-size: 12px;
+    }
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:929px) {
+    .navbar__link {
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:767px) {
+    .navbar__link {
+        display: none;
+    }
 }

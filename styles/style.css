@@ -3,15 +3,11 @@
 @import "../fonts/fonts.css";
 @import "../blocks/page/__section/page__section.css";
 @import "../blocks/title/title.css";
-@import "../blocks/navbar/navbar.css";
-@import "../blocks/navbar/__back/_title/navbar__back_title.css";
 @import "../blocks/navbar/__burger/navbar__burger.css";
-@import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
-@import "../blocks/navbar/__item/_menu/navbar__item_menu.css";
+@import "../blocks/navbar/__section/navbar__section.css";
 @import "../blocks/navbar/__item/navbar__item.css";
 @import "../blocks/navbar/__logo/navbar__logo.css";
-@import "../blocks/navbar/__section/_menu/navbar__section_menu.css";
-@import "../blocks/navbar/__section/navbar__section.css";
+@import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
 @import "../blocks/lead/lead.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
@@ -78,7 +74,6 @@
 .header {
   display: flex;
   flex-direction: row;
-  max-width: 1440px;
   margin: 0 auto;
   border-bottom: 1px solid #242424;
 }
@@ -92,12 +87,37 @@
   }
 }
 /*  Раздел navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.navbar__line {
+  width: 1px;
+  height: 100%;
+  background-color: #242424;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+  .navbar {
+    min-height: 60px;
+    /* margin: 15px 0 11px 0;
+    justify-content: flex-start; */
+  }
+  .navbar__line {
+    display: none;
+  }
+}
 .navbar__link {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
   text-decoration: none;
   display: flex;
+  align-items: center;
   color: #242424;
 }
 
@@ -127,6 +147,29 @@
   visibility: visible;
 }
 
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width: 1279px) {
+  .navbar__link {
+    font-size: 14.2px;
+  }
+}
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width: 1098px) {
+  .navbar__link {
+    font-size: 12px;
+  }
+}
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 929px) {
+  .navbar__link {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .navbar__link {
+    display: none;
+  }
+}
 .navbar__donation-link {
   font-style: normal;
   font-weight: 300;
@@ -149,175 +192,6 @@
     font-size: 10px;
   }
 }
-.navbar__link_menu {
-  line-height: 22px;
-}
-
-/* Медиа-запрос для ширины 1024px*/
-@media screen and (max-width: 1279px) {
-  .navbar__link_menu {
-    font-size: 14.2px;
-  }
-}
-/* Медиа-запрос для ширины 768px*/
-@media screen and (max-width: 1098px) {
-  .navbar__link_menu {
-    font-size: 12px;
-  }
-}
-/* Медиа-запрос для ширины 320px*/
-@media screen and (max-width: 929px) {
-  .navbar__link_menu {
-    font-size: 10px;
-  }
-}
-.navbar__link_social {
-  line-height: 18px;
-  text-transform: lowercase;
-}
-
-/* Медиа-запрос для ширины 1024px*/
-@media screen and (max-width: 1279px) {
-  .navbar__link_social {
-    font-size: 14px;
-  }
-}
-/* Медиа-запрос для ширины 768px*/
-@media screen and (max-width: 1098px) {
-  .navbar__link_social {
-    font-size: 12px;
-  }
-}
-/* Медиа-запрос для ширины 320px*/
-@media screen and (max-width: 860px) {
-  .navbar__link_social {
-    font-size: 10px;
-  }
-}
-.navbar__section_donation {
-  padding: 0 20px 0 5px;
-}
-
-.navbar__section_donation::before, .navbar__section_donation::after {
-  display: block;
-  width: 0.6em;
-  height: 1.6em;
-  box-sizing: border-box;
-  border: 0.0625rem solid;
-  content: "";
-  visibility: hidden;
-}
-
-.navbar__section_donation::before {
-  border-right: 0;
-  border-bottom-left-radius: 200% 100%;
-  border-top-left-radius: 200% 100%;
-}
-
-.navbar__section_donation::after {
-  border-left: 0;
-  border-bottom-right-radius: 200% 100%;
-  border-top-right-radius: 200% 100%;
-}
-
-.navbar__section_donation:hover:after, .navbar__section_donation:hover:before {
-  visibility: visible;
-  color: #242424;
-}
-
-/* Медиа-запрос для ширины 1024px*/
-@media screen and (max-width: 1279px) {
-  .navbar__section_donation {
-    padding: 0 10px 0 5px;
-  }
-}
-/* Медиа-запрос для ширины 768px*/
-@media screen and (max-width: 1023px) {
-  .navbar__section_donation {
-    padding: 0 6px 0 5px;
-  }
-}
-@media screen and (max-width: 800px) {
-  .navbar__section_donation {
-    padding: 0 6px 0 6px;
-  }
-}
-.navbar__section_social {
-  padding: 0 5px 0 5px;
-  position: relative;
-}
-
-.navbar__section_social::before {
-  content: "";
-  width: 0px;
-  height: 50px;
-  border: 1px solid #242424;
-  left: -6px;
-  position: absolute;
-}
-
-.navbar__section_social::after {
-  content: "";
-  width: 0px;
-  height: 50px;
-  border: 1px solid #242424;
-  right: -6px;
-  position: absolute;
-}
-
-/* Медиа-запрос для ширины 320px*/
-@media screen and (max-width: 859px) {
-  .navbar__section_social {
-    padding: 0;
-  }
-}
-.navbar__back {
-  display: none;
-  border-right: 1px solid #242424;
-  border-bottom: 1px solid #242424;
-  border-top: none;
-  border-left: none;
-  padding: 0 0 0 6px;
-  align-items: center;
-  margin-left: 24px;
-  padding: 9px 29px 9px 0px;
-  text-decoration: none;
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 14px;
-  color: #242424;
-  text-transform: uppercase;
-  background: url(../../../images/Union.svg) no-repeat right center;
-  position: relative;
-}
-
-@media screen and (max-width: 767px) {
-  .navbar__back {
-    display: block;
-  }
-}
-.navbar__back:before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 0;
-  height: 32px;
-  background: #242424;
-  transition: all 0.7s ease;
-  z-index: -1;
-}
-
-.navbar__back:hover:before {
-  width: 100%;
-}
-
-.navbar__back:hover {
-  color: #E5E5E5;
-  background: url(../../../images/Union-hover.svg) no-repeat right center;
-}
-
 /* Раздел lead*/
 /* Раздел about*/
 .about {

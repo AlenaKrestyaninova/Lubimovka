@@ -4,10 +4,19 @@
     list-style: none;
     align-items: center;
     text-decoration: none;
+    padding: 0;
+    margin: 20px auto;
+}
+
+/* Медиа-запрос для ширины 1024px*/
+@media screen and (max-width:1279px) {
+  .navbar__section {
+    margin: 15px auto;
+  }
 }
 
 @media screen and (max-width:767px) {
-    .navbar__section {
-      display: none;
-    }
+  .navbar__section {
+    display: none;
   }
+}
