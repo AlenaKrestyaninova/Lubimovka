@@ -1,0 +1,50 @@
+@import "../../../pages/variables.scss";
+
+.performance__item {
+  border-right: 1px solid $text;
+  padding: 0 25px;
+  box-sizing: border-box;
+  display: grid;
+  column-gap: 30px;
+  grid-template-columns: 120px 1fr;
+  grid-template-areas:
+      "image info"
+      ". links";
+  margin: 0 auto;
+  max-width: 100%;
+}
+
+.performance__item:last-child {
+  border-right: none;
+}
+
+@media (max-width: 1439px) and (min-width: 961px) {
+  .performance__item:nth-child(2n) {
+    border-right: none;
+  }
+
+  .performance__item:nth-child(3n) {
+    border-right: 1px solid $text;
+  }
+}
+
+@media (max-width: 960px) {
+  .performance__item {
+    grid-template-areas:
+          "image info"
+          "links links";
+    grid-template-columns: 92px 1fr;
+    margin: 0 auto;
+    border-right: none;
+    border-bottom: 1px solid $text;
+    padding: 32px 25px;
+  }
+}
+
+@media (max-width: 380px) {
+  .performance__item {
+    column-gap: 15px;
+    padding: 20px auto;
+    max-width: 100%;
+  }
+}

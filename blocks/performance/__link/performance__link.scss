@@ -1,0 +1,72 @@
+@import "../../../pages/variables.scss";
+
+.performance__link {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
+    width: 154px;
+    border-bottom: 1px solid $text;
+    border-left: 1px solid $text;
+    line-height: 32px;
+    text-decoration: none;
+    color: $text;
+    text-transform: uppercase;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    cursor: pointer;
+    position: relative;
+}
+
+.performance__link:before {
+    content:'';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 32px;
+    background: $text;
+    transition: all 0.5s ease;
+    z-index: -1;
+}
+
+.performance__link:hover:before {
+    width: 100%;
+}
+
+.performance__link:last-child {
+    margin-bottom: 0;
+}
+
+.performance__link:hover {
+    color: $white;
+}
+
+.performance__link:hover path {
+    fill: #ffffff;
+}
+
+.performance__link-arrow {
+    display: block;
+}
+
+.performance__link-text {
+    margin: 0;
+    display: block;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+@media (max-width: 960px) {
+    .performance__link {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__link-text {
+        font-size: 12px;
+        line-height: 8px;
+    }
+}

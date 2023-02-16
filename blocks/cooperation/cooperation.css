@@ -1,0 +1,17 @@
+.cooperation {
+    margin-left: 46%; 
+    margin-top: 74px;
+    margin-bottom: 169px;
+    display: flex;
+    flex-direction: column;
+    max-width: 553px;
+}
+
+@media screen and (max-width: 767px) {
+    .cooperation {
+        margin-right: calc(118 / 1440 * 100%);
+        margin-left: calc(25 / 414 * 100%);
+        margin-top: 50px;
+        margin-bottom: 114px;
+    }
+}

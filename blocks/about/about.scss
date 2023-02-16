@@ -1,0 +1,34 @@
+@import "../../pages/variables.scss";
+
+.about {
+    background-color: $background-green;
+    padding-top: 79px;
+    padding-bottom: 120px;
+    box-sizing: border-box;
+}
+
+.about__subtitle {
+    margin-left: 29%;
+    max-width: 509px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 1.4;
+    letter-spacing: -0.01em;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width: 767px) {
+    .youtube {
+        padding-top: 56px;
+        padding-bottom: 72px;
+    }
+    .about__title {
+        margin-left: 24px;
+    }
+    .about__subtitle {
+        margin-left: 85px;
+        margin-right: 24px;
+    }
+}

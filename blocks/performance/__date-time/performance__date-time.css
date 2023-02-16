@@ -1,0 +1,24 @@
+.performance__date-time {
+    display: flex;
+    margin-bottom: 4px;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 28px;
+    letter-spacing: -0.01em;
+}
+
+@media (max-width: 960px) {
+    .performance__date-time {
+        font-size: 20px;
+        line-height: 28px;
+        margin-bottom: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .performance__date-time {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 8px;
+    }
+}

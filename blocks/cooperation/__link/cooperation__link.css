@@ -1,0 +1,7 @@
+.cooperation__link {
+    color: inherit;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    hyphens: none;
+    transition: all .4s ease;
+}

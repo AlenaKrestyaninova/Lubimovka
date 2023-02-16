@@ -2,6 +2,7 @@
 @import "../fonts/fonts.css";
 @import "../blocks/body/body.scss";
 @import "../blocks/page/page.scss";
+@import "../blocks/page/__section/page__section.css";
 
 @import "../blocks/title/title.css";
 
@@ -27,14 +28,73 @@
 @import "../blocks/navbar/__back/navbar__back.scss";
 
 
+/* Раздел lead*/
+@import "../blocks/lead/lead.css";
+/* Раздел about*/
+@import "../blocks/about/about.scss";
+
 /* Раздел gallery*/
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
 
+/*Раздел performance*/
+@import "../blocks/performance/performance.css";
+@import "../blocks/performance/_amount/performance_amount_one.css";
+@import "../blocks/performance/_amount/performance_amount_two.css";
+@import "../blocks/performance/_amount/performance_amount_three.css";
+@import "../blocks/performance/__title/performance__title.css";
+@import "../blocks/performance/__title-for-one/performance__title-for-one.css";
+@import "../blocks/performance/__title/_special/performance__title_special.css";
+@import "../blocks/performance/__section/performance__section.css";
+@import "../blocks/performance/__item/performance__item.scss";
+@import "../blocks/performance/__image/performance__image.css";
+@import "../blocks/performance/__information/performance__information.css";
+@import "../blocks/performance/__date-time/performance__date-time.css";
+@import "../blocks/performance/__date/performance__date.css";
+@import "../blocks/performance/__time/performance__time.css";
+@import "../blocks/performance/__name/performance__name.css";
+@import "../blocks/performance/__authors/performance__authors.css";
+@import "../blocks/performance/__author/performance__author.css";
+@import "../blocks/performance/__description/performance__description.css";
+@import "../blocks/performance/__links/performance__links.css";
+@import "../blocks/performance/__link/performance__link.scss";
+
+@import "../blocks/swiper/swiper.css";
+
+/* Раздел plays*/
+@import "../blocks/plays/plays.css";
+@import "../blocks/plays/__items/plays__items.css";
+@import "../blocks/play/play.css";
+@import "../blocks/play/__promo/play__promo.css";
+@import "../blocks/play/__title/play__title.css";
+@import "../blocks/play/__author/play__author.css";
+@import "../blocks/play/__place/play__place.css";
+@import "../blocks/play/__links/play__links.css";
+@import "../blocks/play/__link/play__link.scss";
+
+/* Раздел persons*/
+@import "../blocks/persons/persons.css";
+@import "../blocks/persons/__items/persons__items.css";
+@import "../blocks/persons/__item/persons__item.css";
+@import "../blocks/persons/__photo/persons__photo.css";
+@import "../blocks/persons/__name/persons__name.css";
+@import "../blocks/persons/__description/persons__description.css";
+
+/* Раздел cooperation*/
+@import "../blocks/cooperation/cooperation.css";
+@import "../blocks/cooperation/__asterisk/cooperation__asterisk.css";
+@import "../blocks/cooperation/__paragraph/cooperation__paragraph.css";
+@import "../blocks/cooperation/__text/cooperation__text.css";
+@import "../blocks/cooperation/__title/cooperation__title.css";
+@import "../blocks/cooperation/__link/cooperation__link.css";
+
+/* Раздел youtube*/
+@import "../blocks/youtube/youtube.scss";
+@import "../blocks/youtube/__content/youtube__content.css";
+@import "../blocks/youtube/__subtitle/youtube__subtitle.css";
+@import "../blocks/youtube/__button/youtube__button.scss";
 
 /* Раздел footer*/
-@import "../blocks/footer/footer.css";
-@import "../blocks/footer/__copyright/footer__copyright.css";
-
-
+@import "../blocks/footer/footer.scss";
+@import "../blocks/logo/_place/logo_place_footer.css";

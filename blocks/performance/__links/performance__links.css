@@ -1,0 +1,12 @@
+.performance__links {
+    position: relative;
+    grid-area: links;
+    align-self: end;
+}
+
+@media (max-width: 960px) {
+    .performance__links {
+        display: flex;
+        gap: 27px;
+    }
+}

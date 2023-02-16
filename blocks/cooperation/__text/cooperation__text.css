@@ -1,0 +1,21 @@
+.cooperation__text {
+    margin: 33px 0 0 85px;
+    max-width: 468px;
+    font-family: 'Neue Machina';
+    font-weight: 400;
+    line-height: calc(24 / 20 * 100%);
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    letter-spacing: -0.01em;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 767px) {
+    .cooperation__text {
+        max-width: calc(333 / 414 * 100%);
+        margin-top: 19px;
+        margin-left: 32px;
+        row-gap: 23px;
+    }
+}

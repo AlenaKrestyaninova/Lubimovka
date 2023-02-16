@@ -2,8 +2,8 @@
 
 .navbar__back {
     display: none;
-    border-right: 1px solid $coal;
-    border-bottom: 1px solid $coal;
+    border-right: 1px solid $text;
+    border-bottom: 1px solid $text;
     border-top: none;
     border-left: none;
     padding: 0 0 0 6px;
@@ -15,7 +15,7 @@
     font-weight: 300;
     font-size: 16px;
     line-height: 14px;
-    color: $coal;
+    color: $text;
     text-transform: uppercase;
     background: url(../../../images/Union.svg) no-repeat right center;
     position: relative;
@@ -34,7 +34,7 @@
     right: 0;
     width: 0;
     height: 32px;
-    background: $coal;
+    background: $text;
     transition: all 0.7s ease;
     z-index: -1;
 }

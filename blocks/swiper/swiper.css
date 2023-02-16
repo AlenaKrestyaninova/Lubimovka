@@ -1,0 +1,33 @@
+.swiper-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.swiper-button {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background-color: white;
+    background-image: url(../../images/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: calc(50% - 66px);
+    display: none;
+}
+
+.swiper-button-next {
+    right: 0;
+}
+
+.swiper-button-prev {
+    rotate: 180deg;
+}
+
+/* Медиа-запрос для ширины 1280px*/
+@media screen and (max-width:1479px) {
+    .swiper-button {
+        display: block;
+    }
+}
