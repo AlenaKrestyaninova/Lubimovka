@@ -1,0 +1,35 @@
+.sidebar {
+    background-color: #B7C09D;
+    position: fixed;
+    top: 0;
+    right: -100%;
+    min-width: 250px;
+    z-index: 10;
+    transition: .3s;
+}
+
+.sidebar_open {
+    right: 0;
+}
+
+.sidebar__content{
+    margin: 50px auto;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    max-width: 100px;
+}
+
+.sidebar__item {
+    margin-bottom: 16px;
+}
+
+.sidebar__link {
+    color: black;
+    text-decoration: none;
+    size: 16px;
+}
+
+.sidebar__item:hover .sidebar__link {
+    text-decoration: underline;
+}

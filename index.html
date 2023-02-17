@@ -11,19 +11,115 @@
 <div class="page">
 
     <header class="header">
-        <!-- Навбар -->
-        <div class="navbar">
-            <img src="./images/logo.svg" alt="лого" class="header__logo">
-        </div>
-
+        <nav class="navbar page__section">
+            <img src="./images/logo.svg" alt="лого" class="navbar__logo">
+            <div class="navbar__burger">
+                <span class="navbar__burger-bar"></span>
+                <span class="navbar__burger-bar"></span>
+                <span class="navbar__burger-bar"></span>
+            </div>
+            <ul class="navbar__section">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/events">Афиша</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/library">Библиотека</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/projects">Проекты</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/history">История</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/blog">Блог</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/news">Новости</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/about-us">О фестивале</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://lubimovka.art/contacts">Контакты</a>
+                </li>
+            </ul>
+            <div class="navbar__line"></div>
+            <ul class="navbar__section">
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://www.facebook.com/festival.lubimovka/">fb</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://www.instagram.com/lubimovka/">inst</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://www.youtube.com/channel/UCDZ1HTzBVBxm_vw6tV7C3lg">ytube</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://t.me/lubimovka">tlgrm</a>
+                </li>
+                <li class="navbar__item">
+                    <a class="navbar__link" href="https://vk.com/festival.lubimovka">vk</a>
+                </li>
+            </ul>
+            <div class="navbar__line"></div>
+            <a href="https://lubimovka.art/donation" class="navbar__section navbar__link">
+                <img src="./images/plus.svg" class="navbar__donation-icon">
+                <span class="navbar__donation-link">Поддержать</span>
+            </a>
+        </nav>
+        <nav class="sidebar">
+            <ul class="sidebar__content">
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/events">Афиша</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/library">Библиотека</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/projects">Проекты</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/history">История</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/blog">Блог</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/news">Новости</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/about-us">О фестивале</a>
+                </li>
+                <li class="sidebar__item">
+                    <a class="sidebar__link" href="https://lubimovka.art/contacts">Контакты</a>
+                </li>
+            </ul>
+        </nav>
     </header>
 
     <main class="content">
+        <!-- Лид -->
+        <section class="lead page__section">
+            <button type="button" class="lead__button" aria-label="Показать проекты">
+                <p class="lead__button-text">Проекты</p>
+                <div class="lead__button-arrow">
+                    <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M7.7232e-08 6.52344L0.724826 5.79861L6.52344 -2.21465e-08L7.22631 0.702867L1.90563 6.02354L21 6.02354L21 7.02354L1.94976 7.02354L7.20139 12.2752L6.47656 13L0.702867 7.22631L7.7232e-08 6.52344Z" fill="#242424"/>
+                    </svg>
+                </div>
+            </button>
+            <h1 class="lead__title">Любимовка.<span class="lead__span"> </span>Ещё</h1>
+            <p class="lead__subtitle">Межсезонные читки и обсуждение пьес из списка отмеченных отборщиками Любимовки.</p>
+            <img src="./images/lead__photo.png" class="lead__photo" alt="Фотография: люди сидят в зале и читают пьесу с листа">
+        </section>
 
         <!-- Блок о проекте -->
         <section class="about">
-            <h2 class="about__title">О проекте</h2>
-            <p class="about__subtitle">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
+            <div class="page__section">
+                <h2 class="title">О проекте</h2>
+                <p class="about__subtitle">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
+            </div>
         </section>
 
         <!-- Блок с одним видео -->
@@ -101,7 +197,7 @@
         </section>
 
         <!-- Блок с фотографиями -->
-        <section class="gallery">
+        <section class="gallery page__section">
             <h2 class="title">Заголовок блока с фотографиями</h2>
             <div class="gallery__photos">
                 <img src="./images/gallery1.png" alt="фото из галереи" class="gallery__photo">
@@ -116,7 +212,7 @@
         </section>
 
         <!-- Блок с тремя спектаклями -->
-        <section class="performance performance_amount_three">
+        <section class="performance performance_amount_three page__section">
             <h2 class="title performance__title">Заголовок блока с&nbsp;тремя&nbsp;и&nbsp;более спектаклями</h2>
             <h2 class="title performance__title_special">Заголовок блока со&nbsp;спектаклями любое количество</h2>
             <ul class="performance__section" id="performance__section_for-three-elements">
@@ -124,14 +220,14 @@
         </section>
 
         <!-- Блок с двумя спектаклями -->
-        <section class="performance performance_amount_two">
+        <section class="performance performance_amount_two page__section">
             <h2 class="title performance__title">Заголовок блока с&nbsp;двумя&nbsp;спектаклями</h2>
             <ul class="performance__section" id="performance__section_for-two-elements">
             </ul>
         </section>
 
         <!-- Блок с одним спектаклем -->
-        <section class="performance performance_amount_one">
+        <section class="performance performance_amount_one page__section">
             <h2 class="title performance__title performance__title-for-one">Заголовок блока
                 с&nbsp;одним&nbsp;спектаклем</h2>
             <ul class="performance__section" id="performance__section_for-one-element">
@@ -139,7 +235,7 @@
         </section>
 
         <!-- Блок с пьесами -->
-        <section class="plays">
+        <section class="plays page__section">
             <h2 class="title">Заголовок блока с пьесами</h2>
             <div class="swiper-container">
                 <ul class="plays__items swiper-wrapper">
@@ -151,7 +247,7 @@
         </section>
 
         <!-- Блок с персонами -->
-        <section class="persons">
+        <section class="persons page__section">
             <h2 class="title">Команда разработчиков</h2>
             <div class="swiper-container">
                 <ul class="persons__items swiper-wrapper">
@@ -163,22 +259,24 @@
 
         <!-- Блок со ссылкой youtube -->
         <section class="youtube">
-            <h2 class="title youtube__title">Любимовка на YouTube</h2>
-            <div class="youtube__content">
-                <p class="youtube__subtitle">Видео прошедших мероприятий можно посмотреть в плейлисте на канале Любимовки в YouTube</p>
-                <a href="https://www.youtube.com/playlist?list=PL9Pz6qSnYlVHotLMuD-XDQCc3uU7ngwIQ" class="youtube__button">
-                    <p class="youtube__button-text">youtube</p>
-                    <div class="youtube__button-arrow">
-                        <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
-                        </svg>
-                    </div>
-                </a>
+            <div class="page__section">
+                <h2 class="title">Любимовка на YouTube</h2>
+                <div class="youtube__content">
+                    <p class="youtube__subtitle">Видео прошедших мероприятий можно посмотреть в плейлисте на канале Любимовки в YouTube</p>
+                    <a href="https://www.youtube.com/playlist?list=PL9Pz6qSnYlVHotLMuD-XDQCc3uU7ngwIQ" class="youtube__button">
+                        <p class="youtube__button-text">youtube</p>
+                        <div class="youtube__button-arrow">
+                            <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
+                            </svg>
+                        </div>
+                    </a>
+                </div>
             </div>
         </section>
 
         <!-- Блок с сотрудничеством -->
-        <section class="cooperation">
+        <section class="cooperation page__section">
             <div class="cooperation__asterisk"></div>
             <h2 class="cooperation__title">Проект открыт к&nbsp;сотрудничеству</h2>
             <div class="cooperation__text">
@@ -187,8 +285,7 @@
                 </p>
                 <address class="cooperation__paragraph">
                     Пишите на
-                    <a href="mailto:more@lubimovka.ru?subject=Сотрудничество%20с%20проектом%20%22Любимовка%22"
-                       class="cooperation__link" lang="en">
+                    <a href="mailto:more@lubimovka.ru?subject=Сотрудничество%20с%20проектом%20%22Любимовка%22"class="cooperation__link" lang="en">
                         more@lubimovka.ru
                     </a>
                 </address>
@@ -196,7 +293,7 @@
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer page__section">
         <div class="logo logo_place_footer">
             <a href="#" class="logo__link"></a>
         </div>
@@ -294,8 +391,7 @@
 
 <template class="performance__template">
     <li class="performance__item performance__item_one-of-the-three">
-        <img src="#" alt="#"
-             class="performance__image">
+        <img src="#" alt="#" class="performance__image">
         <div class="performance__information">
             <div class="performance__date-time">
                 <p class="performance__date"></p>
@@ -309,8 +405,22 @@
             <p class="performance__description"></p>
         </div>
         <div class="performance__links">
-            <a class="performance__link" id="about" href="#">О спектакле</a>
-            <a class="performance__link" id="tickets" href="#">Билеты</a>
+            <a class="performance__link" id="about" href="#">
+                <div class="performance__link-arrow">
+                    <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
+                    </svg>
+                </div>
+                <p class="performance__link-text">О спектакле</p>
+            </a>
+            <a class="performance__link" id="tickets" href="#">
+                <div class="performance__link-arrow">
+                    <svg width="21" height="13" viewBox="0 0 21 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M21 6.47656L20.2752 7.20139L14.4766 13L13.7737 12.2971L19.0944 6.97646L-3.63036e-07 6.97646L-3.10999e-07 5.97646L19.0502 5.97646L13.7986 0.724826L14.5234 -2.37804e-07L20.2971 5.77369L21 6.47656Z" fill="#242424"/>
+                    </svg>
+                </div>
+                <p class="performance__link-text">Билеты</p>
+            </a>
         </div>
     </li>
 </template>
@@ -323,6 +433,8 @@
     </li>
 </template>
 
+<script src="scripts/sidebar.js"></script>
+<!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 <script src="scripts/video.js"></script>
 <script src="scripts/performance.js"></script>

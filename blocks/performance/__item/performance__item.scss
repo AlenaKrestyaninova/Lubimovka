@@ -1,8 +1,8 @@
-$text: #242424;
+@import "../../../pages/variables.scss";
 
 .performance__item {
   border-right: 1px solid $text;
-  padding: 0 30px;
+  padding: 0 25px;
   box-sizing: border-box;
   display: grid;
   column-gap: 30px;
@@ -11,7 +11,7 @@ $text: #242424;
       "image info"
       ". links";
   margin: 0 auto;
-  width: 100%;
+  max-width: 100%;
 }
 
 .performance__item:last-child {
@@ -35,7 +35,6 @@ $text: #242424;
           "links links";
     grid-template-columns: 92px 1fr;
     margin: 0 auto;
-    max-width: 100%;
     border-right: none;
     border-bottom: 1px solid $text;
     padding: 32px 25px;
@@ -45,7 +44,7 @@ $text: #242424;
 @media (max-width: 380px) {
   .performance__item {
     column-gap: 15px;
-    padding: 20px 15px;
-    min-width: 320px;
+    padding: 20px auto;
+    max-width: 100%;
   }
 }

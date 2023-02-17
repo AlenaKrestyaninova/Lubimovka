@@ -1,0 +1,35 @@
+.navbar__logo {
+  width: 43px;
+  height: 35px;
+  margin: 0 30px 0 43px;
+  }
+
+
+@media screen and (max-width:1279px) {
+  .navbar__logo {
+    margin: 0 17px 0 23px;
+  }
+}
+  
+/* Медиа-запрос для ширины 768px*/
+@media screen and (max-width:1023px) {
+  .navbar__logo {
+    margin: 0 6px 0 8px;
+  }
+}
+
+@media screen and (max-width:820px) {
+  .navbar__logo {
+    width: 43px;
+    height: 34px;
+  }
+}
+  
+/* Медиа-запрос для ширины 320px*/
+@media screen and (max-width:767px) {
+    .navbar__logo {
+      width: 43px;
+      height: 34px;
+      margin-left: 24px;
+    }
+}

@@ -1,4 +1,4 @@
-$text: #242424;
+@import "../../pages/variables.scss";
 
 .page {
     margin: 0 auto;
@@ -8,12 +8,12 @@ $text: #242424;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     box-sizing: border-box;
-    max-width: 1440px;
+    // max-width: 1440px;
 }
 
 /* Медиа-запрос для ширины 1280px*/
 @media all and (max-width:1439px) {
     .page {
-        max-width: 100%;
+        // max-width: 100%;
     }
 }

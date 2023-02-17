@@ -1,7 +1,6 @@
 @import "../../pages/variables.scss";
 
 .footer {
-  padding-top: 42px;
   padding-bottom: 54px;
   box-sizing: border-box;
   display: grid;
@@ -11,7 +10,6 @@
     ". lubimovka lubimovka design yandex";
   grid-template-columns: 13% 1fr 15% 15% 20%;
   margin: 0 auto;
-  max-width: calc(100% - 2*30px);
 }
 
 .logo_place_footer {
@@ -137,7 +135,6 @@
 
 @media (max-width: 1023px) {
   .footer {
-    padding-top: 0;
     grid-template-areas: 
       "logo address address"
       "navigation about projects"

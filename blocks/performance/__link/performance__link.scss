@@ -1,16 +1,14 @@
-$text: #242424;
+@import "../../../pages/variables.scss";
 
 .performance__link {
-    background: url(../../../images/performances/arrow.svg) no-repeat left center;
-    display: block;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 9px;
     width: 154px;
-    height: 32px;
     border-bottom: 1px solid $text;
     border-left: 1px solid $text;
-    padding: 9px 0 9px 29px;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 14px;
+    line-height: 32px;
     text-decoration: none;
     color: $text;
     text-transform: uppercase;
@@ -41,8 +39,23 @@ $text: #242424;
 }
 
 .performance__link:hover {
-    color: #E5E5E5;
-    background: url(../../../images/performances/arrow-hover.svg) no-repeat left center;
+    color: $white;
+}
+
+.performance__link:hover path {
+    fill: #ffffff;
+}
+
+.performance__link-arrow {
+    display: block;
+}
+
+.performance__link-text {
+    margin: 0;
+    display: block;
+    z-index: 1;
+    font-weight: 300;
+    font-size: 16px;
 }
 
 @media (max-width: 960px) {
@@ -52,10 +65,8 @@ $text: #242424;
 }
 
 @media (max-width: 480px) {
-    .performance__link {
-        padding: 8px 0 8px 20px;
+    .performance__link-text {
         font-size: 12px;
         line-height: 8px;
-        background-size: 15px 7px;
     }
 }
