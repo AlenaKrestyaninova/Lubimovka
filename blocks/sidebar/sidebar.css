@@ -12,24 +12,6 @@
     right: 0;
 }
 
-/* .sidebar__close {
-    border: none;
-    background-color: transparent;
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    z-index: 11;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    text-align: center;
-    transition: all 0.5s ease;
-} */
-
-/* .sidebar__close:hover rect {
-    fill: black;
-} */
-
 .sidebar__content{
     margin: 50px auto;
     list-style: none;
