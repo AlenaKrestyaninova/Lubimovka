@@ -1,13 +1,18 @@
 .sidebar {
     background-color: #B7C09D;
-    position: absolute;
+    position: fixed;
     top: 0;
-    right: 0;
+    right: -100%;
     min-width: 250px;
     z-index: 10;
+    transition: .3s;
 }
 
-.sidebar__close {
+.sidebar_open {
+    right: 0;
+}
+
+/* .sidebar__close {
     border: none;
     background-color: transparent;
     position: absolute;
@@ -19,14 +24,14 @@
     padding: 0;
     text-align: center;
     transition: all 0.5s ease;
-}
+} */
 
-.sidebar__close:hover rect {
+/* .sidebar__close:hover rect {
     fill: black;
-}
+} */
 
 .sidebar__content{
-    margin: 60px auto 60px;
+    margin: 50px auto;
     list-style: none;
     padding: 0;
     text-align: center;

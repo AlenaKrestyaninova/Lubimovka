@@ -13,7 +13,11 @@
     <header class="header">
         <nav class="navbar page__section">
             <img src="./images/logo.svg" alt="лого" class="navbar__logo">
-            <img src="./images/Burger.svg" class="navbar__burger">
+            <div class="navbar__burger">
+                <span class="navbar__burger-bar"></span>
+                <span class="navbar__burger-bar"></span>
+                <span class="navbar__burger-bar"></span>
+            </div>
             <ul class="navbar__section">
                 <li class="navbar__item">
                     <a class="navbar__link" href="https://lubimovka.art/events">Афиша</a>
@@ -65,12 +69,6 @@
             </a>
         </nav>
         <nav class="sidebar">
-            <button class="sidebar__close">
-                <svg width="30" height="30" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <rect x="7.16016" y="9.28249" width="3" height="22" transform="rotate(-45 7.16016 9.28249)" fill="white"/>
-                    <rect x="22.7168" y="7.16117" width="3" height="22" transform="rotate(45 22.7168 7.16117)" fill="white"/>
-                </svg>
-            </button>
             <ul class="sidebar__content">
                 <li class="sidebar__item">
                     <a class="sidebar__link" href="https://lubimovka.art/events">Афиша</a>
@@ -376,6 +374,7 @@
     </li>
 </template>
 
+<script src="scripts/sidebar.js"></script>
 <script src="scripts/performance.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>

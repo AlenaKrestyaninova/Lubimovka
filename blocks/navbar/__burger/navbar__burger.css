@@ -1,15 +1,46 @@
 .navbar__burger {
-  position: -webkit-sticky;
-  position: sticky;
+  position: fixed;
   top: 0;
   right: 0;
   display: none;
-  height: 60px;
+  height: 50px;
+  width: 50px;
+  z-index: 11;
+  background-color: black;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.navbar__burger_active {
+  background-color: transparent;
+}
+
+.navbar__burger_active .navbar__burger-bar:nth-child(2){
+  opacity: 0;
+}
+
+.navbar__burger_active .navbar__burger-bar:nth-child(1){
+  transform: translateY(9px) rotate(45deg);
+}
+
+.navbar__burger_active .navbar__burger-bar:nth-child(3){
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+.navbar__burger-bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 3px auto;
+  background-color: #fff;
+  transition: .2s;
 }
 
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width:767px) {
   .navbar__burger {
-    display: block;
+    display: flex;
   }
 }
