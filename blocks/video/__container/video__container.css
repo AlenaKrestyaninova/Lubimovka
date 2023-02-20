@@ -1,0 +1,31 @@
+.video__container {
+  padding: 0;
+  margin: 0 auto;
+  position: relative;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  gap: 59px;
+}
+
+.video__container_two {
+  width: 899px;
+}
+
+.video__container_three {
+  width: 1378px;
+}
+
+@media screen and (max-width:767px) {
+  .video__container  {
+    gap: 30px;
+    margin: 0;
+  }
+  .video__container_two {
+    width: 628px;
+  }
+  
+  .video__container_three {
+    width: 957px;
+  }
+}

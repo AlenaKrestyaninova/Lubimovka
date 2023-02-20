@@ -1,0 +1,22 @@
+.video__content_row {
+  width: 420px;
+  height: 236px;
+}
+
+.video__content_row:last-child {
+  margin-right: 0;
+}
+
+@media screen and (max-width:1023px) {
+   /*  .video__content_row {
+      width: 640px;
+      height: 360px;
+    } */
+  }
+  
+@media screen and (max-width:600px) {
+  .video__content_row {
+    width: 299px;
+    height: 168px;
+  }
+}

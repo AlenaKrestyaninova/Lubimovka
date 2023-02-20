@@ -1,7 +1,6 @@
 .page__section {
     margin: 0 auto;
     max-width: 1440px;
-    border: 1px solid red;
 }
 
 @media all and (max-width:1439px) {

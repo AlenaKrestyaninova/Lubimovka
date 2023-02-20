@@ -1,0 +1,15 @@
+.video__cover {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
+.video__cover:hover {
+  cursor: pointer;
+}
+
+.video__cover:hover .video__button {
+  transform: scale(1.15);
+}

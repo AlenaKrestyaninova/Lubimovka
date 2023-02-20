@@ -116,30 +116,89 @@
 
         <!-- Блок о проекте -->
         <section class="about">
-            <div class="page__section">
-                <h2 class="title">О проекте</h2>
+            <div class="page__section page__section_size_large">
+                <h2 class="title about__title">О проекте</h2>
                 <p class="about__subtitle">За первый сезон проекта организаторы провели 17 мероприятий вместе с режиссёрами и актёрами московских театров: Театра.doc, Театрального Центра им. Вс. Мейерхольда, Гоголь-центра, Электротеатра «Станиславский», Ленкома.</p>
             </div>
         </section>
 
         <!-- Блок с одним видео -->
-        <section class="art">
-
+        <section class="video page__section page__section_size_large">
+            <h2 class="title">Заголовок блока с видео</h2>
+            <div class="video__content">
+                <a target="blank" class="video__link" href="https://www.youtube.com/embed/xB654zuufpc">
+                    <div class="video__cover">
+                        <img src="images/cover-video.png" class="video__img" alt="обложка видео">
+                        <div class="video__button"></div>
+                    </div>
+                </a>
+            </div>
+            <p class="video__description">Из этого следует два вывода: с одной стороны, искусство не должно быть равно реальности, потому что иначе оно не будет искусством, с другой стороны – оно должно быть все-таки подобно реальности, иначе мы ничего не поймем, не подключимся и не распознаем замыслы автора. Мне нравится такое определение, что один из видов эстетики – это, грубо говоря, "понимание" чего-то. Если нам нечего понимать, то мы не получим ни удовольствия, ни какого-то чувства, ничего. А для того, чтобы что-то понять, нам должно быть представлено что-то, что не равно само себе. То есть нам показывают или говорят что-то, а мы понимаем, что там есть что-то еще. Вот мы смотрим на античную статую и понимаем, что это – статуя, но похожа на человека. Если она будет абсолютно такая же как человек, как восковая фигура, то мы поймем, что это уже не искусство. Искусство для того, чтобы люди догадались, домыслили, дочувствовали что-то.</p>
         </section>
 
         <!-- Блок с двумя видео -->
-        <section class="video">
-
+        <section class="two-video video page__section">
+            <h2 class="title title__special">Заголовок блока с двумя видео</h2>
+            <div class="swiper-container">
+                <ul class="video__container video__container_two swiper-wrapper">
+                    <li class="video__content swiper-slide video__content_row">
+                        <a target="blank" class="video__link" href="https://www.youtube.com/embed/uzzhJGaN83Q">
+                            <div class="video__cover">
+                                <img src="images/cover-video.jpg" class="video__img" alt="обложка видео">
+                                <div class="video__button"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="video__content swiper-slide video__content_row">
+                        <a target="blank" class="video__link" href="https://www.youtube.com/embed/Dz6u6DFjNmM">
+                            <div class="video__cover">
+                                <img src="images/cover-video.jpg" class="video__img" alt="обложка видео">
+                                <div class="video__button"></div>
+                            </div>
+                        </a>
+                    </li>        
+                </ul>
+                <div class="swiper-pagination"></div> 
+            </div>
         </section>
 
-        <!-- Блок с тремя видео - Переименовать секцию!!!-->
-        <section class="triple-video">
-
+        <!-- Блок с тремя видео -->
+        <section class="three-video video page__section">
+            <h2 class="title title__special">Заголовок блока с тремя видео</h2>
+            <div class="swiper-container">
+                <ul class="video__container video__container_three swiper-wrapper">
+                    <li class="video__content swiper-slide video__content_row">
+                        <a target="blank" class="video__link" href="https://www.youtube.com/embed/JDs2DxwNLUo">
+                            <div class="video__cover">
+                                <img src="images/cover-video.jpg" class="video__img" alt="обложка видео">
+                                <div class="video__button"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="video__content swiper-slide video__content_row">
+                        <a target="blank" class="video__link" href="https://www.youtube.com/embed/wPg_StIU5dM">
+                            <div class="video__cover">
+                                <img src="images/cover-video.jpg" class="video__img" alt="обложка видео">
+                                <div class="video__button"></div>
+                            </div>
+                        </a>
+                    </li>
+                    <li class="video__content swiper-slide video__content_row">
+                        <a target="blank" class="video__link" href="https://www.youtube.com/embed/PW7e9Rp9VCw">
+                            <div class="video__cover">
+                                <img src="images/cover-video.jpg" class="video__img" alt="обложка видео">
+                                <div class="video__button"></div>
+                            </div>
+                        </a>
+                    </li> 
+                </ul>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
         <!-- Блок с фотографиями -->
         <section class="gallery page__section">
-            <h2 class="title">Заголовок блока с фотографиями</h2>
+            <h2 class="title title__special">Заголовок блока с фотографиями</h2>
             <div class="gallery__photos">
                 <img src="./images/gallery1.png" alt="фото из галереи" class="gallery__photo">
                 <img src="./images/gallery2.png" alt="фото из галереи" class="gallery__photo">
@@ -176,7 +235,7 @@
         </section>
 
         <!-- Блок с пьесами -->
-        <section class="plays page__section">
+        <section class="plays page__section page__section_size_large">
             <h2 class="title">Заголовок блока с пьесами</h2>
             <div class="swiper-container">
                 <ul class="plays__items swiper-wrapper">
@@ -188,7 +247,7 @@
         </section>
 
         <!-- Блок с персонами -->
-        <section class="persons page__section">
+        <section class="persons page__section page__section_size_large">
             <h2 class="title">Команда разработчиков</h2>
             <div class="swiper-container">
                 <ul class="persons__items swiper-wrapper">
@@ -200,7 +259,7 @@
 
         <!-- Блок со ссылкой youtube -->
         <section class="youtube">
-            <div class="page__section">
+            <div class="page__section page__section_size_large">
                 <h2 class="title">Любимовка на YouTube</h2>
                 <div class="youtube__content">
                     <p class="youtube__subtitle">Видео прошедших мероприятий можно посмотреть в плейлисте на канале Любимовки в YouTube</p>
@@ -234,7 +293,7 @@
         </section>
     </main>
 
-    <footer class="footer page__section">
+    <footer class="footer page__section page__section_size_large">
         <div class="logo logo_place_footer">
             <a href="#" class="logo__link"></a>
         </div>
@@ -375,14 +434,12 @@
 </template>
 
 <script src="scripts/sidebar.js"></script>
-<script src="scripts/performance.js"></script>
 <!-- Swiper JS -->
 <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+<script src="scripts/video.js"></script>
+<script src="scripts/performance.js"></script>
 <script src="scripts/plays.js"></script>
-
-
-
-<script src="plugin/swiper.js"></script>
+<!-- <script src="plugin/swiper.js"></script> -->
 <script src="scripts/persons.js"></script>
 </body>
 </html>

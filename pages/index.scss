@@ -3,6 +3,7 @@
 @import "../blocks/body/body.scss";
 @import "../blocks/page/page.scss";
 @import "../blocks/page/__section/page__section.css";
+@import "../blocks/page/__section/_size/page__section_size_large.css";
 
 @import "../blocks/title/title.css";
 
@@ -24,6 +25,19 @@
 @import "../blocks/lead/lead.css";
 /* Раздел about*/
 @import "../blocks/about/about.scss";
+
+/* Раздел видео*/
+@import "../blocks/video/video.css";
+@import "../blocks/video/__title/video__title.css";
+@import "../blocks/video/__content/video__content.css";
+@import "../blocks/video/__content/_row/video__content_row.css";
+@import "../blocks/video/__description/video__description.css";
+@import "../blocks/video/__cover/video__cover.css";
+@import "../blocks/video/__button/video__button.css";
+@import "../blocks/video/__iframe/video__iframe.css";
+@import "../blocks/hidden/hidden.css";
+@import "../blocks/video/__img/video__img.css";
+@import "../blocks/video/__container/video__container.css";
 
 /* Раздел gallery*/
 @import "../blocks/gallery/gallery.css";

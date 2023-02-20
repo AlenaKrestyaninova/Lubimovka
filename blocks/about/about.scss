@@ -7,6 +7,14 @@
     box-sizing: border-box;
 }
 
+.about__title {
+    font-family: 'Neue Machina';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 40px;
+}
+
 .about__subtitle {
     margin-left: 29%;
     max-width: 509px;
@@ -20,12 +28,13 @@
 
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width: 767px) {
-    .youtube {
+    .about {
         padding-top: 56px;
         padding-bottom: 72px;
     }
     .about__title {
-        margin-left: 24px;
+        font-size: 40px;
+        line-height: 40px;
     }
     .about__subtitle {
         margin-left: 85px;

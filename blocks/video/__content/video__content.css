@@ -1,0 +1,10 @@
+.video__content {
+    width: 716px;
+    aspect-ratio: 16 / 9;
+}
+
+@media screen and (max-width:767px) {
+    .video__content {
+        width: 100%;
+    }
+}
