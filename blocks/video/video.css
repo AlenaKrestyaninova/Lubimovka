@@ -3,11 +3,9 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto;
-  padding: 98px 0 0 0;
-  max-width: calc(100% - 2*24px);
+  margin-top: 98px;
 }
 
-.three-video {
-  padding: 48px 0 0 0;
+.video .title {
+  align-self: flex-start;
 }

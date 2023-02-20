@@ -72,6 +72,7 @@ function initTwoVideoSlider () {
         spaceBetween: 0,
         mousewheel: true,
         keyboard: true,
+        slidesOffsetAfter: 30,
         breakpoints: {
             600: {
                 pagination: {
@@ -100,6 +101,7 @@ function initThreeVideoSlider () {
         mousewheel: true,
         keyboard: true,
         onlyInViewport: true,
+        slidesOffsetAfter: 115,
         breakpoints: {
             600: {
                 pagination: {

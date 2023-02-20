@@ -27,4 +27,7 @@
         line-height: 1.14;
         margin-left: 0;
     }
+    .title__special {
+        margin-left: 24px;
+    }
 }

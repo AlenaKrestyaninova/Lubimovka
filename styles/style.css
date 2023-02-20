@@ -2,6 +2,7 @@
 @import "../vendor/normalize.css";
 @import "../fonts/fonts.css";
 @import "../blocks/page/__section/page__section.css";
+@import "../blocks/page/__section/_size/page__section_size_large.css";
 @import "../blocks/title/title.css";
 @import "../blocks/navbar/__burger/navbar__burger.css";
 @import "../blocks/navbar/__section/navbar__section.css";
@@ -12,10 +13,15 @@
 @import "../blocks/lead/lead.css";
 @import "../blocks/video/video.css";
 @import "../blocks/video/__title/video__title.css";
-@import "../blocks/video/__cover/video__cover.css";
-@import "../blocks/video/__img/video__img.css";
-@import "../blocks/video/__button/video__button.css";
+@import "../blocks/video/__content/video__content.css";
+@import "../blocks/video/__content/_row/video__content_row.css";
 @import "../blocks/video/__description/video__description.css";
+@import "../blocks/video/__cover/video__cover.css";
+@import "../blocks/video/__button/video__button.css";
+@import "../blocks/video/__iframe/video__iframe.css";
+@import "../blocks/hidden/hidden.css";
+@import "../blocks/video/__img/video__img.css";
+@import "../blocks/video/__container/video__container.css";
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
@@ -52,17 +58,6 @@
 @import "../blocks/persons/__photo/persons__photo.css";
 @import "../blocks/persons/__name/persons__name.css";
 @import "../blocks/persons/__description/persons__description.css";
-@import "../blocks/video/video.css";
-@import "../blocks/video/__title/video__title.css";
-@import "../blocks/video/__content/_row/video__content_row.css";
-@import "../blocks/video/__description/video__description.css";
-@import "../blocks/video/__cover/video__cover.css";
-@import "../blocks/video/__button/video__button.css";
-@import "../blocks/video/__iframe/video__iframe.css";
-@import "../blocks/hidden/hidden.css";
-@import "../blocks/video/__img/video__img.css";
-@import "../blocks/video/__content/_row/video__content_row.css";
-@import "../blocks/video/__container/video__container.css";
 @import "../blocks/cooperation/cooperation.css";
 @import "../blocks/cooperation/__asterisk/cooperation__asterisk.css";
 @import "../blocks/cooperation/__paragraph/cooperation__paragraph.css";
@@ -219,6 +214,14 @@
   box-sizing: border-box;
 }
 
+.about__title {
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 40px;
+}
+
 .about__subtitle {
   margin-left: 29%;
   max-width: 509px;
@@ -232,19 +235,20 @@
 
 /* Медиа-запрос для ширины 320px*/
 @media screen and (max-width: 767px) {
-  .youtube {
+  .about {
     padding-top: 56px;
     padding-bottom: 72px;
   }
   .about__title {
-    margin-left: 24px;
+    font-size: 40px;
+    line-height: 40px;
   }
   .about__subtitle {
     margin-left: 85px;
     margin-right: 24px;
   }
 }
-/* Раздел video*/
+/* Раздел видео*/
 /* Раздел gallery*/
 /*Раздел performance*/
 .performance__item {
@@ -415,7 +419,6 @@
 }
 
 /* Раздел persons*/
-/* Раздел видео*/
 /* Раздел cooperation*/
 /* Раздел youtube*/
 .youtube {
