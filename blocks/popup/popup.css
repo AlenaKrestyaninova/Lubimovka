@@ -1,0 +1,62 @@
+.popup {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, .5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility .5s, opacity .5s linear;
+}
+
+.popup_opened {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* .popup__button {
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    border: none;
+    background-color: white;
+    background-image: url(../../images/arrow.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: opacity .3s ease-in-out;
+}
+
+.popup__button:hover{
+    opacity: .7;
+}
+
+.popup__button-next {
+    right: -80px;
+}
+
+.popup__button-prev {
+    rotate: 180deg;
+    left: -80px;
+    transform: translateY(50%);
+}
+
+@media all and (max-width:767px) {
+    .popup__button {
+        width: 40px;
+        height: 40px;
+    }
+    .popup__button-next {
+        right: -40px;
+    }
+    .popup__button-prev {
+        left: -40px;
+    }
+} */

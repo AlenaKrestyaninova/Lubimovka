@@ -19,16 +19,15 @@
 @import "../blocks/navbar/__logo/navbar__logo.css";
 @import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
 @import "../blocks/navbar/__donation-link/navbar__donation-link.scss";
-@import "../blocks/sidebar/sidebar.css";
+@import "../blocks/sidebar/sidebar.scss";
 
 /* Раздел lead*/
-@import "../blocks/lead/lead.css";
+@import "../blocks/lead/lead.scss";
 /* Раздел about*/
 @import "../blocks/about/about.scss";
 
 /* Раздел видео*/
 @import "../blocks/video/video.css";
-@import "../blocks/video/__title/video__title.css";
 @import "../blocks/video/__content/video__content.css";
 @import "../blocks/video/__content/_row/video__content_row.css";
 @import "../blocks/video/__description/video__description.css";
@@ -43,6 +42,10 @@
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
+@import "../blocks/popup/popup.css";
+@import "../blocks/popup/__close/popup__close.css";
+@import "../blocks/popup/__image-container/popup__image-container.css";
+@import "../blocks/popup/__img/popup__img.css";
 
 /*Раздел performance*/
 @import "../blocks/performance/performance.css";

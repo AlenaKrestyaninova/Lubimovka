@@ -189,7 +189,7 @@
     gap: 40;
     margin-top: 83px;
     padding-bottom: 83px;
-    border-bottom: 1px solid #242424;
+    border-bottom: 1px solid $text;
   }
   .footer__partners-title {
     display: none;
@@ -206,7 +206,7 @@
     font-weight: 300;
     font-size: 14px;
     line-height: 20px;
-    color: #242424;
+    color: $text;
     text-align: center;
   }
   .footer__lubimovka-links {

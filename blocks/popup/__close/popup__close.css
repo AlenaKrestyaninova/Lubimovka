@@ -1,0 +1,29 @@
+.popup__close {
+    background-image: url(../../../images/Close_Icon.svg);
+    background-size: 32px 32px;
+    background-color: transparent;
+    width: 32px;
+    height: 32px;
+    border: none;
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    cursor: pointer;
+    transition: opacity .3s ease-in-out;
+    padding: 0;
+}
+
+.popup__close:hover {
+    opacity: 0.6;
+}
+
+/* Медиа-запрос для ширины 425px (меньше 768px)*/
+@media all and (max-width:767px) {
+    .popup__close {
+        background-size: 20px 20px;
+        width: 20px;
+        height: 20px;
+        top: -36px;
+        right: 0;
+    }
+}

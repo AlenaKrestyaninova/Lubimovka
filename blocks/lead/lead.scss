@@ -1,3 +1,5 @@
+@import "../../pages/variables.scss";
+
 .lead {
   display: grid;
   grid-template-areas:
@@ -12,7 +14,7 @@
   width: 120px;
   height: 31px;
   background: none;
-  border: 1px solid #242424;
+  border: 1px solid $text;
   border-top: none;
   border-left: none;
   position: absolute;
@@ -29,7 +31,7 @@
 }
 
 .lead__button-text {
-  color: #242424;
+  color: $text;
   font-size: 16px;
   line-height: 14px;
   margin: 0;
@@ -42,7 +44,7 @@
   left: 0;
   width: 0;
   height: 31px;
-  background-color: #242424;
+  background-color: $text;
   transition: all 0.5s ease;
 }
 
@@ -51,12 +53,12 @@
 }
 
 .lead__button:hover .lead__button-text, .lead__button-arrow {
-  color: white;
+  color: $white;
   z-index: 1;
 }
 
 .lead__button:hover path{
-  fill: white;
+  fill: $white;
 }
 
 .lead__arrow {

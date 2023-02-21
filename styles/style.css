@@ -9,10 +9,7 @@
 @import "../blocks/navbar/__item/navbar__item.css";
 @import "../blocks/navbar/__logo/navbar__logo.css";
 @import "../blocks/navbar/__donation-icon/navbar__donation-icon.css";
-@import "../blocks/sidebar/sidebar.css";
-@import "../blocks/lead/lead.css";
 @import "../blocks/video/video.css";
-@import "../blocks/video/__title/video__title.css";
 @import "../blocks/video/__content/video__content.css";
 @import "../blocks/video/__content/_row/video__content_row.css";
 @import "../blocks/video/__description/video__description.css";
@@ -25,6 +22,10 @@
 @import "../blocks/gallery/gallery.css";
 @import "../blocks/gallery/__photos/gallery__photos.css";
 @import "../blocks/gallery/__photo/gallery__photo.css";
+@import "../blocks/popup/popup.css";
+@import "../blocks/popup/__close/popup__close.css";
+@import "../blocks/popup/__image-container/popup__image-container.css";
+@import "../blocks/popup/__img/popup__img.css";
 @import "../blocks/performance/performance.css";
 @import "../blocks/performance/_amount/performance_amount_one.css";
 @import "../blocks/performance/_amount/performance_amount_two.css";
@@ -205,7 +206,183 @@
     font-size: 10px;
   }
 }
+.sidebar {
+  background-color: #B7C09D;
+  position: fixed;
+  top: 0;
+  right: -100%;
+  min-width: 250px;
+  z-index: 10;
+  transition: 0.3s;
+}
+
+.sidebar_open {
+  right: 0;
+}
+
+.sidebar__content {
+  margin: 50px auto;
+  list-style: none;
+  padding: 0;
+  text-align: center;
+  max-width: 100px;
+}
+
+.sidebar__item {
+  margin-bottom: 16px;
+}
+
+.sidebar__link {
+  color: #242424;
+  text-decoration: none;
+  size: 16px;
+}
+
+.sidebar__item:hover .sidebar__link {
+  text-decoration: underline;
+}
+
 /* Раздел lead*/
+.lead {
+  display: grid;
+  grid-template-areas: ". title" "subtitle img";
+  grid-template-columns: repeat(2, 1fr);
+  position: relative;
+  margin: 0 auto;
+}
+
+.lead__button {
+  width: 120px;
+  height: 31px;
+  background: none;
+  border: 1px solid #242424;
+  border-top: none;
+  border-left: none;
+  position: absolute;
+  top: 33px;
+  left: 30px;
+  padding: 0;
+  text-transform: uppercase;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: end;
+  gap: 9px;
+}
+
+.lead__button-text {
+  color: #242424;
+  font-size: 16px;
+  line-height: 14px;
+  margin: 0;
+}
+
+.lead__button:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 31px;
+  background-color: #242424;
+  transition: all 0.5s ease;
+}
+
+.lead__button:hover:before {
+  width: 100%;
+}
+
+.lead__button:hover .lead__button-text, .lead__button-arrow {
+  color: #ffffff;
+  z-index: 1;
+}
+
+.lead__button:hover path {
+  fill: #ffffff;
+}
+
+.lead__arrow {
+  background-image: url(../../images/arrow.svg);
+  width: 13px;
+  height: 21px;
+  transform: rotate(180deg);
+}
+
+.lead__title {
+  grid-area: title;
+  letter-spacing: -0.01em;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  margin: 0;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 0.97;
+  max-width: 450px;
+  display: block;
+}
+
+.lead__subtitle {
+  grid-area: subtitle;
+  font-family: "Neue Machina";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 28px;
+  line-height: 1.14;
+  letter-spacing: -0.01em;
+  max-width: 420px;
+  justify-self: center;
+  margin: 0;
+}
+
+.lead__photo {
+  grid-area: img;
+  display: block;
+  object-fit: cover;
+  width: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  .lead {
+    max-width: calc(100% - 60px);
+  }
+  .lead__title {
+    font-size: 58px;
+  }
+  .lead__subtitle {
+    font-size: 24px;
+  }
+  .lead__button {
+    top: 30px;
+    left: 0;
+  }
+}
+@media screen and (max-width: 767px) {
+  .lead {
+    display: grid;
+    grid-template-areas: "title" "subtitle" "img";
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 100%;
+  }
+  .lead__title {
+    padding-top: 54px;
+    padding-bottom: 22px;
+    font-size: 58px;
+    font-size: 40px;
+    margin-left: 24px;
+  }
+  .lead__subtitle {
+    font-size: 20px;
+    line-height: 1.2;
+    margin-left: 86px;
+    margin-bottom: 36px;
+  }
+  .lead__button {
+    top: -42px;
+    left: 80px;
+  }
+}
 /* Раздел about*/
 .about {
   background-color: #B7C09D;
@@ -506,7 +683,6 @@
   display: grid;
   grid-template-areas: "logo partners partners partners partners" ". address navigation about projects" ". lubimovka lubimovka design yandex";
   grid-template-columns: 13% 1fr 15% 15% 20%;
-  margin: 0 auto;
 }
 
 .logo_place_footer {

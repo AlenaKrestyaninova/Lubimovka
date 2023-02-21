@@ -1,5 +1,7 @@
+@import "../../pages/variables.scss";
+
 .sidebar {
-    background-color: #B7C09D;
+    background-color: $background-green;
     position: fixed;
     top: 0;
     right: -100%;
@@ -25,7 +27,7 @@
 }
 
 .sidebar__link {
-    color: black;
+    color: $text;
     text-decoration: none;
     size: 16px;
 }
