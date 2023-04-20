@@ -18,4 +18,6 @@
 * блок с ссылкой на внешние ресурсы
 * раздел для желающих присоединиться в качестве режиссёра:  
 
-Ссылка на макет: [Макет в figma](https://www.figma.com/file/sPmrkcsXbuuHC24zIRktfJ/lubimovka-pr.page?node-id=0%3A1)
+Ссылка на макет: [Макет в figma](https://www.figma.com/file/sPmrkcsXbuuHC24zIRktfJ/lubimovka-pr.page?node-id=0%3A1)  
+Полный макет всех страниц сайта: [Полный макет](https://www.figma.com/file/zpyHTGb3aKiAbpJJoIVqQ2/lubimovka?node-id=1170-21929&t=wmsx7ufJkygAXkzR-0)  
+[Стайлгайд](https://www.figma.com/proto/zpyHTGb3aKiAbpJJoIVqQ2/lubimovka?page-id=822%3A11417&node-id=859-13873&viewport=11728%2C2764%2C1.1076146364212036&scaling=min-zoom&starting-point-node-id=859%3A13873&hide-ui=1)
